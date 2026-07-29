@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generado por Plantilla Excel 2016 - Superintendencia del Mercado de Valores .  -->
 <xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ifrs-full="http://xbrl.ifrs.org/taxonomy/2015-03-11/ifrs-full" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:smv="http://www.smv.gob.pe/2016-01-27/smv" xmlns:iso4217="http://www.xbrl.org/2003/iso4217">
-<link:schemaRef xlink:href="http://www.smv.gob.pe/pe/fr/ci/2016-01-27/pe_consolidado_directo_smv_2016-01-27.xsd" xlink:type="simple" />
+<link:schemaRef xlink:href="  http://www.smv.gob.pe/pe/fr/ci/2016-01-27/pe_consolidado_directo_smv_2016-01-27.xsd" xlink:type="simple" />
   <xbrli:context id="id1">
     <xbrli:entity>
       <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B08361</xbrli:identifier>
