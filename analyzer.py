@@ -11,22 +11,28 @@ root = tree.getroot()
 
 #3- We define the attributte we have been searching for:
 
-cuenta_efectivo = 'CashAndCashEquivalents'
+nombre_cuenta = 'CashAndCashEquivalents'
 monto_efectivo = None
 contexto_efectivo = None
 
 #Is the '}' be inside the tags?
-for elemnts in root.iter():
-    
-    nombre_corto_temp = elemnts.tag
-    if '}' in nombre_corto_temp:
-        partes = nombre_corto_temp.split('}')
-        nombre_limpio_tag = partes[-1]
-    else: 
-        nombre_limpio_tag = nombre_corto_temp
 
-#4- We find the tag and the attribute
-    if nombre_limpio_tag == cuenta_efectivo:
-        monto_efectivo = elemnts.text
-        contexto_efectivo = elemnts.get('contextRef')
-        print(f"-> Econtrado: {nombre_limpio_tag} | monto: {monto_efectivo} | contexto: {contexto_efectivo}")
+
+for elementos in root.iter():
+    #Define the elements:
+    elemento_iterado = elementos.tag
+    elemento_recortado = None
+    
+    if '}' in elemento_iterado:
+        cortar = elemento_iterado.split('}')
+        elemento_recortado = cortar[-1]
+    else:
+        elemento_recortado = elemento_iterado
+
+    #Busqueda: 
+    if elemento_recortado == nombre_cuenta:
+        monto_efectivo = elementos.text
+        contexto_efectivo = elementos.get('contextRef')
+        print(f"tag {elemento_recortado}| valor =  {monto_efectivo} | con Id de = {contexto_efectivo}")
+    
+    
