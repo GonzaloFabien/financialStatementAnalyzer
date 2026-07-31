@@ -15,6 +15,8 @@ def buscar_elemento(nombre_tag, id_buscado):
     for elementos in root.iter():
         elemento_iterado = elementos.tag
         elemento_recortado = None
+        elemento_encontrado = "NO encontrado"
+
 
         if '}' in  elemento_iterado:
             recortar = elemento_iterado.split('}')
@@ -23,10 +25,11 @@ def buscar_elemento(nombre_tag, id_buscado):
             elemento_recortado = elemento_iterado
 
         if elemento_recortado == nombre_tag and id_buscado == elementos.get('contextRef'):
-            print(f"elemento encontrado:")
-            print(f"nombre  tag :{elementos.text} | valor de :{elementos.text} | con id:{elementos.get('contextRef')}")
+            elemento_encontrado = elementos.text
+            return int(elemento_encontrado)
+            print(f"nombre del tag : {nombre_tag} = || {elementos.text} || con id:{elementos.get('contextRef')}")
 
-    return elementos.text
+    
 
 if __name__ == "__main__":
     print("hola")
