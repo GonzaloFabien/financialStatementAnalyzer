@@ -10,7 +10,7 @@ tree = ET.parse(nombre_empresa)
 root = tree.getroot()
 
 #------De a partir de aquí crearemos la funcón:------   
-def buscar_elemento(nombre_tag):
+def buscar_elemento(nombre_tag, id_buscado):
 
     for elementos in root.iter():
         elemento_iterado = elementos.tag
@@ -22,7 +22,7 @@ def buscar_elemento(nombre_tag):
         else: 
             elemento_recortado = elemento_iterado
 
-        if elemento_recortado == nombre_tag:
+        if elemento_recortado == nombre_tag and id_buscado == elementos.get('contextRef'):
             print(f"elemento encontrado:")
             print(f"nombre  tag :{elementos.text} | valor de :{elementos.text} | con id:{elementos.get('contextRef')}")
 
