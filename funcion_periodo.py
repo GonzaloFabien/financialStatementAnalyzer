@@ -13,9 +13,24 @@ def encontrar_id_año(año_buscado):
         
         if nombre_limpio == "context":
 
-            id_contexto = elemento.get('id')
-            print(f"Fecha del ID es = {id_contexto}")
-        
+            id_contexto =   elemento.get('id')
+            #Variables para verificar las fechas:
+            fecha_inicio =  None
+            fecha_fin =  None
+            sub_nombre = None
+
+            for sub_elemento in elemento.iter():
+                sub_nombre = sub_elemento.tag.split('}')[-1] if '}' in sub_elemento.tag else sub_elemento.tag
+
+                if sub_nombre =="startDate":
+                    fecha_inicio = sub_elemento.text
+                if sub_nombre == "endDate":
+                    fecha_fin = sub_elemento.text
+            if fecha_inicio is not None and fecha_fin is not None:
+                print(f"Encontramos el Id de | {año_buscado} | corresponde a | {id_contexto}")
+                return id_contexto
+
+         
 
 
 
