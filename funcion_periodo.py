@@ -6,10 +6,14 @@ empresa_a_analizar = "casaGrande2024.xml"
 tree = ET.parse(empresa_a_analizar)
 root = tree.getroot()
 
+#Esto es para limpiar el tag de nuestro código, para poderlo optimizar mucho mejor: 
+def cortar_llaves(tag):
+    return tag.split('}')[-1] if '}' in tag else tag
+
 def encontrar_id_año(año_buscado):
     for elemento in root.iter():
         nombre_original = elemento.tag
-        nombre_limpio = nombre_original.split('}')[-1] if '}' in nombre_original else nombre_original
+        nombre_limpio = cortar_llaves(elemento.tag)
         
         if nombre_limpio == "context":
 
