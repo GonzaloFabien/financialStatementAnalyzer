@@ -13,7 +13,7 @@ def cortar_llaves(tag):
 def encontrar_id_año(año_buscado):
     for elemento in root.iter():
         nombre_original = elemento.tag
-        nombre_limpio = cortar_llaves(elemento.tag)
+        nombre_limpio = cortar_llaves(nombre_original)
         
         if nombre_limpio == "context":
 
@@ -24,15 +24,16 @@ def encontrar_id_año(año_buscado):
             sub_nombre = None
 
             for sub_elemento in elemento.iter():
-                sub_nombre = sub_elemento.tag.split('}')[-1] if '}' in sub_elemento.tag else sub_elemento.tag
+                sub_nombre = cortar_llaves(sub_elemento.tag)
 
                 if sub_nombre =="startDate":
                     fecha_inicio = sub_elemento.text
                 if sub_nombre == "endDate":
                     fecha_fin = sub_elemento.text
             if fecha_inicio is not None and fecha_fin is not None:
-                print(f"Encontramos el Id de | {año_buscado} | corresponde a | {id_contexto}")
-                return id_contexto
+                if año_buscado in fecha_inicio or año_buscado in fecha_fin:    
+                    print(f"Encontramos el Id de | {año_buscado} | corresponde a | {id_contexto}")
+                    return id_contexto
 
          
 
