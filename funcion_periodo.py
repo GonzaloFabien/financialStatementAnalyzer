@@ -35,9 +35,5 @@ def encontrar_id_año(año_buscado):
                     print(f"Encontramos el Id de | {año_buscado} | corresponde a | {id_contexto}")
                     return id_contexto
 
-         
-
-
-
 if __name__ == "__main__":
     encontrar_id_año("2024")
