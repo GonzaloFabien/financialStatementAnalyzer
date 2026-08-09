@@ -15,7 +15,7 @@ def buscar_elemento(nombre_tag, id_buscado):
     for elementos in root.iter():
         elemento_iterado = elementos.tag
         elemento_recortado = None
-        elemento_encontrado = "NO encontrado"
+        elemento_encontrado = None #Si lanza None es porque no se encontró nada
 
 
         if '}' in  elemento_iterado:
@@ -24,10 +24,17 @@ def buscar_elemento(nombre_tag, id_buscado):
         else: 
             elemento_recortado = elemento_iterado
 
-        if elemento_recortado == nombre_tag and id_buscado == elementos.get('contextRef'):
+        #Esto para el id[0]
+        if elemento_recortado == nombre_tag and id_buscado[0] == elementos.get('contextRef'):
             elemento_encontrado = elementos.text
             return int(elemento_encontrado)
             print(f"nombre del tag : {nombre_tag} = || {elementos.text} || con id:{elementos.get('contextRef')}")
+
+        #Si lo anterior devuelve None, entonces id[1]
+        if elemento_recortado == nombre_tag and id_buscado[1] == elementos.get('contextRef'):
+                    elemento_encontrado = elementos.text
+                    return int(elemento_encontrado)
+                    print(f"nombre del tag : {nombre_tag} = || {elementos.text} || con id:{elementos.get('contextRef')}")
 
     
 
