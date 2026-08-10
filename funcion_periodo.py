@@ -35,7 +35,7 @@ def encontrar_id_año(año_buscado):
                 if sub_nombre == "endDate":
                     fecha_fin = sub_elemento.text
                 if sub_nombre == "instant":
-                    fecha_instant == sub_elemento.text
+                    fecha_instant = sub_elemento.text
 
             #Condición 1: ¿Es el id intervalo de tiempo[startDate, endDate]?
             if fecha_inicio is not None and fecha_fin is not None:
