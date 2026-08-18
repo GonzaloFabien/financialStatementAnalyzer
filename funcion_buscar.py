@@ -5,12 +5,13 @@
 import xml.etree.ElementTree as ET
 
 #conexión con el xml:
-nombre_empresa = "casaGrande2024.xml"
-tree = ET.parse(nombre_empresa)
-root = tree.getroot()
+
 
 #------De a partir de aquí crearemos la funcón:------   
-def buscar_elemento(nombre_tag, id_buscado):
+def buscar_elemento(nombre_tag, id_buscado, nombre_empresa):
+
+    tree = ET.parse(nombre_empresa)
+    root = tree.getroot()
 
     for elementos in root.iter():
         elemento_iterado = elementos.tag
