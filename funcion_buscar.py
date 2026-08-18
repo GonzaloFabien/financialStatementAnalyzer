@@ -8,10 +8,7 @@ import xml.etree.ElementTree as ET
 
 
 #------De a partir de aquí crearemos la funcón:------   
-def buscar_elemento(nombre_tag, id_buscado, nombre_empresa):
-
-    tree = ET.parse(nombre_empresa)
-    root = tree.getroot()
+def buscar_elemento(nombre_tag, id_buscado, root):
 
     for elementos in root.iter():
         elemento_iterado = elementos.tag
