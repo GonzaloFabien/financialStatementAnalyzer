@@ -4,9 +4,18 @@ from funcion_periodo import encontrar_id_año
 
 año_2024 = encontrar_id_año("2024")
 año_2023 = encontrar_id_año("2023")
+
+#Aquí el archivo de la empresa a Analizar 
 nombre_empresa = (ET.parse('casaGrande2024.xml')).getroot()
 #The id1 ranges from the start of 2024 to the end of 2024
 #The id3 starts at the 2024-12-31 instant, thats mean the end of 2024
+
+#Agregamos otra empresa para analizar y comparar ratios financieros: 
+
+empresa_2 = (ET.parse('cartavio2024.xml')).getroot()
+
+Utilidad_neta_2024_cartavio = buscar_elemento('ProfitLoss',año_2024,empresa_2)
+print(f"\nPrimeramente, la utilidad del 2024 de Cartavio fue: {Utilidad_neta_2024_cartavio} en soles\n\n")
 
 #Test para los id
 efectivo_2024 = buscar_elemento('CashAndCashEquivalents', año_2024, nombre_empresa)
