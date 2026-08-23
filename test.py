@@ -41,6 +41,10 @@ empresa_2 = (ET.parse('cartavio2024.xml')).getroot()
 Utilidad_neta_2024_cartavio = buscar_elemento('ProfitLoss', año_2024, empresa_2)
 print(f"\nPrimeramente, la utilidad del 2024 de Cartavio fue: {Utilidad_neta_2024_cartavio} en soles\n\n")
 
+#Pese a los cambios igual podemos invocar, datos tags standars como el efectivo:
+efectivo_cartavio_2024 = buscar_elemento('CashAndCashEquivalents', año_2024, empresa_2)
+print(f"\n el efectivo de cartavio es {efectivo_cartavio_2024} para el 2024")
+
 # EJECUCIÓN: Llamamos a tu función para las dos empresas de forma directa
 analizar_empresa(nombre_empresa, "Casa Grande")
 analizar_empresa(empresa_2, "Cartavio")
