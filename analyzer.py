@@ -33,6 +33,31 @@ def analizar_empresa(root_empresa, año_a_analizar ,nombre_imprimir):
     print(f"Prueba Acida : {(activos_corrientes_2024 - inventarios_2024) / pasivos_corrientes if pasivos_corrientes > 0 else 0} ")
     print("-" * 40)
 
+#Ratios de solvencia
+def analizar_solvencia(root_empresa, año_a_analizar, nombre_imprimir):
+    print(f"\n--- ANÁLISIS DE RATIOS DE SOLVENCIA PARA: {nombre_imprimir} ---")
+    
+    # Aquí se tendrán todos los tags de las variables para solvencia:
+    capital_2024 = buscar_elemento('Equity', año_a_analizar, root_empresa)
+    pasivos_2024 = buscar_elemento('Liabilities', año_a_analizar, root_empresa)
+    activos_2024 = buscar_elemento('Assets', año_a_analizar, root_empresa)
+    pasivos_no_corrientes = buscar_elemento('NonCurrentLiabilities', año_a_analizar, root_empresa)
+    
+    # Cálculo de los ratios de solvencia más importantes:
+    ratio_solvencia = pasivos_2024 / capital_2024 * 100 if capital_2024 > 0 else 0
+    ratio_deuda_activo = pasivos_2024 / activos_2024 * 100 if activos_2024 > 0 else 0
+    multiplicador_capital = activos_2024 / capital_2024 if capital_2024 > 0 else 0
+    calidad_deuda = pasivos_no_corrientes / pasivos_2024 * 100 if pasivos_2024 > 0 else 0
+    
+    print(f"El capital para el 2024 es: {capital_2024}")
+    print(f"Valor de los pasivos totales del 2024: {pasivos_2024}")
+    print(f"Ratio Solvencia (Deuda/Patrimonio): {ratio_solvencia:.2f} %")
+    print(f"Ratio Deuda/Activo : {ratio_deuda_activo:.2f} %")
+    print(f"Multiplicador del Capital: {multiplicador_capital:.2f}")
+    print(f"Calidad de la Deuda (Largo Plazo / Total Pasivos): {calidad_deuda:.2f} %")
+    print("-" * 40)
+
+
 #Demostramos que es un package:
 if __name__ == "__main__":
     print("hola")
