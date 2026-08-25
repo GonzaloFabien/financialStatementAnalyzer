@@ -24,16 +24,17 @@ def analizar_empresa(root_empresa, año_a_analizar ,nombre_imprimir):
     margen_neto_2024 = Utilidad_neta_2024 / ventas_2024 * 100 if ventas_2024 > 0 else 0
 
     ratios_calculados = {
-        'Capital' : (f"El capital para el 2024 es: {capital_2024}"),
-        'Utilidad_NETA' : (f"Valor de la utilidad Neta del 2024: {Utilidad_neta_2024}"),
-        'Margen_neto' : (f"Margen 2024: {margen_neto_2024:.2f} % "),
-        'ROE' :(f"ROE: {((Utilidad_neta_2024 / capital_2024) * 100 if capital_2024 > 0 else 0):.2f} %")
-        (f"ROA: {Utilidad_neta_2024 / activos_2024 * 100 if activos_2024 > 0 else 0:.2f} %")
-        (f"Ratio Solvencia: {pasivos_2024 / capital_2024 * 100 if capital_2024 > 0 else 0:.2f} %")
-        (f"Ratio Deuda/Activo : {pasivos_2024 / activos_2024 * 100 if activos_2024 > 0 else 0:.2f} %")
-        (f"Prueba Acida : {(activos_corrientes_2024 - inventarios_2024) / pasivos_corrientes if pasivos_corrientes > 0 else 0} ")
+        'Capital' : capital_2024,
+        'Utilidad Neta' : Utilidad_neta_2024,
+        'Margen Neto' : margen_neto_2024,
+        'ROE' : Utilidad_neta_2024 / capital_2024 * 100 if capital_2024 > 0 else 0,
+        'ROA' : Utilidad_neta_2024 / activos_2024 * 100 if activos_2024 > 0 else 0,
+        'Ratio Solvencia' : pasivos_2024 / capital_2024 * 100 if capital_2024 > 0 else 0,
+        'Ratio Deuda/Activo' : pasivos_2024 / activos_2024 * 100 if activos_2024 > 0 else 0,
+        'Prueba Acida' : activos_corrientes_2024 - inventarios_2024 / pasivos_corrientes if pasivos_corrientes > 0 else 0
     }
     print("-" * 40)
+    return ratios_calculados
 
 #Ratios de solvencia
 def analizar_solvencia(root_empresa, año_a_analizar, nombre_imprimir):
