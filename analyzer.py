@@ -23,14 +23,16 @@ def analizar_empresa(root_empresa, año_a_analizar ,nombre_imprimir):
     
     margen_neto_2024 = Utilidad_neta_2024 / ventas_2024 * 100 if ventas_2024 > 0 else 0
 
-    print(f"El capital para el 2024 es: {capital_2024}")
-    print(f"Valor de la utilidad Neta del 2024: {Utilidad_neta_2024}")
-    print(f"Margen 2024: {margen_neto_2024:.2f} % ")
-    print(f"ROE: {((Utilidad_neta_2024 / capital_2024) * 100 if capital_2024 > 0 else 0):.2f} %")
-    print(f"ROA: {Utilidad_neta_2024 / activos_2024 * 100 if activos_2024 > 0 else 0:.2f} %")
-    print(f"Ratio Solvencia: {pasivos_2024 / capital_2024 * 100 if capital_2024 > 0 else 0:.2f} %")
-    print(f"Ratio Deuda/Activo : {pasivos_2024 / activos_2024 * 100 if activos_2024 > 0 else 0:.2f} %")
-    print(f"Prueba Acida : {(activos_corrientes_2024 - inventarios_2024) / pasivos_corrientes if pasivos_corrientes > 0 else 0} ")
+    ratios_calculados = {
+        'Capital' : (f"El capital para el 2024 es: {capital_2024}"),
+        'Utilidad_NETA' : (f"Valor de la utilidad Neta del 2024: {Utilidad_neta_2024}"),
+        'Margen_neto' : (f"Margen 2024: {margen_neto_2024:.2f} % "),
+        'ROE' :(f"ROE: {((Utilidad_neta_2024 / capital_2024) * 100 if capital_2024 > 0 else 0):.2f} %")
+        (f"ROA: {Utilidad_neta_2024 / activos_2024 * 100 if activos_2024 > 0 else 0:.2f} %")
+        (f"Ratio Solvencia: {pasivos_2024 / capital_2024 * 100 if capital_2024 > 0 else 0:.2f} %")
+        (f"Ratio Deuda/Activo : {pasivos_2024 / activos_2024 * 100 if activos_2024 > 0 else 0:.2f} %")
+        (f"Prueba Acida : {(activos_corrientes_2024 - inventarios_2024) / pasivos_corrientes if pasivos_corrientes > 0 else 0} ")
+    }
     print("-" * 40)
 
 #Ratios de solvencia
@@ -47,14 +49,12 @@ def analizar_solvencia(root_empresa, año_a_analizar, nombre_imprimir):
     ratio_solvencia = pasivos_2024 / capital_2024 * 100 if capital_2024 > 0 else 0
     ratio_deuda_activo = pasivos_2024 / activos_2024 * 100 if activos_2024 > 0 else 0
     multiplicador_capital = activos_2024 / capital_2024 if capital_2024 > 0 else 0
-    calidad_deuda = pasivos_no_corrientes / pasivos_2024 * 100 if pasivos_2024 > 0 else 0
     
     print(f"El capital para el 2024 es: {capital_2024}")
     print(f"Valor de los pasivos totales del 2024: {pasivos_2024}")
     print(f"Ratio Solvencia (Deuda/Patrimonio): {ratio_solvencia:.2f} %")
     print(f"Ratio Deuda/Activo : {ratio_deuda_activo:.2f} %")
     print(f"Multiplicador del Capital: {multiplicador_capital:.2f}")
-    print(f"Calidad de la Deuda (Largo Plazo / Total Pasivos): {calidad_deuda:.2f} %")
     print("-" * 40)
 
 

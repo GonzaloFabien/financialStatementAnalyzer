@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 from funcion_buscar import buscar_elemento
 from funcion_periodo import encontrar_id_año
 from analyzer import analizar_empresa
+from analyzer import analizar_solvencia
 
 #Los años se expresan en ids contextRef:
 año_2024 = encontrar_id_año("2024")
@@ -19,3 +20,6 @@ print(f"\n el efectivo de cartavio es {efectivo_cartavio_2024} para el 2024")
 # EJECUCIÓN: Llamamos a tu función para las dos empresas de forma directa
 analizar_empresa(nombre_empresa, año_2024,"Casa Grande")
 analizar_empresa(empresa_2,año_2024 ,"Cartavio")
+
+#Utilizamos los demás métodos:
+analizar_solvencia(nombre_empresa, año_2024,"Casa Grande")
