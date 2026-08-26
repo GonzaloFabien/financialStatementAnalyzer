@@ -21,7 +21,18 @@ ratios_cartavio = analizar_empresa(cartavio_root,año_2024 ,"Cartavio")
 tabla_horizontal["Casa Grande"] = ratios_casa_grande
 tabla_horizontal["Cartavio"] = ratios_cartavio
 
-print(f"\n[Test]: El ROE guardado de cartavio debería ser :7%| y es | {tabla_horizontal['Casa Grande']['ROE']:.2f}%")
 
+#Aquí haremos una vizualización horizontal de el diccionario anidado:
+print("\n"+"="*40)
+print(f"{'Métrica financiera':<25} | {'Casa Grande':<15} | {'Cartavio':<15}") 
+print("\n"+"="*40)
 
+#Datos del diccionario que se van a mostrar:
+ratios_a_mostrar = ['Utilidad Neta', 'Margen Neto','ROE','ROA', 'Prueba Acida']
 
+#Bucle para mostrarlo todo: 
+for ratio in ratios_a_mostrar:
+    valor_casaGrande = tabla_horizontal['Casa Grande'][ratio]
+    valor_Cartavio = tabla_horizontal['Cartavio'][ratio]
+    print(f"{ratio:<25} | {valor_casaGrande:<13.2f} | {valor_Cartavio:<13.2f}")
+print("-"*40)

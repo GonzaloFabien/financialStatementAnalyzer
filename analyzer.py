@@ -23,6 +23,7 @@ def analizar_empresa(root_empresa, año_a_analizar ,nombre_imprimir):
     
     margen_neto_2024 = Utilidad_neta_2024 / ventas_2024 * 100 if ventas_2024 > 0 else 0
 
+    #Diccionario anidado:
     ratios_calculados = {
         'Capital' : capital_2024,
         'Utilidad Neta' : Utilidad_neta_2024,
