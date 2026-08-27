@@ -2,29 +2,20 @@
 
 import xml.etree.ElementTree as ET
 
-empresa_a_analizar = "casaGrande2024.xml"
-
-try:
-    tree = ET.parse(empresa_a_analizar)
-    root = tree.getroot()
-except (FileNotFoundError, ET.ParseError) as e:
-    print(f"Error al procesar el archivo XML '{empresa_a_analizar}': {e}")
-    root = None
-
 #Esto es para limpiar el tag de nuestro código, para poderlo optimizar mucho mejor: 
 def cortar_llaves(tag):
     return tag.split('}')[-1] if '}' in tag else tag
 
-def encontrar_id_año(año_buscado):
+def encontrar_id_año(año_buscado, empresa_a_buscar):
     # En caso de que el archivo XML no se haya cargado correctamente
-    if root is None:
+    if empresa_a_buscar is None:
         print("No se puede realizar la búsqueda porque el archivo XML no se cargó.")
         return []
 
     #Creamos el array para ids[]
     array_ids = []
 
-    for elemento in root.iter():
+    for elemento in empresa_a_buscar.iter():
         nombre_original = elemento.tag
         nombre_limpio = cortar_llaves(nombre_original)
         
