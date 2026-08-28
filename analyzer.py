@@ -62,9 +62,8 @@ def analizar_solvencia(root_empresa, año_a_analizar, nombre_imprimir):
     print(f"Multiplicador del Capital: {multiplicador_capital:.2f}")
     print("-" * 40)
 
-#Creamos una funcion separada para extraer datos:
-def extraer_datos_crudos(root_empresa, año_a_analizar):
- #Creamos un diccionario para los tag y sus respectivos nombres:
+#FUNCION 1: Esta función solo extrae datos a un diccionario anidado:
+def extraer_source_data_f1(root_empresa, año_a_analizar):
     datos = {
         'Revenue' : buscar_elemento('Revenue',año_a_analizar, root_empresa),
         'ProfitLoss': buscar_elemento('ProfitLoss', año_a_analizar, root_empresa),
@@ -76,6 +75,32 @@ def extraer_datos_crudos(root_empresa, año_a_analizar):
         'CurrentLiabilities': buscar_elemento('CurrentLiabilities', año_a_analizar, root_empresa)
     }
     return datos
+
+#FUNCION 2: Esta función solo hará matemática y generará los ratios:
+def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
+    #Se generan varias variables para poder trabajarlas
+    revenue = diccionario_fuente_generado['Revenue']
+    net_income = diccionario_fuente_generado['ProfitLoss']
+    equity = diccionario_fuente_generado['Equity']
+    assets = diccionario_fuente_generado['Assets']
+    liabilities = diccionario_fuente_generado['Liabilities']
+    current_assets = diccionario_fuente_generado['CurrentAssets']
+    inventories = diccionario_fuente_generado['Inventories']
+    current_liabilities = diccionario_fuente_generado['CurrentLiabilities']
+
+    ratios_calculados = {
+        'Equity': equity,
+        'Net Income': net_income,
+        'Net Margin': (net_income / revenue * 100) if revenue > 0 else 0,
+        'ROE': (net_income / equity * 100) if equity > 0 else 0,
+        'ROA': (net_income / assets * 100) if assets > 0 else 0,
+        'Current Ratio': (liabilities / equity * 100) if equity > 0 else 0,
+        'Debt Asset Ratio': (liabilities / assets * 100) if assets > 0 else 0,
+        'Quick Ratio': current_assets - (inventories / current_liabilities) if current_liabilities > 0 else 0
+    }
+
+    return ratios_calculados
+
 
 
 #Demostramos que es un package:
