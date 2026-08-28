@@ -37,6 +37,9 @@ def analizar_empresa(root_empresa, año_a_analizar ,nombre_imprimir):
     print("-" * 40)
     return ratios_calculados
 
+
+
+
 #Ratios de solvencia
 def analizar_solvencia(root_empresa, año_a_analizar, nombre_imprimir):
     print(f"\n--- ANÁLISIS DE RATIOS DE SOLVENCIA PARA: {nombre_imprimir} ---")
@@ -58,6 +61,21 @@ def analizar_solvencia(root_empresa, año_a_analizar, nombre_imprimir):
     print(f"Ratio Deuda/Activo : {ratio_deuda_activo:.2f} %")
     print(f"Multiplicador del Capital: {multiplicador_capital:.2f}")
     print("-" * 40)
+
+#Creamos una funcion separada para extraer datos:
+def extraer_datos_crudos(root_empresa, año_a_analizar):
+ #Creamos un diccionario para los tag y sus respectivos nombres:
+    datos = {
+        'Revenue' : buscar_elemento('Revenue',año_a_analizar, root_empresa),
+        'ProfitLoss': buscar_elemento('ProfitLoss', año_a_analizar, root_empresa),
+        'Equity': buscar_elemento('Equity', año_a_analizar, root_empresa),
+        'Assets': buscar_elemento('Assets', año_a_analizar, root_empresa),
+        'Liabilities': buscar_elemento('Liabilities', año_a_analizar, root_empresa),
+        'CurrentAssets': buscar_elemento('CurrentAssets', año_a_analizar, root_empresa),
+        'Inventories': buscar_elemento('Inventories', año_a_analizar, root_empresa),
+        'CurrentLiabilities': buscar_elemento('CurrentLiabilities', año_a_analizar, root_empresa)
+    }
+    return datos
 
 
 #Demostramos que es un package:
