@@ -32,7 +32,7 @@ def analizar_empresa(root_empresa, año_a_analizar ,nombre_imprimir):
         'ROA' : Utilidad_neta_2024 / activos_2024 * 100 if activos_2024 > 0 else 0,
         'Ratio Solvencia' : pasivos_2024 / capital_2024 * 100 if capital_2024 > 0 else 0,
         'Ratio Deuda/Activo' : pasivos_2024 / activos_2024 * 100 if activos_2024 > 0 else 0,
-        'Prueba Acida' : activos_corrientes_2024 - inventarios_2024 / pasivos_corrientes if pasivos_corrientes > 0 else 0
+        'Prueba Acida' : (activos_corrientes_2024 - inventarios_2024) / pasivos_corrientes if pasivos_corrientes > 0 else 0
     }
     print("-" * 40)
     return ratios_calculados
@@ -96,7 +96,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
         'ROA': (net_income / assets * 100) if assets > 0 else 0,
         'Current Ratio': (liabilities / equity * 100) if equity > 0 else 0,
         'Debt Asset Ratio': (liabilities / assets * 100) if assets > 0 else 0,
-        'Quick Ratio': current_assets - (inventories / current_liabilities) if current_liabilities > 0 else 0
+        'Quick Ratio': (current_assets - inventories) / current_liabilities if current_liabilities > 0 else 0
     }
 
     return ratios_calculados

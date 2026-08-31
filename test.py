@@ -54,3 +54,5 @@ print("-"*40)
 
 with open("data_xml/reporte_analizado.json", "w", encoding="utf-8") as archivo_json:
     json.dump(tabla_horizontal,archivo_json, indent=4, ensure_ascii=False)
+
+print("\n📊 ¡Base de datos JSON creada con éxito en 'data_xml/reporte_morningstar.json'!")
