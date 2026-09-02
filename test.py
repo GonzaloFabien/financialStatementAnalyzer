@@ -29,7 +29,11 @@ for año in casa_grande:
     print(f"procesamiento del año ->{año}")
 
     #1- conexión al XML
-    root_anual = ET.parse(nombre_importacion).getroot()
+    try:
+        root_anual = ET.parse(nombre_importacion).getroot()
+    except ET.ParseError as ex:
+        print(f"\tAlereta, no se pudo leer el año: {año}, error en el archivo ")
+        continue
     
     #2- Buscamos y encontramos el ID de cada elemento por su año:
     ids_anual = encontrar_id_año(año, root_anual)
@@ -42,6 +46,9 @@ for año in casa_grande:
 
     #5- Añadimos la data y ratios analizados al nuevo diccionario:
     tabla_historial["Casa Grande"][año] = ratios_calculados_anual
+
+    #Comentario opcional de funcionalidad del código:
+    print(f"\n\tFuncionó con Éxito la lectura del archivo xml, para el año: |{año}\n\t")
 
 #6- acabado el proceso de iteración guardamos en el Json:
 with open("data_xml/reporte_analizado.json", "w", encoding="utf-8") as archivo_json: 
