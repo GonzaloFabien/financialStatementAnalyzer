@@ -43,17 +43,17 @@ def encontrar_id_año(año_buscado, empresa_a_buscar):
                 if año_buscado in fecha_inicio or año_buscado in fecha_fin:
                     if id_contexto not in array_ids:
                         array_ids.append(id_contexto)
-                        print(f"Encontramos el Id de | {año_buscado} | corresponde a | {id_contexto}")
+                        #print(f"Encontramos el Id de | {año_buscado} | intervalo correspondiente a | {id_contexto}")
                        
             #Condición 2: ¿Es el id un instante de tiempo?
             if fecha_instant is not None:
                 if año_buscado in fecha_instant:
                     if id_contexto not in array_ids:
                         array_ids.append(id_contexto)
-                        print(f"Encontramos en el año {año_buscado} | el instante | {id_contexto}")
+                        #print(f"Encontramos en el año {año_buscado} | el instante | {id_contexto}")
 
     #Una vez terminado el bucle devuele el valor de los array_ids[]:
-    print(f"El valor para el año {año_buscado} son = || {array_ids}")
+    #print(f"El valor para el año {año_buscado} son = || {array_ids}")
     return array_ids
 
 if __name__ == "__main__":
@@ -61,3 +61,10 @@ if __name__ == "__main__":
         encontrar_id_año("2024")
     except Exception as e:
         print(f"Ocurrió un error inesperado durante la ejecución: {e}")
+
+
+"""
+    NOTA: Para ver los IDS generados, quita los "#" al final de cada funcion, 
+    así podrás conocer los IDs y contextRef de cada documento:
+
+"""

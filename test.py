@@ -15,8 +15,6 @@ tabla_historial = {
     "Casa Grande" : {}
 }
 
-print("Se inicia el test para poder empezar la iteración de BD")
-
 #Se inicia el bucle:-----------------------------------------------------
 for año in casa_grande:
     nombre_importacion = f"data_xml/casa_grande{año}.xml" 
@@ -24,15 +22,13 @@ for año in casa_grande:
     #Test para verificar si el archivo existe:
     if not os.path.exists(nombre_importacion):
         print(f"El archivo {nombre_importacion} para el año {año} no existe")
-        continue
-
-    print(f"procesamiento del año ->{año}")
+        continue    
 
     #1- conexión al XML
     try:
         root_anual = ET.parse(nombre_importacion).getroot()
     except ET.ParseError as ex:
-        print(f"\tAlereta, no se pudo leer el año: {año}, error en el archivo ")
+        print(f"\tAlereta, no se pudo leer el archivo del año {año}")
         continue
     
     #2- Buscamos y encontramos el ID de cada elemento por su año:
@@ -48,14 +44,13 @@ for año in casa_grande:
     tabla_historial["Casa Grande"][año] = ratios_calculados_anual
 
     #Comentario opcional de funcionalidad del código:
-    print(f"\n\tFuncionó con Éxito la lectura del archivo xml, para el año: |{año}\n\t")
+    print(f"\tFuncionó con Éxito la lectura del archivo xml, para el año: |{año}")
 
 #6- acabado el proceso de iteración guardamos en el Json:
 with open("data_xml/reporte_analizado.json", "w", encoding="utf-8") as archivo_json: 
     json.dump(tabla_historial, archivo_json, indent=4, ensure_ascii=False)
 
-
-print("\nSe realizó todo el proceso de guardado con éxito:")
+#Fin del bucle----
 
 
 
@@ -72,7 +67,7 @@ tabla_horizontal = {}
 # ejecucion, pero ahora las empresas están encapsuladas para atrapar el diccionario anidado de cada empresa
 
 #------- Sección en mantenimiento, alejarse porfavor: ----------
-print("a")
+#Este fragmento de código puede eliminarse:
 data_casa_grande = extraer_source_data_f1(casa_grande_root,id_casa_grande_2024)
 ratios_casa_grande = calcular_ratios_de_extraer_source_data_f2(data_casa_grande)
 
