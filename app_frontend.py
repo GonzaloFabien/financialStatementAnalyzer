@@ -22,3 +22,17 @@ print(list(ratos_test))
 #4- Los mostramos en una lista ordenada
 años_disponibles = sorted(list(datos_empresa.keys()))
 print(f"\nAños historicos detectados :  {años_disponibles}")
+
+#5- Redefinimos los ratios para poder utilizarlos libremente y en el orden deseado.
+
+ratios_a_mostrar_1 = ['Utilidad Neta', 'Margen Neto', 'ROE', 'ROA', 'Prueba ácida', 'Ratio Deuda/Activo' ]
+
+#6- Creamos la cabecera horizontal uniendo los años del JSON:
+columna_por_años = " | ".join([f"{año:<10}" for año in años_disponibles])
+cabecera = f"{'Ratio /  ': <22} | {columna_por_años}"
+
+#Mostramos temporalmente en consola
+
+print("\n" + "=" *len(cabecera))
+print(cabecera)
+print("="*len(cabecera))
