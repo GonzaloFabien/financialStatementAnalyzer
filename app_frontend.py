@@ -49,10 +49,15 @@ for ratio in ratios_a_mostrar_1:
         #Formateamos el numero con el formato
         valores_fila.append(f"{valor:<10.2f}")
 
-        #Guardamos en formato 2. decimales
+    #Guardamos en formato 2. decimales
     fila_completa = " | ".join(valores_fila)
 
-        #Se imprime en consola con formato:
+    #Se imprime en consola con formato:
     print(f"{ratio:<22} | {fila_completa}")
 
 print("="*len(cabecera))
+
+
+#Se crea variable de variación con condicional 
+
+variacion = ((valor_actual - valor_anterior) / valor_anterior * 100) if valor_anterior > 0 else 0.0
