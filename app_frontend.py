@@ -61,3 +61,22 @@ print("="*len(cabecera))
 #Se crea variable de variación con condicional 
 
 variacion = ((valor_actual - valor_anterior) / valor_anterior * 100) if valor_anterior > 0 else 0.0
+
+#8- Análisis horizontal 
+print("\n" + "=" * len(cabecera))
+print(f"{'ANÁLISIS HORIZONTAL (%)':<22} | {columna_por_años}")
+print("=" * len(cabecera))
+
+#Creamos un bucle para mostrarlo secuencialmente:
+for ratio in ratios_a_mostrar_1:
+    valores_fila = []
+
+    #Empezamos el bucle con el último índice
+    for i in range(len(años_disponibles)):
+         año_actual = años_disponibles[i]
+        valor_actual = datos_empresa[año_actual].get(ratio, 0)
+
+         if i == 0:
+            variaciones_fila.append(f"{'-':<10}")
+        else:
+            pass
