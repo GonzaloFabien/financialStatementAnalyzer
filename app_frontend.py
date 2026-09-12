@@ -87,6 +87,12 @@ for ratio in ratios_a_mostrar_1:
             #3. Guardamos el resultado, con formato :
             variaziones_horizontal.append(f"{variacion:<10.1f}%")
 
+    #Se imprimirá a consola lo siguiente:
+    fila_a_imprimir = ' | '.join(variaziones_horizontal)
+    #Impresión a consola
+    print(f"{ratio:<22} | {fila_a_imprimir}")
+            
+
             
 
 #9- Mostramos en pantalla el análisis horizontal:
