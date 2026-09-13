@@ -61,7 +61,7 @@ print("="*len(cabecera))
 
 #8- Análisis horizontal --------------------------------------------
 print("\n" + "=" * len(cabecera))
-print(f"{'ANÁLISIS HORIZONTAL %':<10} | {columna_por_años}")
+print(f"{'ANÁLISIS HORIZONTAL (%)':<10} | {columna_por_años}")
 print("=" * len(cabecera))
 
 #Creamos un bucle para mostrarlo secuencialmente:
@@ -85,7 +85,7 @@ for ratio in ratios_a_mostrar_1:
             variacion = ((valor_actual-valor_anterior)/valor_anterior)*100 if valor_anterior >0 else 0.0
 
             #3. Guardamos el resultado, con formato :
-            variaziones_horizontal.append(f"{variacion:<8.1f}%")
+            variaziones_horizontal.append(f"{variacion:<10.1f}%")
 
     #Se imprimirá a consola lo siguiente:
     fila_a_imprimir = ' | '.join(variaziones_horizontal)
@@ -96,4 +96,4 @@ for ratio in ratios_a_mostrar_1:
             
 
 #9- Mostramos en pantalla el análisis horizontal:
-print("-"*len(cabecera))
+print("<"*len(cabecera))
