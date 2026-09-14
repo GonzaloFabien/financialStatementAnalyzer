@@ -66,6 +66,7 @@ def analizar_solvencia(root_empresa, año_a_analizar, nombre_imprimir):
 def extraer_source_data_f1(root_empresa, año_a_analizar):
     datos = {
         'Revenue' : buscar_elemento('Revenue',año_a_analizar, root_empresa),
+        'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', año_a_analizar, root_empresa),
         'ProfitLoss': buscar_elemento('ProfitLoss', año_a_analizar, root_empresa),
         'Equity': buscar_elemento('Equity', año_a_analizar, root_empresa),
         'Assets': buscar_elemento('Assets', año_a_analizar, root_empresa),
@@ -87,13 +88,16 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     current_assets = diccionario_fuente_generado['CurrentAssets']
     inventories = diccionario_fuente_generado['Inventories']
     current_liabilities = diccionario_fuente_generado['CurrentLiabilities']
+    cashAndCashEquivalents = diccionario_fuente_generado['CashAndCashEquivalents']
 
     ratios_calculados = {
         'Equity': equity,
+        'CashAndCashEquivalents': cashAndCashEquivalents,
         'Net Income': net_income,
         'Net Margin': (net_income / revenue * 100) if revenue > 0 else 0,
         'ROE': (net_income / equity * 100) if equity > 0 else 0,
         'ROA': (net_income / assets * 100) if assets > 0 else 0,
+        'Cash Ratio': (cashAndCashEquivalents/current_assets) if current_assets > 0 else 0,
         'Current Ratio': (liabilities / equity * 100) if equity > 0 else 0,
         'Debt Asset Ratio': (liabilities / assets * 100) if assets > 0 else 0,
         'Quick Ratio': (current_assets - inventories) / current_liabilities if current_liabilities > 0 else 0

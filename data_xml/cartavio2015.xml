@@ -1,0 +1,1872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generado por Plantilla Excel 2012 - Superintendencia del Mercado de Valores .  -->
+<xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:link="http://www.xbrl.org/2003/linkbase" 
+xmlns:ifrs="http://xbrl.ifrs.org/taxonomy/2011-03-25/ifrs"
+xmlns:smv="http://www.smv.gob.pe/2012-02-22/smv" 
+xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+xmlns:iso4217="http://www.xbrl.org/2003/iso4217">
+<link:schemaRef xlink:href="http://www.smv.gob.pe/pe/fr/ci/2012-02-22/pe_individual_directo_smv_2012-02-22.xsd" xlink:type="simple" />
+  <xbrli:context id="id1">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="id2">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="id3">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="id4">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="id5">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ClassesOfOrdinarySharesAxis">ifrs:OrdinarySharesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id6">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ClassesOfOrdinarySharesAxis">ifrs:OrdinarySharesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id7">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ClassesOfOrdinarySharesAxis">smv:AccionesDeInversionMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id8">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ClassesOfOrdinarySharesAxis">smv:AccionesDeInversionMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id9">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="id10">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:IssuedCapitalMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id11">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:SharePremiumMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id12">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">smv:AccionesDeInversionMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id13">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:TreasurySharesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id14">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:OtherEquityInterestMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id15">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:RetainedEarningsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id16">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfCashFlowHedgesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id17">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfHedgesOfNetInvestmentInForeignOperationsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id18">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id19">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfExchangeDifferencesOnTranslationMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id20">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:AmountRecognisedInOtherComprehensiveIncomeAndAccumulatedInEquityRelatingToNoncurrentAssetsOrDisposalGroupsHeldForSaleMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id21">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:RevaluationSurplusMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id22">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">smv:ReservasALaGananciaPerdidaActuarialesEnPlanDeBeneficiosDefinidosMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id23">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiabilityMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id24">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2013-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:OtherReservesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id25">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:IssuedCapitalMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id26">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:SharePremiumMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id27">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">smv:AccionesDeInversionMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id28">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:TreasurySharesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id29">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:OtherEquityInterestMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id30">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:RetainedEarningsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id31">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfCashFlowHedgesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id32">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfHedgesOfNetInvestmentInForeignOperationsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id33">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id34">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfExchangeDifferencesOnTranslationMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id35">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:AmountRecognisedInOtherComprehensiveIncomeAndAccumulatedInEquityRelatingToNoncurrentAssetsOrDisposalGroupsHeldForSaleMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id36">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:RevaluationSurplusMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id37">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">smv:ReservasALaGananciaPerdidaActuarialesEnPlanDeBeneficiosDefinidosMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id38">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiabilityMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id39">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:OtherReservesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id40">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="id41">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:RetainedEarningsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id42">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfCashFlowHedgesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id43">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfHedgesOfNetInvestmentInForeignOperationsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id44">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id45">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfExchangeDifferencesOnTranslationMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id46">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:AmountRecognisedInOtherComprehensiveIncomeAndAccumulatedInEquityRelatingToNoncurrentAssetsOrDisposalGroupsHeldForSaleMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id47">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:RevaluationSurplusMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id48">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">smv:ReservasALaGananciaPerdidaActuarialesEnPlanDeBeneficiosDefinidosMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id49">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiabilityMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id50">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:OtherReservesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id51">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:OtherEquityInterestMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id52">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:IssuedCapitalMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id53">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:SharePremiumMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id54">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">smv:AccionesDeInversionMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id55">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:TreasurySharesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id56">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:IssuedCapitalMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id57">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:SharePremiumMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id58">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">smv:AccionesDeInversionMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id59">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:TreasurySharesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id60">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:OtherEquityInterestMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id61">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:RetainedEarningsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id62">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfCashFlowHedgesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id63">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfHedgesOfNetInvestmentInForeignOperationsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id64">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id65">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfExchangeDifferencesOnTranslationMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id66">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:AmountRecognisedInOtherComprehensiveIncomeAndAccumulatedInEquityRelatingToNoncurrentAssetsOrDisposalGroupsHeldForSaleMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id67">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:RevaluationSurplusMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id68">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">smv:ReservasALaGananciaPerdidaActuarialesEnPlanDeBeneficiosDefinidosMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id69">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiabilityMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id70">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2014-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:OtherReservesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id71">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:RetainedEarningsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id72">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfCashFlowHedgesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id73">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfHedgesOfNetInvestmentInForeignOperationsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id74">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id75">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfExchangeDifferencesOnTranslationMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id76">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:AmountRecognisedInOtherComprehensiveIncomeAndAccumulatedInEquityRelatingToNoncurrentAssetsOrDisposalGroupsHeldForSaleMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id77">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:RevaluationSurplusMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id78">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">smv:ReservasALaGananciaPerdidaActuarialesEnPlanDeBeneficiosDefinidosMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id79">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiabilityMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id80">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:OtherReservesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id81">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:OtherEquityInterestMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id82">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:IssuedCapitalMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id83">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:SharePremiumMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id84">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">smv:AccionesDeInversionMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id85">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:TreasurySharesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id86">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:IssuedCapitalMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id87">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:SharePremiumMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id88">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">smv:AccionesDeInversionMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id89">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:TreasurySharesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id90">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:OtherEquityInterestMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id91">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:RetainedEarningsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id92">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfCashFlowHedgesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id93">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfHedgesOfNetInvestmentInForeignOperationsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id94">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfGainsAndLossesFromInvestmentsInEquityInstrumentsMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id95">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfExchangeDifferencesOnTranslationMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id96">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:AmountRecognisedInOtherComprehensiveIncomeAndAccumulatedInEquityRelatingToNoncurrentAssetsOrDisposalGroupsHeldForSaleMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id97">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:RevaluationSurplusMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id98">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">smv:ReservasALaGananciaPerdidaActuarialesEnPlanDeBeneficiosDefinidosMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id99">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:ReserveOfChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiabilityMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="id100">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.smv.gob.pe/RPJ">B11082</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+<xbrli:instant>2015-12-31</xbrli:instant>
+</xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ifrs:ComponentsOfEquityAxis">ifrs:OtherReservesMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+<xbrli:unit id="id0"> <xbrli:measure>iso4217:PEN</xbrli:measure> </xbrli:unit>
+<xbrli:unit id="SHA">  <xbrli:divide>       <xbrli:unitNumerator>         <xbrli:measure xmlns:m="http://www.xbrl.org/2003/iso4217">m:PEN</xbrli:measure>       </xbrli:unitNumerator>       <xbrli:unitDenominator>         <xbrli:measure xmlns:m="http://www.xbrl.org/2003/instance">m:shares</xbrli:measure>       </xbrli:unitDenominator>     </xbrli:divide> </xbrli:unit>
+  <ifrs:NameOfReportingEntityOrOtherMeansOfIdentification contextRef="id1">CARTAVIO SOCIEDAD ANONIMA ABIERTA (CARTAVIO S.A.A.)</ifrs:NameOfReportingEntityOrOtherMeansOfIdentification>
+  <smv:RegistroUnicoDeContribuyente contextRef="id1">20131867744</smv:RegistroUnicoDeContribuyente>
+  <smv:ClasificacionIndustrialInternacionalUniforme contextRef="id1">1542</smv:ClasificacionIndustrialInternacionalUniforme>
+  <smv:InformacionSobreElInforme contextRef="id1">2015AIMD</smv:InformacionSobreElInforme>
+  <smv:MatriculaDeLaSociedadDeAuditoriaDelCCP contextRef="id1">S0041</smv:MatriculaDeLaSociedadDeAuditoriaDelCCP>
+  <smv:NombreDeLaSociedadDeAuditoria contextRef="id1">GAVEGLIO APARICIO Y ASOCIADOS SOCIEDAD CIVIL</smv:NombreDeLaSociedadDeAuditoria>
+  <smv:NombreDelQueFirmaElDictamenApellidosYNombres contextRef="id1">De la torre Onofre Chistian</smv:NombreDelQueFirmaElDictamenApellidosYNombres>
+  <smv:CalificacionDelDictamen contextRef="id1">L</smv:CalificacionDelDictamen>
+  <ifrs:Assets decimals="-3" unitRef="id0" contextRef="id2">677443000</ifrs:Assets>
+  <ifrs:Assets decimals="-3" unitRef="id0" contextRef="id3">651466000</ifrs:Assets>
+  <ifrs:NoncurrentAssets decimals="-3" unitRef="id0" contextRef="id2">537889000</ifrs:NoncurrentAssets>
+  <ifrs:NoncurrentAssets decimals="-3" unitRef="id0" contextRef="id3">546773000</ifrs:NoncurrentAssets>
+  <ifrs:OtherNoncurrentNonfinancialAssets decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:OtherNoncurrentNonfinancialAssets>
+  <ifrs:OtherNoncurrentNonfinancialAssets decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:OtherNoncurrentNonfinancialAssets>
+  <ifrs:Goodwill decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:Goodwill>
+  <ifrs:Goodwill decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:Goodwill>
+  <ifrs:DeferredTaxAssets decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:DeferredTaxAssets>
+  <ifrs:DeferredTaxAssets decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:DeferredTaxAssets>
+  <ifrs:IntangibleAssetsOtherThanGoodwill decimals="-3" unitRef="id0" contextRef="id2">497000</ifrs:IntangibleAssetsOtherThanGoodwill>
+  <ifrs:IntangibleAssetsOtherThanGoodwill decimals="-3" unitRef="id0" contextRef="id3">919000</ifrs:IntangibleAssetsOtherThanGoodwill>
+  <ifrs:PropertyPlantAndEquipment decimals="-3" unitRef="id0" contextRef="id2">429932000</ifrs:PropertyPlantAndEquipment>
+  <ifrs:PropertyPlantAndEquipment id="footnote_row_23" decimals="-3" unitRef="id0" contextRef="id3">444877000</ifrs:PropertyPlantAndEquipment>
+  <ifrs:InvestmentProperty decimals="-3" unitRef="id0" contextRef="id2">5109000</ifrs:InvestmentProperty>
+  <ifrs:InvestmentProperty decimals="-3" unitRef="id0" contextRef="id3">5109000</ifrs:InvestmentProperty>
+  <ifrs:NoncurrentBiologicalAssets decimals="-3" unitRef="id0" contextRef="id2">100412000</ifrs:NoncurrentBiologicalAssets>
+  <ifrs:NoncurrentBiologicalAssets id="footnote_row_27" decimals="-3" unitRef="id0" contextRef="id3">93509000</ifrs:NoncurrentBiologicalAssets>
+  <ifrs:NoncurrentPrepayments decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:NoncurrentPrepayments>
+  <ifrs:NoncurrentPrepayments decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:NoncurrentPrepayments>
+  <ifrs:NoncurrentReceivablesDueFromRelatedParties decimals="-3" unitRef="id0" contextRef="id2">1939000</ifrs:NoncurrentReceivablesDueFromRelatedParties>
+  <ifrs:NoncurrentReceivablesDueFromRelatedParties decimals="-3" unitRef="id0" contextRef="id3">2359000</ifrs:NoncurrentReceivablesDueFromRelatedParties>
+  <ifrs:OtherNoncurrentReceivables decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:OtherNoncurrentReceivables>
+  <ifrs:OtherNoncurrentReceivables decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:OtherNoncurrentReceivables>
+  <ifrs:NoncurrentTradeReceivables decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:NoncurrentTradeReceivables>
+  <ifrs:NoncurrentTradeReceivables decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:NoncurrentTradeReceivables>
+  <ifrs:NoncurrentReceivables decimals="-3" unitRef="id0" contextRef="id2">1939000</ifrs:NoncurrentReceivables>
+  <ifrs:NoncurrentReceivables decimals="-3" unitRef="id0" contextRef="id3">2359000</ifrs:NoncurrentReceivables>
+  <ifrs:InvestmentsInSubsidiariesJointVenturesAndAssociates decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:InvestmentsInSubsidiariesJointVenturesAndAssociates>
+  <ifrs:InvestmentsInSubsidiariesJointVenturesAndAssociates decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:InvestmentsInSubsidiariesJointVenturesAndAssociates>
+  <ifrs:OtherNoncurrentFinancialAssets decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:OtherNoncurrentFinancialAssets>
+  <ifrs:OtherNoncurrentFinancialAssets decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:OtherNoncurrentFinancialAssets>
+  <ifrs:CurrentAssets decimals="-3" unitRef="id0" contextRef="id2">139554000</ifrs:CurrentAssets>
+  <ifrs:CurrentAssets decimals="-3" unitRef="id0" contextRef="id3">104693000</ifrs:CurrentAssets>
+  <ifrs:NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners>
+  <ifrs:NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners>
+  <ifrs:NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForDistributionToOwners decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForDistributionToOwners>
+  <ifrs:NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForDistributionToOwners decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForDistributionToOwners>
+  <ifrs:NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale>
+  <ifrs:NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale>
+  <ifrs:CurrentAssetsOtherThanAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners decimals="-3" unitRef="id0" contextRef="id2">139554000</ifrs:CurrentAssetsOtherThanAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners>
+  <ifrs:CurrentAssetsOtherThanAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners decimals="-3" unitRef="id0" contextRef="id3">104693000</ifrs:CurrentAssetsOtherThanAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners>
+  <ifrs:OtherCurrentNonfinancialAssets decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:OtherCurrentNonfinancialAssets>
+  <ifrs:OtherCurrentNonfinancialAssets decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:OtherCurrentNonfinancialAssets>
+  <ifrs:CurrentTaxAssetsCurrent decimals="-3" unitRef="id0" contextRef="id2">1510000</ifrs:CurrentTaxAssetsCurrent>
+  <ifrs:CurrentTaxAssetsCurrent decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:CurrentTaxAssetsCurrent>
+  <ifrs:CurrentBiologicalAssets decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:CurrentBiologicalAssets>
+  <ifrs:CurrentBiologicalAssets decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:CurrentBiologicalAssets>
+  <ifrs:Inventories decimals="-3" unitRef="id0" contextRef="id2">40045000</ifrs:Inventories>
+  <ifrs:Inventories id="footnote_row_59" decimals="-3" unitRef="id0" contextRef="id3">55606000</ifrs:Inventories>
+  <ifrs:CurrentPrepayments decimals="-3" unitRef="id0" contextRef="id2">3719000</ifrs:CurrentPrepayments>
+  <ifrs:CurrentPrepayments decimals="-3" unitRef="id0" contextRef="id3">4169000</ifrs:CurrentPrepayments>
+  <ifrs:TradeAndOtherCurrentReceivablesDueFromRelatedParties decimals="-3" unitRef="id0" contextRef="id2">8161000</ifrs:TradeAndOtherCurrentReceivablesDueFromRelatedParties>
+  <ifrs:TradeAndOtherCurrentReceivablesDueFromRelatedParties id="footnote_row_63" decimals="-3" unitRef="id0" contextRef="id3">337000</ifrs:TradeAndOtherCurrentReceivablesDueFromRelatedParties>
+  <ifrs:OtherCurrentReceivables decimals="-3" unitRef="id0" contextRef="id2">8421000</ifrs:OtherCurrentReceivables>
+  <ifrs:OtherCurrentReceivables decimals="-3" unitRef="id0" contextRef="id3">8533000</ifrs:OtherCurrentReceivables>
+  <ifrs:CurrentTradeReceivables decimals="-3" unitRef="id0" contextRef="id2">44652000</ifrs:CurrentTradeReceivables>
+  <ifrs:CurrentTradeReceivables id="footnote_row_67" decimals="-3" unitRef="id0" contextRef="id3">25100000</ifrs:CurrentTradeReceivables>
+  <ifrs:TradeAndOtherCurrentReceivables decimals="-3" unitRef="id0" contextRef="id2">64953000</ifrs:TradeAndOtherCurrentReceivables>
+  <ifrs:TradeAndOtherCurrentReceivables decimals="-3" unitRef="id0" contextRef="id3">38139000</ifrs:TradeAndOtherCurrentReceivables>
+  <ifrs:OtherCurrentFinancialAssets decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:OtherCurrentFinancialAssets>
+  <ifrs:OtherCurrentFinancialAssets decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:OtherCurrentFinancialAssets>
+  <ifrs:CashAndCashEquivalents decimals="-3" unitRef="id0" contextRef="id2">33046000</ifrs:CashAndCashEquivalents>
+  <ifrs:CashAndCashEquivalents decimals="-3" unitRef="id0" contextRef="id3">10948000</ifrs:CashAndCashEquivalents>
+  <ifrs:OtherCurrentFinancialLiabilities decimals="-3" unitRef="id0" contextRef="id3">2000</ifrs:OtherCurrentFinancialLiabilities>
+  <ifrs:OtherCurrentFinancialLiabilities decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:OtherCurrentFinancialLiabilities>
+  <ifrs:TradeAndOtherCurrentPayables decimals="-3" unitRef="id0" contextRef="id3">80504000</ifrs:TradeAndOtherCurrentPayables>
+  <ifrs:TradeAndOtherCurrentPayables decimals="-3" unitRef="id0" contextRef="id2">60329000</ifrs:TradeAndOtherCurrentPayables>
+  <ifrs:TradeAndOtherCurrentPayablesToTradeSuppliers id="footnote_row_78" decimals="-3" unitRef="id0" contextRef="id3">56398000</ifrs:TradeAndOtherCurrentPayablesToTradeSuppliers>
+  <ifrs:TradeAndOtherCurrentPayablesToTradeSuppliers decimals="-3" unitRef="id0" contextRef="id2">36400000</ifrs:TradeAndOtherCurrentPayablesToTradeSuppliers>
+  <ifrs:AccrualsClassifiedAsCurrent id="footnote_row_80" decimals="-3" unitRef="id0" contextRef="id3">12206000</ifrs:AccrualsClassifiedAsCurrent>
+  <ifrs:AccrualsClassifiedAsCurrent decimals="-3" unitRef="id0" contextRef="id2">9653000</ifrs:AccrualsClassifiedAsCurrent>
+  <ifrs:TradeAndOtherCurrentPayablesToRelatedParties decimals="-3" unitRef="id0" contextRef="id3">11900000</ifrs:TradeAndOtherCurrentPayablesToRelatedParties>
+  <ifrs:TradeAndOtherCurrentPayablesToRelatedParties decimals="-3" unitRef="id0" contextRef="id2">14276000</ifrs:TradeAndOtherCurrentPayablesToRelatedParties>
+  <ifrs:DeferredIncomeClassifiedAsCurrent decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:DeferredIncomeClassifiedAsCurrent>
+  <ifrs:DeferredIncomeClassifiedAsCurrent decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:DeferredIncomeClassifiedAsCurrent>
+  <ifrs:CurrentProvisionsForEmployeeBenefits decimals="-3" unitRef="id0" contextRef="id3">9024000</ifrs:CurrentProvisionsForEmployeeBenefits>
+  <ifrs:CurrentProvisionsForEmployeeBenefits decimals="-3" unitRef="id0" contextRef="id2">6734000</ifrs:CurrentProvisionsForEmployeeBenefits>
+  <ifrs:OtherShorttermProvisions decimals="-3" unitRef="id0" contextRef="id3">1720000</ifrs:OtherShorttermProvisions>
+  <ifrs:OtherShorttermProvisions decimals="-3" unitRef="id0" contextRef="id2">2146000</ifrs:OtherShorttermProvisions>
+  <ifrs:CurrentTaxLiabilitiesCurrent decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:CurrentTaxLiabilitiesCurrent>
+  <ifrs:CurrentTaxLiabilitiesCurrent decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:CurrentTaxLiabilitiesCurrent>
+  <ifrs:OtherCurrentNonfinancialLiabilities decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:OtherCurrentNonfinancialLiabilities>
+  <ifrs:OtherCurrentNonfinancialLiabilities decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:OtherCurrentNonfinancialLiabilities>
+  <ifrs:CurrentLiabilitiesOtherThanLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale decimals="-3" unitRef="id0" contextRef="id3">91250000</ifrs:CurrentLiabilitiesOtherThanLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale>
+  <ifrs:CurrentLiabilitiesOtherThanLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale decimals="-3" unitRef="id0" contextRef="id2">69209000</ifrs:CurrentLiabilitiesOtherThanLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale>
+  <ifrs:LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale>
+  <ifrs:LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale>
+  <ifrs:CurrentLiabilities decimals="-3" unitRef="id0" contextRef="id3">91250000</ifrs:CurrentLiabilities>
+  <ifrs:CurrentLiabilities decimals="-3" unitRef="id0" contextRef="id2">69209000</ifrs:CurrentLiabilities>
+  <ifrs:OtherNoncurrentFinancialLiabilities decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:OtherNoncurrentFinancialLiabilities>
+  <ifrs:OtherNoncurrentFinancialLiabilities decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:OtherNoncurrentFinancialLiabilities>
+  <ifrs:NoncurrentPayables decimals="-3" unitRef="id0" contextRef="id3">23183000</ifrs:NoncurrentPayables>
+  <ifrs:NoncurrentPayables decimals="-3" unitRef="id0" contextRef="id2">113810000</ifrs:NoncurrentPayables>
+  <ifrs:NoncurrentPayablesToTradeSuppliers decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:NoncurrentPayablesToTradeSuppliers>
+  <ifrs:NoncurrentPayablesToTradeSuppliers decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:NoncurrentPayablesToTradeSuppliers>
+  <ifrs:AccrualsClassifiedAsNoncurrent id="footnote_row_106" decimals="-3" unitRef="id0" contextRef="id3">1095000</ifrs:AccrualsClassifiedAsNoncurrent>
+  <ifrs:AccrualsClassifiedAsNoncurrent decimals="-3" unitRef="id0" contextRef="id2">1690000</ifrs:AccrualsClassifiedAsNoncurrent>
+  <ifrs:NoncurrentPayablesToRelatedParties decimals="-3" unitRef="id0" contextRef="id3">22088000</ifrs:NoncurrentPayablesToRelatedParties>
+  <ifrs:NoncurrentPayablesToRelatedParties decimals="-3" unitRef="id0" contextRef="id2">112120000</ifrs:NoncurrentPayablesToRelatedParties>
+  <ifrs:DeferredIncomeClassifiedAsNoncurrent decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:DeferredIncomeClassifiedAsNoncurrent>
+  <ifrs:DeferredIncomeClassifiedAsNoncurrent decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:DeferredIncomeClassifiedAsNoncurrent>
+  <ifrs:NoncurrentProvisionsForEmployeeBenefits decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:NoncurrentProvisionsForEmployeeBenefits>
+  <ifrs:NoncurrentProvisionsForEmployeeBenefits decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:NoncurrentProvisionsForEmployeeBenefits>
+  <ifrs:OtherLongtermProvisions decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:OtherLongtermProvisions>
+  <ifrs:OtherLongtermProvisions decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:OtherLongtermProvisions>
+  <ifrs:DeferredTaxLiabilities decimals="-3" unitRef="id0" contextRef="id3">64255000</ifrs:DeferredTaxLiabilities>
+  <ifrs:DeferredTaxLiabilities decimals="-3" unitRef="id0" contextRef="id2">64360000</ifrs:DeferredTaxLiabilities>
+  <ifrs:OtherNoncurrentNonfinancialLiabilities decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:OtherNoncurrentNonfinancialLiabilities>
+  <ifrs:OtherNoncurrentNonfinancialLiabilities decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:OtherNoncurrentNonfinancialLiabilities>
+  <ifrs:NoncurrentLiabilities decimals="-3" unitRef="id0" contextRef="id3">87438000</ifrs:NoncurrentLiabilities>
+  <ifrs:NoncurrentLiabilities decimals="-3" unitRef="id0" contextRef="id2">178170000</ifrs:NoncurrentLiabilities>
+  <ifrs:Liabilities decimals="-3" unitRef="id0" contextRef="id3">178688000</ifrs:Liabilities>
+  <ifrs:Liabilities decimals="-3" unitRef="id0" contextRef="id2">247379000</ifrs:Liabilities>
+  <ifrs:IssuedCapital id="footnote_row_124" decimals="-3" unitRef="id0" contextRef="id3">206766000</ifrs:IssuedCapital>
+  <ifrs:IssuedCapital decimals="-3" unitRef="id0" contextRef="id2">206766000</ifrs:IssuedCapital>
+  <ifrs:SharePremium decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:SharePremium>
+  <ifrs:SharePremium decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:SharePremium>
+  <smv:AccionesDeInversion decimals="-3" unitRef="id0" contextRef="id3">0</smv:AccionesDeInversion>
+  <smv:AccionesDeInversion decimals="-3" unitRef="id0" contextRef="id2">0</smv:AccionesDeInversion>
+  <ifrs:TreasuryShares decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:TreasuryShares>
+  <ifrs:TreasuryShares decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:TreasuryShares>
+  <ifrs:OtherEquityInterest id="footnote_row_132" decimals="-3" unitRef="id0" contextRef="id3">41353000</ifrs:OtherEquityInterest>
+  <ifrs:OtherEquityInterest decimals="-3" unitRef="id0" contextRef="id2">41353000</ifrs:OtherEquityInterest>
+  <ifrs:RetainedEarnings id="footnote_row_134" decimals="-3" unitRef="id0" contextRef="id3">224659000</ifrs:RetainedEarnings>
+  <ifrs:RetainedEarnings decimals="-3" unitRef="id0" contextRef="id2">181945000</ifrs:RetainedEarnings>
+  <ifrs:OtherReserves decimals="-3" unitRef="id0" contextRef="id3">0</ifrs:OtherReserves>
+  <ifrs:OtherReserves decimals="-3" unitRef="id0" contextRef="id2">0</ifrs:OtherReserves>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id3">472778000</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id2">430064000</ifrs:Equity>
+  <ifrs:EquityAndLiabilities decimals="-3" unitRef="id0" contextRef="id3">651466000</ifrs:EquityAndLiabilities>
+  <ifrs:EquityAndLiabilities decimals="-3" unitRef="id0" contextRef="id2">677443000</ifrs:EquityAndLiabilities>
+  <ifrs:Revenue decimals="-3" unitRef="id0" contextRef="id1">300096000</ifrs:Revenue>
+  <ifrs:Revenue decimals="-3" unitRef="id0" contextRef="id4">298179000</ifrs:Revenue>
+  <ifrs:CostOfSales decimals="-3" unitRef="id0" contextRef="id1">254838000</ifrs:CostOfSales>
+  <ifrs:CostOfSales decimals="-3" unitRef="id0" contextRef="id4">244628000</ifrs:CostOfSales>
+  <ifrs:GrossProfit decimals="-3" unitRef="id0" contextRef="id1">45258000</ifrs:GrossProfit>
+  <ifrs:GrossProfit decimals="-3" unitRef="id0" contextRef="id4">53551000</ifrs:GrossProfit>
+  <ifrs:DistributionCosts decimals="-3" unitRef="id0" contextRef="id1">13147000</ifrs:DistributionCosts>
+  <ifrs:DistributionCosts decimals="-3" unitRef="id0" contextRef="id4">16443000</ifrs:DistributionCosts>
+  <ifrs:AdministrativeExpense decimals="-3" unitRef="id0" contextRef="id1">15804000</ifrs:AdministrativeExpense>
+  <ifrs:AdministrativeExpense decimals="-3" unitRef="id0" contextRef="id4">16977000</ifrs:AdministrativeExpense>
+  <ifrs:GainLossArisingFromDerecognitionOfFinancialAssetsMeasuredAtAmortisedCost decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:GainLossArisingFromDerecognitionOfFinancialAssetsMeasuredAtAmortisedCost>
+  <ifrs:GainLossArisingFromDerecognitionOfFinancialAssetsMeasuredAtAmortisedCost decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:GainLossArisingFromDerecognitionOfFinancialAssetsMeasuredAtAmortisedCost>
+  <ifrs:OtherIncome decimals="-3" unitRef="id0" contextRef="id1">46640000</ifrs:OtherIncome>
+  <ifrs:OtherIncome decimals="-3" unitRef="id0" contextRef="id4">17858000</ifrs:OtherIncome>
+  <ifrs:OtherExpenseByFunction decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherExpenseByFunction>
+  <ifrs:OtherExpenseByFunction decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherExpenseByFunction>
+  <ifrs:OtherGainsLosses decimals="-3" unitRef="id0" contextRef="id1">4000</ifrs:OtherGainsLosses>
+  <ifrs:OtherGainsLosses decimals="-3" unitRef="id0" contextRef="id4">62000</ifrs:OtherGainsLosses>
+  <ifrs:ProfitLossFromOperatingActivities decimals="-3" unitRef="id0" contextRef="id1">62951000</ifrs:ProfitLossFromOperatingActivities>
+  <ifrs:ProfitLossFromOperatingActivities decimals="-3" unitRef="id0" contextRef="id4">38051000</ifrs:ProfitLossFromOperatingActivities>
+  <ifrs:FinanceIncome decimals="-3" unitRef="id0" contextRef="id1">1038000</ifrs:FinanceIncome>
+  <ifrs:FinanceIncome decimals="-3" unitRef="id0" contextRef="id4">134000</ifrs:FinanceIncome>
+  <ifrs:FinanceCosts decimals="-3" unitRef="id0" contextRef="id1">6781000</ifrs:FinanceCosts>
+  <ifrs:FinanceCosts decimals="-3" unitRef="id0" contextRef="id4">8521000</ifrs:FinanceCosts>
+  <ifrs:GainsLossesOnNetMonetaryPosition decimals="-3" unitRef="id0" contextRef="id1">-6527000</ifrs:GainsLossesOnNetMonetaryPosition>
+  <ifrs:GainsLossesOnNetMonetaryPosition decimals="-3" unitRef="id0" contextRef="id4">-6506000</ifrs:GainsLossesOnNetMonetaryPosition>
+  <ifrs:OtherIncomeExpenseFromSubsidiariesJointlyControlledEntitiesAndAssociates decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherIncomeExpenseFromSubsidiariesJointlyControlledEntitiesAndAssociates>
+  <ifrs:OtherIncomeExpenseFromSubsidiariesJointlyControlledEntitiesAndAssociates decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherIncomeExpenseFromSubsidiariesJointlyControlledEntitiesAndAssociates>
+  <ifrs:GainsLossesArisingFromDifferenceBetweenPreviousCarryingAmountAndFairValueOfFinancialAssetsReclassifiedAsMeasuredAtFairValue decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:GainsLossesArisingFromDifferenceBetweenPreviousCarryingAmountAndFairValueOfFinancialAssetsReclassifiedAsMeasuredAtFairValue>
+  <ifrs:GainsLossesArisingFromDifferenceBetweenPreviousCarryingAmountAndFairValueOfFinancialAssetsReclassifiedAsMeasuredAtFairValue decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:GainsLossesArisingFromDifferenceBetweenPreviousCarryingAmountAndFairValueOfFinancialAssetsReclassifiedAsMeasuredAtFairValue>
+  <ifrs:DifferenceBetweenCarryingAmountOfDividendsPayableAndCarryingAmountOfNoncashAssetsDistributed decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:DifferenceBetweenCarryingAmountOfDividendsPayableAndCarryingAmountOfNoncashAssetsDistributed>
+  <ifrs:DifferenceBetweenCarryingAmountOfDividendsPayableAndCarryingAmountOfNoncashAssetsDistributed decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:DifferenceBetweenCarryingAmountOfDividendsPayableAndCarryingAmountOfNoncashAssetsDistributed>
+  <ifrs:ProfitLossBeforeTax decimals="-3" unitRef="id0" contextRef="id1">50681000</ifrs:ProfitLossBeforeTax>
+  <ifrs:ProfitLossBeforeTax decimals="-3" unitRef="id0" contextRef="id4">23158000</ifrs:ProfitLossBeforeTax>
+  <ifrs:IncomeTaxExpenseContinuingOperations id="footnote_row_176" decimals="-3" unitRef="id0" contextRef="id1">7967000</ifrs:IncomeTaxExpenseContinuingOperations>
+  <ifrs:IncomeTaxExpenseContinuingOperations decimals="-3" unitRef="id0" contextRef="id4">-3888000</ifrs:IncomeTaxExpenseContinuingOperations>
+  <ifrs:ProfitLossFromContinuingOperations decimals="-3" unitRef="id0" contextRef="id1">42714000</ifrs:ProfitLossFromContinuingOperations>
+  <ifrs:ProfitLossFromContinuingOperations decimals="-3" unitRef="id0" contextRef="id4">27046000</ifrs:ProfitLossFromContinuingOperations>
+  <ifrs:ProfitLossFromDiscontinuedOperations decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:ProfitLossFromDiscontinuedOperations>
+  <ifrs:ProfitLossFromDiscontinuedOperations decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:ProfitLossFromDiscontinuedOperations>
+  <ifrs:ProfitLoss decimals="-3" unitRef="id0" contextRef="id1">42714000</ifrs:ProfitLoss>
+  <ifrs:ProfitLoss decimals="-3" unitRef="id0" contextRef="id4">27046000</ifrs:ProfitLoss>
+  <ifrs:BasicEarningsLossPerShareFromContinuingOperations decimals="3" unitRef="SHA" contextRef="id5">1.9</ifrs:BasicEarningsLossPerShareFromContinuingOperations>
+  <ifrs:BasicEarningsLossPerShareFromContinuingOperations decimals="3" unitRef="SHA" contextRef="id6">1.31</ifrs:BasicEarningsLossPerShareFromContinuingOperations>
+  <ifrs:BasicEarningsLossPerShareFromDiscontinuedOperations decimals="3" unitRef="SHA" contextRef="id5">0</ifrs:BasicEarningsLossPerShareFromDiscontinuedOperations>
+  <ifrs:BasicEarningsLossPerShareFromDiscontinuedOperations decimals="3" unitRef="SHA" contextRef="id6">0</ifrs:BasicEarningsLossPerShareFromDiscontinuedOperations>
+  <ifrs:BasicEarningsLossPerShare decimals="3" unitRef="SHA" contextRef="id5">1.9</ifrs:BasicEarningsLossPerShare>
+  <ifrs:BasicEarningsLossPerShare decimals="3" unitRef="SHA" contextRef="id6">1.31</ifrs:BasicEarningsLossPerShare>
+  <ifrs:DilutedEarningsLossPerShareFromContinuingOperations decimals="3" unitRef="SHA" contextRef="id5">0</ifrs:DilutedEarningsLossPerShareFromContinuingOperations>
+  <ifrs:DilutedEarningsLossPerShareFromContinuingOperations decimals="3" unitRef="SHA" contextRef="id6">0</ifrs:DilutedEarningsLossPerShareFromContinuingOperations>
+  <ifrs:DilutedEarningsLossPerShareFromDiscontinuedOperations decimals="3" unitRef="SHA" contextRef="id5">0</ifrs:DilutedEarningsLossPerShareFromDiscontinuedOperations>
+  <ifrs:DilutedEarningsLossPerShareFromDiscontinuedOperations decimals="3" unitRef="SHA" contextRef="id6">0</ifrs:DilutedEarningsLossPerShareFromDiscontinuedOperations>
+  <ifrs:DilutedEarningsLossPerShare decimals="3" unitRef="SHA" contextRef="id5">0</ifrs:DilutedEarningsLossPerShare>
+  <ifrs:DilutedEarningsLossPerShare decimals="3" unitRef="SHA" contextRef="id6">0</ifrs:DilutedEarningsLossPerShare>
+  <ifrs:BasicEarningsLossPerShareFromContinuingOperations decimals="3" unitRef="SHA" contextRef="id7">0</ifrs:BasicEarningsLossPerShareFromContinuingOperations>
+  <ifrs:BasicEarningsLossPerShareFromContinuingOperations decimals="3" unitRef="SHA" contextRef="id8">0</ifrs:BasicEarningsLossPerShareFromContinuingOperations>
+  <ifrs:BasicEarningsLossPerShareFromDiscontinuedOperations decimals="3" unitRef="SHA" contextRef="id7">0</ifrs:BasicEarningsLossPerShareFromDiscontinuedOperations>
+  <ifrs:BasicEarningsLossPerShareFromDiscontinuedOperations decimals="3" unitRef="SHA" contextRef="id8">0</ifrs:BasicEarningsLossPerShareFromDiscontinuedOperations>
+  <ifrs:BasicEarningsLossPerShare decimals="3" unitRef="SHA" contextRef="id7">0</ifrs:BasicEarningsLossPerShare>
+  <ifrs:BasicEarningsLossPerShare decimals="3" unitRef="SHA" contextRef="id8">0</ifrs:BasicEarningsLossPerShare>
+  <ifrs:DilutedEarningsLossPerShareFromContinuingOperations decimals="3" unitRef="SHA" contextRef="id7">0</ifrs:DilutedEarningsLossPerShareFromContinuingOperations>
+  <ifrs:DilutedEarningsLossPerShareFromContinuingOperations decimals="3" unitRef="SHA" contextRef="id8">0</ifrs:DilutedEarningsLossPerShareFromContinuingOperations>
+  <ifrs:DilutedEarningsLossPerShareFromDiscontinuedOperations decimals="3" unitRef="SHA" contextRef="id7">0</ifrs:DilutedEarningsLossPerShareFromDiscontinuedOperations>
+  <ifrs:DilutedEarningsLossPerShareFromDiscontinuedOperations decimals="3" unitRef="SHA" contextRef="id8">0</ifrs:DilutedEarningsLossPerShareFromDiscontinuedOperations>
+  <ifrs:DilutedEarningsLossPerShare decimals="3" unitRef="SHA" contextRef="id7">0</ifrs:DilutedEarningsLossPerShare>
+  <ifrs:DilutedEarningsLossPerShare decimals="3" unitRef="SHA" contextRef="id8">0</ifrs:DilutedEarningsLossPerShare>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxCashFlowHedges decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherComprehensiveIncomeBeforeTaxCashFlowHedges>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxCashFlowHedges decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherComprehensiveIncomeBeforeTaxCashFlowHedges>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxHedgesOfNetInvestmentsInForeignOperations decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherComprehensiveIncomeBeforeTaxHedgesOfNetInvestmentsInForeignOperations>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxHedgesOfNetInvestmentsInForeignOperations decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherComprehensiveIncomeBeforeTaxHedgesOfNetInvestmentsInForeignOperations>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation>
+  <smv:VariacionNetaDeActivosNoCorrientesOGruposDeActivosMantenidosParaLaVenta decimals="-3" unitRef="id0" contextRef="id1">0</smv:VariacionNetaDeActivosNoCorrientesOGruposDeActivosMantenidosParaLaVenta>
+  <smv:VariacionNetaDeActivosNoCorrientesOGruposDeActivosMantenidosParaLaVenta decimals="-3" unitRef="id0" contextRef="id4">0</smv:VariacionNetaDeActivosNoCorrientesOGruposDeActivosMantenidosParaLaVenta>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRevaluation decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRevaluation>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRevaluation decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherComprehensiveIncomeBeforeTaxGainsLossesOnRevaluation>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxActuarialGainsLossesOnDefinedBenefitPlans decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherComprehensiveIncomeBeforeTaxActuarialGainsLossesOnDefinedBenefitPlans>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxActuarialGainsLossesOnDefinedBenefitPlans decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherComprehensiveIncomeBeforeTaxActuarialGainsLossesOnDefinedBenefitPlans>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiability decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherComprehensiveIncomeBeforeTaxChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiability>
+  <ifrs:OtherComprehensiveIncomeBeforeTaxChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiability decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherComprehensiveIncomeBeforeTaxChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiability>
+  <ifrs:OtherComprehensiveIncomeBeforeTax decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherComprehensiveIncomeBeforeTax>
+  <ifrs:OtherComprehensiveIncomeBeforeTax decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherComprehensiveIncomeBeforeTax>
+  <ifrs:IncomeTaxRelatingToCashFlowHedgesOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncomeTaxRelatingToCashFlowHedgesOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToCashFlowHedgesOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncomeTaxRelatingToCashFlowHedgesOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToHedgesOfNetInvestmentsInForeignOperationsOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncomeTaxRelatingToHedgesOfNetInvestmentsInForeignOperationsOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToHedgesOfNetInvestmentsInForeignOperationsOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncomeTaxRelatingToHedgesOfNetInvestmentsInForeignOperationsOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToInvestmentsInEquityInstrumentsOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncomeTaxRelatingToInvestmentsInEquityInstrumentsOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToInvestmentsInEquityInstrumentsOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncomeTaxRelatingToInvestmentsInEquityInstrumentsOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToExchangeDifferencesOnTranslationOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncomeTaxRelatingToExchangeDifferencesOnTranslationOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToExchangeDifferencesOnTranslationOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncomeTaxRelatingToExchangeDifferencesOnTranslationOfOtherComprehensiveIncome>
+  <smv:ImpuestosRelacionadosALaVariacionNetaDeActivosNoCorrientesOGruposDeActivosMantenidosParaLaVenta decimals="-3" unitRef="id0" contextRef="id1">0</smv:ImpuestosRelacionadosALaVariacionNetaDeActivosNoCorrientesOGruposDeActivosMantenidosParaLaVenta>
+  <smv:ImpuestosRelacionadosALaVariacionNetaDeActivosNoCorrientesOGruposDeActivosMantenidosParaLaVenta decimals="-3" unitRef="id0" contextRef="id4">0</smv:ImpuestosRelacionadosALaVariacionNetaDeActivosNoCorrientesOGruposDeActivosMantenidosParaLaVenta>
+  <ifrs:IncomeTaxRelatingToChangesInRevaluationSurplusOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncomeTaxRelatingToChangesInRevaluationSurplusOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToChangesInRevaluationSurplusOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncomeTaxRelatingToChangesInRevaluationSurplusOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToDefinedBenefitPlansOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncomeTaxRelatingToDefinedBenefitPlansOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToDefinedBenefitPlansOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncomeTaxRelatingToDefinedBenefitPlansOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToChangesInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiabilityOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncomeTaxRelatingToChangesInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiabilityOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToChangesInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiabilityOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncomeTaxRelatingToChangesInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiabilityOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome>
+  <ifrs:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id1">42714000</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id4">27046000</ifrs:ComprehensiveIncome>
+  <ifrs:ReceiptsFromSalesOfGoodsAndRenderingOfServices decimals="-3" unitRef="id0" contextRef="id1">358233000</ifrs:ReceiptsFromSalesOfGoodsAndRenderingOfServices>
+  <ifrs:ReceiptsFromSalesOfGoodsAndRenderingOfServices decimals="-3" unitRef="id0" contextRef="id4">322809000</ifrs:ReceiptsFromSalesOfGoodsAndRenderingOfServices>
+  <ifrs:ReceiptsFromRoyaltiesFeesCommissionsAndOtherRevenue decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:ReceiptsFromRoyaltiesFeesCommissionsAndOtherRevenue>
+  <ifrs:ReceiptsFromRoyaltiesFeesCommissionsAndOtherRevenue decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:ReceiptsFromRoyaltiesFeesCommissionsAndOtherRevenue>
+  <ifrs:ReceiptsFromContractsHeldForDealingOrTradingPurpose decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:ReceiptsFromContractsHeldForDealingOrTradingPurpose>
+  <ifrs:ReceiptsFromContractsHeldForDealingOrTradingPurpose decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:ReceiptsFromContractsHeldForDealingOrTradingPurpose>
+  <ifrs:ReceiptsFromRentsAndSubsequentSalesOfSuchAssets decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:ReceiptsFromRentsAndSubsequentSalesOfSuchAssets>
+  <ifrs:ReceiptsFromRentsAndSubsequentSalesOfSuchAssets decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:ReceiptsFromRentsAndSubsequentSalesOfSuchAssets>
+  <ifrs:OtherCashReceiptsFromOperatingActivities decimals="-3" unitRef="id0" contextRef="id1">231000</ifrs:OtherCashReceiptsFromOperatingActivities>
+  <ifrs:OtherCashReceiptsFromOperatingActivities decimals="-3" unitRef="id0" contextRef="id4">511000</ifrs:OtherCashReceiptsFromOperatingActivities>
+  <ifrs:PaymentsToSuppliersForGoodsAndServices decimals="-3" unitRef="id0" contextRef="id1">199573000</ifrs:PaymentsToSuppliersForGoodsAndServices>
+  <ifrs:PaymentsToSuppliersForGoodsAndServices decimals="-3" unitRef="id0" contextRef="id4">201454000</ifrs:PaymentsToSuppliersForGoodsAndServices>
+  <ifrs:PaymentsFromContractsHeldForDealingOrTradingPurpose decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:PaymentsFromContractsHeldForDealingOrTradingPurpose>
+  <ifrs:PaymentsFromContractsHeldForDealingOrTradingPurpose decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:PaymentsFromContractsHeldForDealingOrTradingPurpose>
+  <ifrs:PaymentsToAndOnBehalfOfEmployees decimals="-3" unitRef="id0" contextRef="id1">49245000</ifrs:PaymentsToAndOnBehalfOfEmployees>
+  <ifrs:PaymentsToAndOnBehalfOfEmployees decimals="-3" unitRef="id0" contextRef="id4">45507000</ifrs:PaymentsToAndOnBehalfOfEmployees>
+  <ifrs:PaymentsToManufactureOrAcquireAssetsHeldForRentalToOthersAndSubsequentlyHeldForSale decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:PaymentsToManufactureOrAcquireAssetsHeldForRentalToOthersAndSubsequentlyHeldForSale>
+  <ifrs:PaymentsToManufactureOrAcquireAssetsHeldForRentalToOthersAndSubsequentlyHeldForSale decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:PaymentsToManufactureOrAcquireAssetsHeldForRentalToOthersAndSubsequentlyHeldForSale>
+  <ifrs:OtherCashPaymentsFromOperatingActivities decimals="-3" unitRef="id0" contextRef="id1">-1197000</ifrs:OtherCashPaymentsFromOperatingActivities>
+  <ifrs:OtherCashPaymentsFromOperatingActivities decimals="-3" unitRef="id0" contextRef="id4">489000</ifrs:OtherCashPaymentsFromOperatingActivities>
+  <ifrs:CashFlowsFromUsedInOperations decimals="-3" unitRef="id0" contextRef="id1">110843000</ifrs:CashFlowsFromUsedInOperations>
+  <ifrs:CashFlowsFromUsedInOperations decimals="-3" unitRef="id0" contextRef="id4">75870000</ifrs:CashFlowsFromUsedInOperations>
+  <ifrs:InterestReceivedClassifiedAsOperatingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:InterestReceivedClassifiedAsOperatingActivities>
+  <ifrs:InterestReceivedClassifiedAsOperatingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:InterestReceivedClassifiedAsOperatingActivities>
+  <ifrs:InterestPaidClassifiedAsOperatingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:InterestPaidClassifiedAsOperatingActivities>
+  <ifrs:InterestPaidClassifiedAsOperatingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:InterestPaidClassifiedAsOperatingActivities>
+  <ifrs:DividendsReceivedClassifiedAsOperatingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:DividendsReceivedClassifiedAsOperatingActivities>
+  <ifrs:DividendsReceivedClassifiedAsOperatingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:DividendsReceivedClassifiedAsOperatingActivities>
+  <ifrs:DividendsPaidClassifiedAsOperatingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:DividendsPaidClassifiedAsOperatingActivities>
+  <ifrs:DividendsPaidClassifiedAsOperatingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:DividendsPaidClassifiedAsOperatingActivities>
+  <ifrs:IncomeTaxesPaidRefundClassifiedAsOperatingActivities decimals="-3" unitRef="id0" contextRef="id1">1217000</ifrs:IncomeTaxesPaidRefundClassifiedAsOperatingActivities>
+  <ifrs:IncomeTaxesPaidRefundClassifiedAsOperatingActivities decimals="-3" unitRef="id0" contextRef="id4">3880000</ifrs:IncomeTaxesPaidRefundClassifiedAsOperatingActivities>
+  <ifrs:OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities>
+  <ifrs:OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities>
+  <ifrs:CashFlowsFromUsedInOperatingActivities decimals="-3" unitRef="id0" contextRef="id1">109626000</ifrs:CashFlowsFromUsedInOperatingActivities>
+  <ifrs:CashFlowsFromUsedInOperatingActivities decimals="-3" unitRef="id0" contextRef="id4">71990000</ifrs:CashFlowsFromUsedInOperatingActivities>
+  <ifrs:CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities>
+  <ifrs:CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities>
+  <ifrs:CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities>
+  <ifrs:CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities>
+  <smv:ReembolsosRecibidosDePrestamosAEntidadesRelacionadasClasificadosComoActividadesDeInversion decimals="-3" unitRef="id0" contextRef="id1">31208000</smv:ReembolsosRecibidosDePrestamosAEntidadesRelacionadasClasificadosComoActividadesDeInversion>
+  <smv:ReembolsosRecibidosDePrestamosAEntidadesRelacionadasClasificadosComoActividadesDeInversion decimals="-3" unitRef="id0" contextRef="id4">30050000</smv:ReembolsosRecibidosDePrestamosAEntidadesRelacionadasClasificadosComoActividadesDeInversion>
+  <ifrs:OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities>
+  <ifrs:OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities>
+  <ifrs:CashReceiptsFromFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:CashReceiptsFromFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities>
+  <ifrs:CashReceiptsFromFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:CashReceiptsFromFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities>
+  <ifrs:OtherCashReceiptsFromSalesOfInterestsInJointVenturesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherCashReceiptsFromSalesOfInterestsInJointVenturesClassifiedAsInvestingActivities>
+  <ifrs:OtherCashReceiptsFromSalesOfInterestsInJointVenturesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherCashReceiptsFromSalesOfInterestsInJointVenturesClassifiedAsInvestingActivities>
+  <ifrs:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities>
+  <ifrs:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">555000</ifrs:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities>
+  <ifrs:ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities>
+  <ifrs:ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities>
+  <ifrs:ProceedsFromOtherLongtermAssetsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:ProceedsFromOtherLongtermAssetsClassifiedAsInvestingActivities>
+  <ifrs:ProceedsFromOtherLongtermAssetsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:ProceedsFromOtherLongtermAssetsClassifiedAsInvestingActivities>
+  <ifrs:ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities>
+  <ifrs:ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities>
+  <ifrs:InterestReceivedClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">799000</ifrs:InterestReceivedClassifiedAsInvestingActivities>
+  <ifrs:InterestReceivedClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">197000</ifrs:InterestReceivedClassifiedAsInvestingActivities>
+  <ifrs:DividendsReceivedClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:DividendsReceivedClassifiedAsInvestingActivities>
+  <ifrs:DividendsReceivedClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:DividendsReceivedClassifiedAsInvestingActivities>
+  <ifrs:CashAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:CashAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities>
+  <ifrs:CashAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:CashAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities>
+  <ifrs:CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities>
+  <ifrs:CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities>
+  <smv:PrestamosConcedidosAEntidadesRealcionadasClasificadosComoActividadesDeInversion decimals="-3" unitRef="id0" contextRef="id1">23411000</smv:PrestamosConcedidosAEntidadesRealcionadasClasificadosComoActividadesDeInversion>
+  <smv:PrestamosConcedidosAEntidadesRealcionadasClasificadosComoActividadesDeInversion decimals="-3" unitRef="id0" contextRef="id4">31303000</smv:PrestamosConcedidosAEntidadesRealcionadasClasificadosComoActividadesDeInversion>
+  <ifrs:OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities>
+  <ifrs:OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities>
+  <ifrs:CashPaymentsForFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:CashPaymentsForFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities>
+  <ifrs:CashPaymentsForFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:CashPaymentsForFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities>
+  <smv:PagosRelacionadosALaCompraDeSubsidiariasNetoDelEfectivoDesapropiado decimals="-3" unitRef="id0" contextRef="id1">0</smv:PagosRelacionadosALaCompraDeSubsidiariasNetoDelEfectivoDesapropiado>
+  <smv:PagosRelacionadosALaCompraDeSubsidiariasNetoDelEfectivoDesapropiado decimals="-3" unitRef="id0" contextRef="id4">0</smv:PagosRelacionadosALaCompraDeSubsidiariasNetoDelEfectivoDesapropiado>
+  <ifrs:OtherCashPaymentsToAcquireInterestsInJointVenturesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherCashPaymentsToAcquireInterestsInJointVenturesClassifiedAsInvestingActivities>
+  <ifrs:OtherCashPaymentsToAcquireInterestsInJointVenturesClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherCashPaymentsToAcquireInterestsInJointVenturesClassifiedAsInvestingActivities>
+  <ifrs:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">19405000</ifrs:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities>
+  <ifrs:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">16558000</ifrs:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities>
+  <ifrs:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities>
+  <ifrs:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">144000</ifrs:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities>
+  <ifrs:PurchaseOfOtherLongtermAssetsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:PurchaseOfOtherLongtermAssetsClassifiedAsInvestingActivities>
+  <ifrs:PurchaseOfOtherLongtermAssetsClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:PurchaseOfOtherLongtermAssetsClassifiedAsInvestingActivities>
+  <ifrs:IncomeTaxesPaidRefundClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncomeTaxesPaidRefundClassifiedAsInvestingActivities>
+  <ifrs:IncomeTaxesPaidRefundClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncomeTaxesPaidRefundClassifiedAsInvestingActivities>
+  <ifrs:OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities>
+  <ifrs:OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities>
+  <ifrs:CashFlowsFromUsedInInvestingActivities decimals="-3" unitRef="id0" contextRef="id1">-10809000</ifrs:CashFlowsFromUsedInInvestingActivities>
+  <ifrs:CashFlowsFromUsedInInvestingActivities decimals="-3" unitRef="id0" contextRef="id4">-17203000</ifrs:CashFlowsFromUsedInInvestingActivities>
+  <ifrs:ProceedsFromBorrowingsClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id1">2000</ifrs:ProceedsFromBorrowingsClassifiedAsFinancingActivities>
+  <ifrs:ProceedsFromBorrowingsClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:ProceedsFromBorrowingsClassifiedAsFinancingActivities>
+  <smv:PrestamosRecibidosDeEntidadesRelacionadasClasificadosComoActividadesDeFinanciacion decimals="-3" unitRef="id0" contextRef="id1">34341000</smv:PrestamosRecibidosDeEntidadesRelacionadasClasificadosComoActividadesDeFinanciacion>
+  <smv:PrestamosRecibidosDeEntidadesRelacionadasClasificadosComoActividadesDeFinanciacion decimals="-3" unitRef="id0" contextRef="id4">43783000</smv:PrestamosRecibidosDeEntidadesRelacionadasClasificadosComoActividadesDeFinanciacion>
+  <ifrs:ProceedsFromChangesInOwnershipInterestsInSubsidiaries decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:ProceedsFromChangesInOwnershipInterestsInSubsidiaries>
+  <ifrs:ProceedsFromChangesInOwnershipInterestsInSubsidiaries decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:ProceedsFromChangesInOwnershipInterestsInSubsidiaries>
+  <ifrs:ProceedsFromIssuingShares decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:ProceedsFromIssuingShares>
+  <ifrs:ProceedsFromIssuingShares decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:ProceedsFromIssuingShares>
+  <ifrs:ProceedsFromIssuingOtherEquityInstruments decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:ProceedsFromIssuingOtherEquityInstruments>
+  <ifrs:ProceedsFromIssuingOtherEquityInstruments decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:ProceedsFromIssuingOtherEquityInstruments>
+  <ifrs:ProceedsFromGovernmentGrantsClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:ProceedsFromGovernmentGrantsClassifiedAsFinancingActivities>
+  <ifrs:ProceedsFromGovernmentGrantsClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:ProceedsFromGovernmentGrantsClassifiedAsFinancingActivities>
+  <ifrs:RepaymentsOfBorrowingsClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:RepaymentsOfBorrowingsClassifiedAsFinancingActivities>
+  <ifrs:RepaymentsOfBorrowingsClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:RepaymentsOfBorrowingsClassifiedAsFinancingActivities>
+  <ifrs:PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities>
+  <ifrs:PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities>
+  <smv:ReembolsoDePrestamosDeEntidadesRealcionadasClasificadosComoActividadesDeFinanciacion decimals="-3" unitRef="id0" contextRef="id1">141031000</smv:ReembolsoDePrestamosDeEntidadesRealcionadasClasificadosComoActividadesDeFinanciacion>
+  <smv:ReembolsoDePrestamosDeEntidadesRealcionadasClasificadosComoActividadesDeFinanciacion decimals="-3" unitRef="id0" contextRef="id4">42446000</smv:ReembolsoDePrestamosDeEntidadesRealcionadasClasificadosComoActividadesDeFinanciacion>
+  <ifrs:PaymentsFromChangesInOwnershipInterestsInSubsidiaries decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:PaymentsFromChangesInOwnershipInterestsInSubsidiaries>
+  <ifrs:PaymentsFromChangesInOwnershipInterestsInSubsidiaries decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:PaymentsFromChangesInOwnershipInterestsInSubsidiaries>
+  <ifrs:PaymentsToAcquireOrRedeemEntitysShares decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:PaymentsToAcquireOrRedeemEntitysShares>
+  <ifrs:PaymentsToAcquireOrRedeemEntitysShares decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:PaymentsToAcquireOrRedeemEntitysShares>
+  <ifrs:PaymentsOfOtherEquityInstruments decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:PaymentsOfOtherEquityInstruments>
+  <ifrs:PaymentsOfOtherEquityInstruments decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:PaymentsOfOtherEquityInstruments>
+  <ifrs:InterestPaidClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id1">7363000</ifrs:InterestPaidClassifiedAsFinancingActivities>
+  <ifrs:InterestPaidClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id4">8594000</ifrs:InterestPaidClassifiedAsFinancingActivities>
+  <ifrs:DividendsPaidClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id1">337000</ifrs:DividendsPaidClassifiedAsFinancingActivities>
+  <ifrs:DividendsPaidClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id4">16383000</ifrs:DividendsPaidClassifiedAsFinancingActivities>
+  <ifrs:IncomeTaxesPaidRefundClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncomeTaxesPaidRefundClassifiedAsFinancingActivities>
+  <ifrs:IncomeTaxesPaidRefundClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncomeTaxesPaidRefundClassifiedAsFinancingActivities>
+  <ifrs:OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities>
+  <ifrs:OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities>
+  <ifrs:CashFlowsFromUsedInFinancingActivities decimals="-3" unitRef="id0" contextRef="id1">-114388000</ifrs:CashFlowsFromUsedInFinancingActivities>
+  <ifrs:CashFlowsFromUsedInFinancingActivities decimals="-3" unitRef="id0" contextRef="id4">-23640000</ifrs:CashFlowsFromUsedInFinancingActivities>
+  <ifrs:IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges decimals="-3" unitRef="id0" contextRef="id1">-15571000</ifrs:IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges>
+  <ifrs:IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges decimals="-3" unitRef="id0" contextRef="id4">31147000</ifrs:IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges>
+  <ifrs:EffectOfExchangeRateChangesOnCashAndCashEquivalents decimals="-3" unitRef="id0" contextRef="id1">-6527000</ifrs:EffectOfExchangeRateChangesOnCashAndCashEquivalents>
+  <ifrs:EffectOfExchangeRateChangesOnCashAndCashEquivalents decimals="-3" unitRef="id0" contextRef="id4">-6506000</ifrs:EffectOfExchangeRateChangesOnCashAndCashEquivalents>
+  <ifrs:IncreaseDecreaseInCashAndCashEquivalents decimals="-3" unitRef="id0" contextRef="id1">-22098000</ifrs:IncreaseDecreaseInCashAndCashEquivalents>
+  <ifrs:IncreaseDecreaseInCashAndCashEquivalents decimals="-3" unitRef="id0" contextRef="id4">24641000</ifrs:IncreaseDecreaseInCashAndCashEquivalents>
+  <ifrs:CashAndCashEquivalents decimals="-3" unitRef="id0" contextRef="id9">8405000</ifrs:CashAndCashEquivalents>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id10">206766000</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id11">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id12">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id13">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id14">41353000</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id15">158899000</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id16">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id17">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id18">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id19">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id20">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id21">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id22">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id23">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id24">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id9">407018000</ifrs:Equity>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id25">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id26">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id27">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id28">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id29">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id30">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id31">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id32">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id33">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id34">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id35">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id36">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id37">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id38">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id39">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id40">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id25">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id26">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id27">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id28">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id29">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id30">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id31">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id32">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id33">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id34">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id35">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id36">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id37">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id38">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id39">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id40">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id10">206766000</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id11">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id12">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id13">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id14">41353000</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id15">158899000</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id16">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id17">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id18">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id19">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id20">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id21">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id22">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id23">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id24">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id9">407018000</smv:PatrimonioReexpresado>
+  <ifrs:ProfitLoss decimals="-3" unitRef="id0" contextRef="id41">27046000</ifrs:ProfitLoss>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id41">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id42">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id43">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id44">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id45">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id46">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id47">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id48">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id49">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id50">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id41">27046000</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id42">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id43">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id44">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id45">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id46">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id47">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id48">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id49">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id50">0</ifrs:ComprehensiveIncome>
+  <ifrs:DividendsDeclaredAndPaidOrPayable decimals="-3" unitRef="id0" contextRef="id51">0</ifrs:DividendsDeclaredAndPaidOrPayable>
+  <ifrs:DividendsDeclaredAndPaidOrPayable decimals="-3" unitRef="id0" contextRef="id41">4000000</ifrs:DividendsDeclaredAndPaidOrPayable>
+  <ifrs:DividendsDeclaredAndPaidOrPayable decimals="-3" unitRef="id0" contextRef="id4">4000000</ifrs:DividendsDeclaredAndPaidOrPayable>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id52">0</ifrs:IssueOfEquity>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id53">0</ifrs:IssueOfEquity>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id54">0</ifrs:IssueOfEquity>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id55">0</ifrs:IssueOfEquity>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id51">0</ifrs:IssueOfEquity>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id41">0</ifrs:IssueOfEquity>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IssueOfEquity>
+  <smv:ReduccionOAmortizacionDeAccionesDeInversion decimals="-3" unitRef="id0" contextRef="id53">0</smv:ReduccionOAmortizacionDeAccionesDeInversion>
+  <smv:ReduccionOAmortizacionDeAccionesDeInversion decimals="-3" unitRef="id0" contextRef="id54">0</smv:ReduccionOAmortizacionDeAccionesDeInversion>
+  <smv:ReduccionOAmortizacionDeAccionesDeInversion decimals="-3" unitRef="id0" contextRef="id55">0</smv:ReduccionOAmortizacionDeAccionesDeInversion>
+  <smv:ReduccionOAmortizacionDeAccionesDeInversion decimals="-3" unitRef="id0" contextRef="id41">0</smv:ReduccionOAmortizacionDeAccionesDeInversion>
+  <smv:ReduccionOAmortizacionDeAccionesDeInversion decimals="-3" unitRef="id0" contextRef="id4">0</smv:ReduccionOAmortizacionDeAccionesDeInversion>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id52">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id53">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id54">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id55">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id51">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id41">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id52">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id53">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id54">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id55">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id51">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id41">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id52">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id53">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id54">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id55">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id51">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id41">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id52">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id53">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id54">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id55">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id51">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id41">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id52">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id53">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id54">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id55">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id51">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id41">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id4">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id52">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id53">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id54">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id55">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id51">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id41">23046000</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id42">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id43">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id44">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id45">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id46">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id47">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id48">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id49">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id50">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id4">23046000</ifrs:ChangesInEquity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id56">206766000</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id57">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id58">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id59">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id60">41353000</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id61">181945000</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id62">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id63">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id64">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id65">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id66">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id67">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id68">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id69">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id70">0</ifrs:Equity>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id52">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id53">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id54">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id55">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id51">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id41">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id42">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id43">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id44">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id45">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id46">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id47">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id48">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id49">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id50">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id4">0</ifrs:IncreaseDecreaseThroughChangesInAccountingPolicies>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id52">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id53">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id54">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id55">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id51">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id41">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id42">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id43">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id44">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id45">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id46">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id47">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id48">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id49">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id50">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <ifrs:IncreaseDecreaseThroughCorrectionsOfErrors decimals="-3" unitRef="id0" xmlns:ifrs='http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs' contextRef="id4">0</ifrs:IncreaseDecreaseThroughCorrectionsOfErrors>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id56">206766000</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id57">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id58">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id59">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id60">41353000</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id61">181945000</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id62">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id63">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id64">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id65">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id66">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id67">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id68">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id69">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id70">0</smv:PatrimonioReexpresado>
+  <smv:PatrimonioReexpresado decimals="-3" unitRef="id0" contextRef="id2">430064000</smv:PatrimonioReexpresado>
+  <ifrs:ProfitLoss decimals="-3" unitRef="id0" contextRef="id71">42714000</ifrs:ProfitLoss>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id71">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id72">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id73">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id74">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id75">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id76">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id77">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id78">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id79">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:OtherComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id80">0</ifrs:OtherComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id71">42714000</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id72">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id73">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id74">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id75">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id76">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id77">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id78">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id79">0</ifrs:ComprehensiveIncome>
+  <ifrs:ComprehensiveIncome decimals="-3" unitRef="id0" contextRef="id80">0</ifrs:ComprehensiveIncome>
+  <ifrs:DividendsDeclaredAndPaidOrPayable decimals="-3" unitRef="id0" contextRef="id81">0</ifrs:DividendsDeclaredAndPaidOrPayable>
+  <ifrs:DividendsDeclaredAndPaidOrPayable decimals="-3" unitRef="id0" contextRef="id71">0</ifrs:DividendsDeclaredAndPaidOrPayable>
+  <ifrs:DividendsDeclaredAndPaidOrPayable decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:DividendsDeclaredAndPaidOrPayable>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id82">0</ifrs:IssueOfEquity>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id83">0</ifrs:IssueOfEquity>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id84">0</ifrs:IssueOfEquity>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id85">0</ifrs:IssueOfEquity>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id81">0</ifrs:IssueOfEquity>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id71">0</ifrs:IssueOfEquity>
+  <ifrs:IssueOfEquity decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IssueOfEquity>
+  <smv:ReduccionOAmortizacionDeAccionesDeInversion decimals="-3" unitRef="id0" contextRef="id83">0</smv:ReduccionOAmortizacionDeAccionesDeInversion>
+  <smv:ReduccionOAmortizacionDeAccionesDeInversion decimals="-3" unitRef="id0" contextRef="id84">0</smv:ReduccionOAmortizacionDeAccionesDeInversion>
+  <smv:ReduccionOAmortizacionDeAccionesDeInversion decimals="-3" unitRef="id0" contextRef="id85">0</smv:ReduccionOAmortizacionDeAccionesDeInversion>
+  <smv:ReduccionOAmortizacionDeAccionesDeInversion decimals="-3" unitRef="id0" contextRef="id71">0</smv:ReduccionOAmortizacionDeAccionesDeInversion>
+  <smv:ReduccionOAmortizacionDeAccionesDeInversion decimals="-3" unitRef="id0" contextRef="id1">0</smv:ReduccionOAmortizacionDeAccionesDeInversion>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id82">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id83">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id84">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id85">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id81">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id71">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherContributionsByOwners decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncreaseDecreaseThroughOtherContributionsByOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id82">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id83">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id84">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id85">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id81">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id71">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncreaseDecreaseThroughOtherDistributionsToOwners>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id82">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id83">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id84">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id85">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id81">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id71">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id82">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id83">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id84">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id85">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id81">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id71">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTreasuryShareTransactions decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncreaseDecreaseThroughTreasuryShareTransactions>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id82">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id83">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id84">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id85">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id81">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id71">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity decimals="-3" unitRef="id0" contextRef="id1">0</ifrs:IncreaseDecreaseThroughTransfersAndOtherChangesEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id82">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id83">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id84">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id85">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id81">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id71">42714000</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id72">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id73">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id74">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id75">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id76">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id77">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id78">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id79">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id80">0</ifrs:ChangesInEquity>
+  <ifrs:ChangesInEquity decimals="-3" unitRef="id0" contextRef="id1">42714000</ifrs:ChangesInEquity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id86">206766000</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id87">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id88">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id89">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id90">41353000</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id91">224659000</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id92">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id93">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id94">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id95">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id96">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id97">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id98">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id99">0</ifrs:Equity>
+  <ifrs:Equity decimals="-3" unitRef="id0" contextRef="id100">0</ifrs:Equity>
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link"> <link:loc xlink:href="#footnote_row_23" xlink:label="arc_footnote_row_23" xlink:type="locator" /> 
+  <link:footnoteArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="arc_footnote_row_23" xlink:title="footnote" xlink:to="text_footnote_row_23" xlink:type="arc" /> 
+  <link:footnote xlink:label="text_footnote_row_23" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en">7 </link:footnote> </link:footnoteLink>
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link"> <link:loc xlink:href="#footnote_row_27" xlink:label="arc_footnote_row_27" xlink:type="locator" /> 
+  <link:footnoteArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="arc_footnote_row_27" xlink:title="footnote" xlink:to="text_footnote_row_27" xlink:type="arc" /> 
+  <link:footnote xlink:label="text_footnote_row_27" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en">6 </link:footnote> </link:footnoteLink>
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link"> <link:loc xlink:href="#footnote_row_59" xlink:label="arc_footnote_row_59" xlink:type="locator" /> 
+  <link:footnoteArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="arc_footnote_row_59" xlink:title="footnote" xlink:to="text_footnote_row_59" xlink:type="arc" /> 
+  <link:footnote xlink:label="text_footnote_row_59" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en">5 </link:footnote> </link:footnoteLink>
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link"> <link:loc xlink:href="#footnote_row_63" xlink:label="arc_footnote_row_63" xlink:type="locator" /> 
+  <link:footnoteArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="arc_footnote_row_63" xlink:title="footnote" xlink:to="text_footnote_row_63" xlink:type="arc" /> 
+  <link:footnote xlink:label="text_footnote_row_63" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en">3 </link:footnote> </link:footnoteLink>
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link"> <link:loc xlink:href="#footnote_row_67" xlink:label="arc_footnote_row_67" xlink:type="locator" /> 
+  <link:footnoteArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="arc_footnote_row_67" xlink:title="footnote" xlink:to="text_footnote_row_67" xlink:type="arc" /> 
+  <link:footnote xlink:label="text_footnote_row_67" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en">3 y 4  </link:footnote> </link:footnoteLink>
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link"> <link:loc xlink:href="#footnote_row_78" xlink:label="arc_footnote_row_78" xlink:type="locator" /> 
+  <link:footnoteArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="arc_footnote_row_78" xlink:title="footnote" xlink:to="text_footnote_row_78" xlink:type="arc" /> 
+  <link:footnote xlink:label="text_footnote_row_78" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en">3 y 8 </link:footnote> </link:footnoteLink>
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link"> <link:loc xlink:href="#footnote_row_80" xlink:label="arc_footnote_row_80" xlink:type="locator" /> 
+  <link:footnoteArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="arc_footnote_row_80" xlink:title="footnote" xlink:to="text_footnote_row_80" xlink:type="arc" /> 
+  <link:footnote xlink:label="text_footnote_row_80" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en">9 </link:footnote> </link:footnoteLink>
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link"> <link:loc xlink:href="#footnote_row_106" xlink:label="arc_footnote_row_106" xlink:type="locator" /> 
+  <link:footnoteArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="arc_footnote_row_106" xlink:title="footnote" xlink:to="text_footnote_row_106" xlink:type="arc" /> 
+  <link:footnote xlink:label="text_footnote_row_106" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en">9 </link:footnote> </link:footnoteLink>
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link"> <link:loc xlink:href="#footnote_row_124" xlink:label="arc_footnote_row_124" xlink:type="locator" /> 
+  <link:footnoteArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="arc_footnote_row_124" xlink:title="footnote" xlink:to="text_footnote_row_124" xlink:type="arc" /> 
+  <link:footnote xlink:label="text_footnote_row_124" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en">11(a) </link:footnote> </link:footnoteLink>
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link"> <link:loc xlink:href="#footnote_row_132" xlink:label="arc_footnote_row_132" xlink:type="locator" /> 
+  <link:footnoteArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="arc_footnote_row_132" xlink:title="footnote" xlink:to="text_footnote_row_132" xlink:type="arc" /> 
+  <link:footnote xlink:label="text_footnote_row_132" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en">11(b) </link:footnote> </link:footnoteLink>
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link"> <link:loc xlink:href="#footnote_row_134" xlink:label="arc_footnote_row_134" xlink:type="locator" /> 
+  <link:footnoteArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="arc_footnote_row_134" xlink:title="footnote" xlink:to="text_footnote_row_134" xlink:type="arc" /> 
+  <link:footnote xlink:label="text_footnote_row_134" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en">11(c) </link:footnote> </link:footnoteLink>
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link"> <link:loc xlink:href="#footnote_row_176" xlink:label="arc_footnote_row_176" xlink:type="locator" /> 
+  <link:footnoteArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="arc_footnote_row_176" xlink:title="footnote" xlink:to="text_footnote_row_176" xlink:type="arc" /> 
+  <link:footnote xlink:label="text_footnote_row_176" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en">12 </link:footnote> </link:footnoteLink>
+</xbrli:xbrl>
