@@ -16,14 +16,14 @@ ruta_json_existente = "data_xml/reporte_analizado.json"
 #Persistimos el Json anterior:
 if os.path.exists(ruta_json_existente):
     with open(ruta_json_existente, "r", encoding="utf-8") as archivo:
-        tabla_horizontal = json.load(archivo)
+        tabla_guardada = json.load(archivo)
 else:
     #Si por alguna razón no existe tabla_historial la creamos desde cero:
-    tabla_horizontal = {}
+    tabla_guardada = {}
 
 #Si no existe nuestra actual empresa a importar, entonces la creamos:
-if "Cartavio" not in tabla_horizontal:
-    tabla_horizontal['Cartavio'] = {}
+if "Cartavio" not in tabla_guardada:
+    tabla_guardada['Cartavio'] = {}
 
 
 #Se inicia el bucle:-----------------------------------------------------
@@ -52,14 +52,14 @@ for año in cartavio:
     ratios_calculados_anual = calcular_ratios_de_extraer_source_data_f2(data_empresa_anual)
 
     #5- Añadimos la data y ratios analizados al nuevo diccionario:
-    tabla_historial["Cartavio"][año] = ratios_calculados_anual
+    tabla_guardada["Cartavio"][año] = ratios_calculados_anual
 
     #Comentario opcional de funcionalidad del código:
     print(f"\tFuncionó con Éxito la lectura del archivo xml, para el año: |{año}")
 
 #6- acabado el proceso de iteración guardamos en el Json:
 with open("data_xml/reporte_analizado.json", "w", encoding="utf-8") as archivo_json: 
-    json.dump(tabla_historial, archivo_json, indent=4, ensure_ascii=False)
+    json.dump(tabla_guardada, archivo_json, indent=4, ensure_ascii=False)
 
 #Fin del bucle----
 

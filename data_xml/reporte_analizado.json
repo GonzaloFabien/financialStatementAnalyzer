@@ -120,5 +120,127 @@
             "Debt Asset Ratio": 48.921176601824286,
             "Quick Ratio": 0.6007706089321562
         }
+    },
+    "Cartavio": {
+        "2016": {
+            "Equity": 537840000,
+            "CashAndCashEquivalents": 12721000,
+            "Net Income": 64644000,
+            "Net Margin": 17.132316695024407,
+            "ROE": 12.019187862561356,
+            "ROA": 8.972003086711043,
+            "Cash Ratio": 0.07077130204508535,
+            "Current Ratio": 33.96326044920423,
+            "Debt Asset Ratio": 25.35266783991295,
+            "Quick Ratio": 1.1325678709940805
+        },
+        "2017": {
+            "Equity": 529830000,
+            "CashAndCashEquivalents": 6604000,
+            "Net Income": 9935000,
+            "Net Margin": 3.662146272056736,
+            "ROE": 1.8751297586018159,
+            "ROA": 1.382353186717165,
+            "Cash Ratio": 0.0346579339588975,
+            "Current Ratio": 35.64766057037163,
+            "Debt Asset Ratio": 26.279598498404066,
+            "Quick Ratio": 1.3222027014693802
+        },
+        "2018": {
+            "Equity": 543715000,
+            "CashAndCashEquivalents": 9350000,
+            "Net Income": 15404000,
+            "Net Margin": 5.93050026564822,
+            "ROE": 2.8331019008120064,
+            "ROA": 2.0549544225409986,
+            "Cash Ratio": 0.052796521640927185,
+            "Current Ratio": 37.86689717958857,
+            "Debt Asset Ratio": 27.466272146722996,
+            "Quick Ratio": 1.0446763725662165
+        },
+        "2024": {
+            "Equity": 383474000,
+            "CashAndCashEquivalents": 45081000,
+            "Net Income": 91846000,
+            "Net Margin": 17.165102397051623,
+            "ROE": 23.951037097691106,
+            "ROA": 9.916850310043285,
+            "Cash Ratio": 0.15285166461535332,
+            "Current Ratio": 141.51859056937369,
+            "Debt Asset Ratio": 58.595319820204054,
+            "Quick Ratio": 0.73610004649847
+        },
+        "2019": {
+            "Equity": 576919000,
+            "CashAndCashEquivalents": 22044000,
+            "Net Income": 35426000,
+            "Net Margin": 11.100979240109675,
+            "ROE": 6.14055005988709,
+            "ROA": 4.63006286513403,
+            "Cash Ratio": 0.12929108088610491,
+            "Current Ratio": 32.623470539191814,
+            "Debt Asset Ratio": 24.5985649497471,
+            "Quick Ratio": 1.4748324479172235
+        },
+        "2020": {
+            "Equity": 616157000,
+            "CashAndCashEquivalents": 22012000,
+            "Net Income": 79544000,
+            "Net Margin": 23.69694225315189,
+            "ROE": 12.90969671690819,
+            "ROA": 9.599134986930675,
+            "Cash Ratio": 0.12958983627597007,
+            "Current Ratio": 34.48812559136714,
+            "Debt Asset Ratio": 25.643993058656285,
+            "Quick Ratio": 1.0873520159880985
+        },
+        "2021": {
+            "Equity": 620969000,
+            "CashAndCashEquivalents": 179927000,
+            "Net Income": 79642000,
+            "Net Margin": 21.31876427081967,
+            "ROE": 12.825438951058748,
+            "ROA": 7.56406834843608,
+            "Cash Ratio": 0.42417905732748357,
+            "Current Ratio": 69.55741752003723,
+            "Debt Asset Ratio": 41.022928125109814,
+            "Quick Ratio": 1.213061479019473
+        },
+        "2023": {
+            "Equity": 392288000,
+            "CashAndCashEquivalents": 18469000,
+            "Net Income": 106404000,
+            "Net Margin": 20.952763534109977,
+            "ROE": 27.123949751203195,
+            "ROA": 12.061853215938733,
+            "Cash Ratio": 0.07057695100234633,
+            "Current Ratio": 124.87381719552981,
+            "Debt Asset Ratio": 55.53061657104833,
+            "Quick Ratio": 0.8072380840266887
+        },
+        "2022": {
+            "Equity": 396751000,
+            "CashAndCashEquivalents": 16392000,
+            "Net Income": 132490000,
+            "Net Margin": 28.42754826611052,
+            "ROE": 33.39374065849866,
+            "ROA": 15.614742844077675,
+            "Cash Ratio": 0.06375208559394215,
+            "Current Ratio": 113.86033053476865,
+            "Debt Asset Ratio": 53.24050993938665,
+            "Quick Ratio": 1.055200638308266
+        },
+        "2025": {
+            "Equity": 335053000,
+            "CashAndCashEquivalents": 13750000,
+            "Net Income": 46053000,
+            "Net Margin": 11.864345648606385,
+            "ROE": 13.74498959866051,
+            "ROA": 5.130087423025852,
+            "Cash Ratio": 0.05372877713303245,
+            "Current Ratio": 167.92895452361267,
+            "Debt Asset Ratio": 62.67667293450848,
+            "Quick Ratio": 0.5856028264389813
+        }
     }
 }
