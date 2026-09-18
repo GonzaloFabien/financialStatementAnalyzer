@@ -89,7 +89,8 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     inventories = diccionario_fuente_generado['Inventories']
     current_liabilities = diccionario_fuente_generado['CurrentLiabilities']
     cashAndCashEquivalents = diccionario_fuente_generado['CashAndCashEquivalents']
-
+    
+    #Estos son los tag del diccionario a buscar:
     ratios_calculados = {
         'Equity': equity,
         'CashAndCashEquivalents': cashAndCashEquivalents,

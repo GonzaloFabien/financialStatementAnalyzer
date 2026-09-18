@@ -20,8 +20,11 @@ años_casa_grande = set(diccionario_casa_grande.keys())
 años_cartavio = set(diccionario_casa_grande.keys())
 años_comunes = sorted(list(años_casa_grande.intersection(años_cartavio)))
 
-#-----IMPORTANTE, aquí el ratio que queremos comprar/MOSTRAR:
-ratio_a_graficar = 'ROA'
+"""
+#-----IMPORTANTE, aquí el ratio que queremos comparar/MOSTRAR:
+"""
+
+ratio_a_graficar = 'Net Margin'
 
 #4- Aquí de desgloza los valores del ratio a graficar 'Net Income' para cada año disponible
 valores_casa_grande = [diccionario_casa_grande[año].get(ratio_a_graficar, 0) for año in años_comunes]
