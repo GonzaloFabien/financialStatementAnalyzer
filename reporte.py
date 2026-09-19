@@ -27,19 +27,6 @@ años_comunes = sorted(list(años_casa_grande.intersection(años_cartavio)))
 
 ratio_a_graficar = 'Net Margin'
 
-#------Área en mantenimiento-----------
-def formatear_eje_y(valor, pos): 
-    #Si el valor del tag es menor a |10| o sea su valor absoluto, entonces es un valor_porcentual:
-    if abs(valor) < 100:
-        return f"{valor:.1f}%"
-    else:
-        #al ser un número grande, no es posible que sea porcentual y se mantiene:
-        datos_en_millones = valor/1_000_000 #podemos utilizar esto para ver que son millones
-        return f"{datos_en_millones:.1f}M"
-
-
-
-
 #4- Aquí de desgloza los valores del ratio a graficar 'Net Income' para cada año disponible
 valores_casa_grande = [diccionario_casa_grande[año].get(ratio_a_graficar, 0) for año in años_comunes]
 valores_cartavio = [diccionario_cartavio[año].get(ratio_a_graficar, 0) for año in años_comunes]
@@ -69,5 +56,19 @@ plt.tight_layout()
 """
     PLASMAR GRÁFICO:
 """
+#correción del gráfico en el eje Y, porcentual y en millones (000,000)
+def formatear_eje_y(valor, pos): 
+    #Si el valor del tag es menor a |10| o sea su valor absoluto, entonces es un valor_porcentual:
+    if abs(valor) < 100:
+        return f"{valor:.1f}%"
+    else:
+        #al ser un número grande, no es posible que sea porcentual y se mantiene:
+        datos_en_millones = valor/1_000_000 #podemos utilizar esto para ver que son millones
+        return f"{datos_en_millones:.1f}M"
+"""Nota: Aunque reparamos el eje_y podría tener poblemas con ratios corrientes, ya que podrían ser superiores a 100
+si eso pasa, entonces puedes subir el humbral de 100 a 500 etc, o cambiar la forma en que se expresa el dato en su 
+función de como se guarda en su diccionario, ya no de forma porcentual si no en decimal"""
+
+
 plt.gca().yaxis.set_major_formatter( ticker.FuncFormatter(formatear_eje_y))
 plt.show()
