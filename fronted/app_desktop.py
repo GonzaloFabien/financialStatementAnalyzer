@@ -26,6 +26,7 @@ class AppFinanzas(ctk.CTk):
             font=ctk.CTkFont(size=22, weight="bold")
         )
         self.titulo.pack(padx=20, pady=20)
+        
 
         #Elemento visual 2: Etiqueta de estado de la base de datos 
         if self.base_datos:
@@ -36,6 +37,28 @@ class AppFinanzas(ctk.CTk):
 
         self.lbl_estado = ctk.CTkLabel(self, text=mensaje, text_color="#2ca02c")
         self.lbl_estado.pack(padx=20, pady=10)
+
+        # --- CONTENEDOR DE CONTROLES (FRAME INTERACTIVO) ---
+        # Creamos una "caja" interna para agrupar los desplegables
+        self.frame_controles = ctk.CTkFrame(self)
+        self.frame_controles.pack(padx=20, pady=20, fill="x")
+        
+        # Selector 1: Empresa
+        self.lbl_empresa = ctk.CTkLabel(self.frame_controles, text="Seleccionar Empresa:", font=ctk.CTkFont(size=13))
+        self.lbl_empresa.grid(row=0, column=0, padx=15, pady=10, sticky="w")
+        
+        self.combo_empresa = ctk.CTkComboBox(self.frame_controles, values=self.empresas)
+        self.combo_empresa.grid(row=0, column=1, padx=15, pady=10)
+        
+        # Selector 2: Ratio / Métrica
+        self.ratios_disponibles = ['Net Income', 'Margen Neto', 'ROE', 'ROA', 'Prueba ácida', 'Ratio Deuda/Activo']
+        
+        self.lbl_ratio = ctk.CTkLabel(self.frame_controles, text="Seleccionar Ratio:", font=ctk.CTkFont(size=13))
+        self.lbl_ratio.grid(row=1, column=0, padx=15, pady=10, sticky="w")
+        
+        self.combo_ratio = ctk.CTkComboBox(self.frame_controles, values=self.ratios_disponibles)
+        self.combo_ratio.grid(row=1, column=1, padx=15, pady=10)
+        
 
     def cargar_base_datos(self):
             if os.path.exists(self.ruta_json):
