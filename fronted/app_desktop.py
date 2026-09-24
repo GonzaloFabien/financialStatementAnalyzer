@@ -60,6 +60,16 @@ class AppFinanzas(ctk.CTk):
         self.combo_ratio = ctk.CTkComboBox(self.frame_controles, values=self.ratios_disponibles)
         self.combo_ratio.grid(row=1, column=1, padx=15, pady=10)
 
+        #Elemento para exportar a Excel (nuevo)
+        self.btn_excel = ctk.CTkButton(
+            self, 
+            text="📥 Exportar Base de Datos a Excel", 
+            command=self.ejecutar_exportacion,
+            font=ctk.CTkFont(weight="bold")
+        )
+        self.btn_excel.pack(padx=20, pady=15)
+
+
 
     def cargar_base_datos(self):
             if os.path.exists(self.ruta_json):
