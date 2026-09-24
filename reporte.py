@@ -8,7 +8,7 @@ nombre_empresa_2 = "Cartavio"
 
 #1- Conectamos a la BD Json:
 carpeta_sctipt_actual = os.path.dirname(os.path.abspath(__file__))
-ruta_jsonl = os.path.abspath(os.path.join(carpeta_sctipt_actual,"data_xml","reporte_analizado.json"))
+ruta_json = os.path.abspath(os.path.join(carpeta_sctipt_actual,"data_xml","reporte_analizado.json"))
 
 
 with open(ruta_json, "r", encoding="utf-8") as archivo:

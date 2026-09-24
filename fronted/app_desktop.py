@@ -3,6 +3,7 @@ import os
 import customtkinter as ctk
 import subprocess
 import matplotlib.pyplot as plt
+import pandas as pd
 
 #Variables básicas:
 ctk.set_appearance_mode("dark")
@@ -18,10 +19,12 @@ class AppFinanzas(ctk.CTk):
         self.title("SMV Equity Analytics - Desktop Edition")
         self.geometry("600x400")
 
+
         #Conexión segura a la BD NoSQL Json:
         carpeta_sctipt_actual = os.path.dirname(os.path.abspath(__file__))
         self.ruta_json = os.path.abspath(os.path.join(carpeta_sctipt_actual,"..","data_xml","reporte_analizado.json"))
         self.base_datos = self.cargar_base_datos()
+
 
         #Elemento 1:
         self.titulo = ctk.CTkLabel(
@@ -49,8 +52,20 @@ class AppFinanzas(ctk.CTk):
         if self.base_datos:
             empresas = list(self.base_datos.keys())
             mensaje = f"(Base de datos concetada con las Empresas:{', '.join(empresas)})"
+
+            #Extraermos los ratios dinamicamente :
+            nombre_emprecita =  list(self.base_datos.keys())[0]
+            primer_año = list(self.base_datos[nombre_emprecita].keys())[0]
+            
+            #Extraemos todos los datos posibles 
+            self.ratios_disponibles = list(self.base_datos[nombre_emprecita ][primer_año].keys())
+            
+            
         else:
+            self.empresas = ["No disponible"]
+            self.ratios_disponibles = ["No disponible"]
             mensaje = "Error en cargar el reporte_analizado.json "
+
 
         self.lbl_estado = ctk.CTkLabel(self, text=mensaje, text_color="#2ca02c")
         self.lbl_estado.pack(padx=20, pady=10)
@@ -68,8 +83,9 @@ class AppFinanzas(ctk.CTk):
         self.combo_empresa = ctk.CTkComboBox(self.frame_controles, values=empresas if self.base_datos else [])
         self.combo_empresa.grid(row=0, column=1, padx=15, pady=10)
         
+        
         # Selector 2: Ratio / Métrica
-        self.ratios_disponibles = ['Net Income', 'Margen Neto', 'ROE', 'ROA']
+        
         
         self.lbl_ratio = ctk.CTkLabel(self.frame_controles, text="Seleccionar Ratio:", font=ctk.CTkFont(size=13))
         self.lbl_ratio.grid(row=1, column=0, padx=15, pady=10, sticky="w")
@@ -77,6 +93,8 @@ class AppFinanzas(ctk.CTk):
         self.combo_ratio = ctk.CTkComboBox(self.frame_controles, values=self.ratios_disponibles)
         self.combo_ratio.grid(row=1, column=1, padx=15, pady=10)
 
+        #Self ruta excel
+        
         #Elemento para exportar a Excel (nuevo)
         self.btn_excel = ctk.CTkButton(
             self, 
@@ -85,7 +103,7 @@ class AppFinanzas(ctk.CTk):
             font=ctk.CTkFont(weight="bold")
         )
         self.btn_excel.pack(padx=20, pady=15)
-
+        
 
 
     def cargar_base_datos(self):
@@ -113,7 +131,8 @@ class AppFinanzas(ctk.CTk):
     def ejecutar_exportacion(self):
         # Aquí reutilizamos la lógica exacta de tu archivo exporter.py
         try:
-            ratios_a_exportar = ['Net Income', 'Margen Neto', 'ROE', 'ROA', 'Prueba ácida', 'Ratio Deuda/Activo']
+            ratios_a_exportar = ['Net Income', 'Margen Neto', 'ROE', 'ROA', 'Prueba ácida']
+            ruta_excel = "excelDinamico.xlsx"
             with pd.ExcelWriter(ruta_excel, engine='openpyxl') as writer:
                 for empresa, datos_historicos in self.base_datos.items():
                     años_ordenados = sorted(list(datos_historicos.keys()))
@@ -133,3 +152,5 @@ class AppFinanzas(ctk.CTk):
 if __name__ == "__main__":
     app = AppFinanzas()
     app.mainloop()
+
+
