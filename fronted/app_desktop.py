@@ -131,7 +131,8 @@ class AppFinanzas(ctk.CTk):
     def ejecutar_exportacion(self):
         # Aquí reutilizamos la lógica exacta de tu archivo exporter.py
         try:
-            ratios_a_exportar = ['Net Income', 'Margen Neto', 'ROE', 'ROA', 'Prueba ácida']
+            primer_año = list(self.base_datos['Casa Grande'].keys())[0]
+            ratios_a_exportar =  list(self.base_datos['Casa Grande'][primer_año].keys())
             ruta_excel = "excelDinamico.xlsx"
             with pd.ExcelWriter(ruta_excel, engine='openpyxl') as writer:
                 for empresa, datos_historicos in self.base_datos.items():

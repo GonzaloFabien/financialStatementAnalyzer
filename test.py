@@ -1,8 +1,6 @@
 import xml.etree.ElementTree as ET
 from funcion_buscar import buscar_elemento
 from funcion_periodo import encontrar_id_año
-from analyzer import analizar_empresa
-from analyzer import analizar_solvencia
 from analyzer import extraer_source_data_f1
 from analyzer import calcular_ratios_de_extraer_source_data_f2
 import json
