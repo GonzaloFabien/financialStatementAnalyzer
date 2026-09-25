@@ -8,6 +8,7 @@ import xml.etree.ElementTree as ET
 def extraer_source_data_f1(root_empresa, año_a_analizar):
     datos = {
         'Revenue' : buscar_elemento('Revenue',año_a_analizar, root_empresa),
+        'CostOfSales' : buscar_elemento('CostOfSales', año_a_analizar, root_empresa),
         'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', año_a_analizar, root_empresa),
         'ProfitLoss': buscar_elemento('ProfitLoss', año_a_analizar, root_empresa),
         'Equity': buscar_elemento('Equity', año_a_analizar, root_empresa),
@@ -23,6 +24,7 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
 def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     #Se generan varias variables para poder trabajarlas
     revenue = diccionario_fuente_generado['Revenue']
+    cost_of_sales = diccionario_fuente_generado['CostOfSales']
     net_income = diccionario_fuente_generado['ProfitLoss']
     equity = diccionario_fuente_generado['Equity']
     assets = diccionario_fuente_generado['Assets']
@@ -34,6 +36,8 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     
     #Estos son los tag del diccionario a buscar:
     ratios_calculados = {
+        'Revenue' : revenue,
+        'CostOfSales' : cost_of_sales,
         'Equity': equity,
         'CashAndCashEquivalents': cashAndCashEquivalents,
         'Net Income': net_income,

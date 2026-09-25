@@ -1,6 +1,8 @@
 {
     "Casa Grande": {
         "2016": {
+            "Revenue": 555938000,
+            "CostOfSales": 476759000,
             "Equity": 1397294000,
             "CashAndCashEquivalents": 14929000,
             "Net Income": 104635000,
@@ -13,6 +15,8 @@
             "Quick Ratio": 2.429969830886898
         },
         "2017": {
+            "Revenue": 383442000,
+            "CostOfSales": 376485000,
             "Equity": 1365982000,
             "CashAndCashEquivalents": 19192000,
             "Net Income": 2688000,
@@ -25,6 +29,8 @@
             "Quick Ratio": 2.1694474402080823
         },
         "2018": {
+            "Revenue": 429418000,
+            "CostOfSales": 391261000,
             "Equity": 1320026000,
             "CashAndCashEquivalents": 8266000,
             "Net Income": 1537000,
@@ -37,6 +43,8 @@
             "Quick Ratio": 2.2263638565053445
         },
         "2019": {
+            "Revenue": 484791000,
+            "CostOfSales": 405092000,
             "Equity": 1336677000,
             "CashAndCashEquivalents": 62197000,
             "Net Income": 17716000,
@@ -49,6 +57,8 @@
             "Quick Ratio": 2.177948349529247
         },
         "2020": {
+            "Revenue": 611468000,
+            "CostOfSales": 441346000,
             "Equity": 1406734000,
             "CashAndCashEquivalents": 114725000,
             "Net Income": 89088000,
@@ -61,6 +71,8 @@
             "Quick Ratio": 3.380409175449473
         },
         "2021": {
+            "Revenue": 678888000,
+            "CostOfSales": 469699000,
             "Equity": 1463753000,
             "CashAndCashEquivalents": 412680000,
             "Net Income": 140019000,
@@ -73,6 +85,8 @@
             "Quick Ratio": 1.7746651540204998
         },
         "2022": {
+            "Revenue": 745972000,
+            "CostOfSales": 506244000,
             "Equity": 1080179000,
             "CashAndCashEquivalents": 73845000,
             "Net Income": 131932000,
@@ -85,6 +99,8 @@
             "Quick Ratio": 1.8155704608123318
         },
         "2023": {
+            "Revenue": 792536000,
+            "CostOfSales": 539931000,
             "Equity": 1100142000,
             "CashAndCashEquivalents": 9423000,
             "Net Income": 138119000,
@@ -97,6 +113,8 @@
             "Quick Ratio": 1.4274619276477494
         },
         "2024": {
+            "Revenue": 782541000,
+            "CostOfSales": 577012000,
             "Equity": 1049649000,
             "CashAndCashEquivalents": 28063000,
             "Net Income": 73490000,
@@ -109,6 +127,8 @@
             "Quick Ratio": 1.107929661894493
         },
         "2025": {
+            "Revenue": 583342000,
+            "CostOfSales": 463401000,
             "Equity": 952428000,
             "CashAndCashEquivalents": 4337000,
             "Net Income": -33221000,
@@ -123,6 +143,8 @@
     },
     "Cartavio": {
         "2016": {
+            "Revenue": 377322000,
+            "CostOfSales": 327909000,
             "Equity": 537840000,
             "CashAndCashEquivalents": 12721000,
             "Net Income": 64644000,
@@ -135,6 +157,8 @@
             "Quick Ratio": 1.1325678709940805
         },
         "2017": {
+            "Revenue": 271289000,
+            "CostOfSales": 267248000,
             "Equity": 529830000,
             "CashAndCashEquivalents": 6604000,
             "Net Income": 9935000,
@@ -147,6 +171,8 @@
             "Quick Ratio": 1.3222027014693802
         },
         "2018": {
+            "Revenue": 259742000,
+            "CostOfSales": 224044000,
             "Equity": 543715000,
             "CashAndCashEquivalents": 9350000,
             "Net Income": 15404000,
@@ -159,6 +185,8 @@
             "Quick Ratio": 1.0446763725662165
         },
         "2024": {
+            "Revenue": 535074000,
+            "CostOfSales": 348851000,
             "Equity": 383474000,
             "CashAndCashEquivalents": 45081000,
             "Net Income": 91846000,
@@ -171,6 +199,8 @@
             "Quick Ratio": 0.73610004649847
         },
         "2019": {
+            "Revenue": 319125000,
+            "CostOfSales": 251785000,
             "Equity": 576919000,
             "CashAndCashEquivalents": 22044000,
             "Net Income": 35426000,
@@ -183,6 +213,8 @@
             "Quick Ratio": 1.4748324479172235
         },
         "2020": {
+            "Revenue": 335672000,
+            "CostOfSales": 233001000,
             "Equity": 616157000,
             "CashAndCashEquivalents": 22012000,
             "Net Income": 79544000,
@@ -195,6 +227,8 @@
             "Quick Ratio": 1.0873520159880985
         },
         "2021": {
+            "Revenue": 373577000,
+            "CostOfSales": 259284000,
             "Equity": 620969000,
             "CashAndCashEquivalents": 179927000,
             "Net Income": 79642000,
@@ -207,6 +241,8 @@
             "Quick Ratio": 1.213061479019473
         },
         "2023": {
+            "Revenue": 507828000,
+            "CostOfSales": 336607000,
             "Equity": 392288000,
             "CashAndCashEquivalents": 18469000,
             "Net Income": 106404000,
@@ -219,6 +255,8 @@
             "Quick Ratio": 0.8072380840266887
         },
         "2022": {
+            "Revenue": 466062000,
+            "CostOfSales": 282002000,
             "Equity": 396751000,
             "CashAndCashEquivalents": 16392000,
             "Net Income": 132490000,
@@ -231,6 +269,8 @@
             "Quick Ratio": 1.055200638308266
         },
         "2025": {
+            "Revenue": 388163000,
+            "CostOfSales": 299661000,
             "Equity": 335053000,
             "CashAndCashEquivalents": 13750000,
             "Net Income": 46053000,

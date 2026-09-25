@@ -7,7 +7,7 @@ import json
 import os
 
 #Aquí vamos a colocar los años de los documentos que vamos a descargar:
-cartavio = ["2016", "2017","2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]
+casa_grande = ["2016", "2017","2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]
 
 ruta_json_existente = "data_xml/reporte_analizado.json"
 
@@ -20,13 +20,13 @@ else:
     tabla_guardada = {}
 
 #Si no existe nuestra actual empresa a importar, entonces la creamos:
-if "Cartavio" not in tabla_guardada:
-    tabla_guardada['Cartavio'] = {}
+if "Casa Grande" not in tabla_guardada:
+    tabla_guardada['Casa Grande'] = {}
 
 
 #Se inicia el bucle:-----------------------------------------------------
-for año in cartavio:
-    nombre_importacion = f"data_xml/cartavio{año}.xml" 
+for año in casa_grande:
+    nombre_importacion = f"data_xml/casa_grande{año}.xml" 
 
     #Test para verificar si el archivo existe:
     if not os.path.exists(nombre_importacion):
@@ -50,7 +50,7 @@ for año in cartavio:
     ratios_calculados_anual = calcular_ratios_de_extraer_source_data_f2(data_empresa_anual)
 
     #5- Añadimos la data y ratios analizados al nuevo diccionario:
-    tabla_guardada["Cartavio"][año] = ratios_calculados_anual
+    tabla_guardada["Casa Grande"][año] = ratios_calculados_anual
 
     #Comentario opcional de funcionalidad del código:
     print(f"\tFuncionó con Éxito la lectura del archivo xml, para el año: |{año}")
