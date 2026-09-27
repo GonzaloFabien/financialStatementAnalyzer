@@ -74,15 +74,25 @@ class AppFinanzas(ctk.CTk):
         # Creamos una "caja" interna para agrupar los desplegables
         self.frame_controles = ctk.CTkFrame(self)
         self.frame_controles.pack(padx=20, pady=20, fill="x")
+
+        #Configuramos la figura 1, para que absorba el espacio disponible:
+        self.frame_controles.grid_columnconfigure(1, weight=1)
         
         # Selector 1: Empresa
-        self.lbl_empresa = ctk.CTkLabel(self.frame_controles, text="Seleccionar Empresa:", font=ctk.CTkFont(size=13))
+        self.lbl_empresa = ctk.CTkLabel(self.frame_controles, text="Seleccionar Empresa:", font=ctk.CTkFont(size=13, weight='bold'))
         self.lbl_empresa.grid(row=0, column=0, padx=15, pady=10, sticky="w")
         
         # CORRECCIÓN: Se cambió self.empresas por empresas (o una lista vacía si falla la carga)
-        self.combo_empresa = ctk.CTkComboBox(self.frame_controles, values=empresas if self.base_datos else [])
-        self.combo_empresa.grid(row=0, column=1, padx=15, pady=10)
-        
+        self.combo_empresa = ctk.CTkComboBox(
+            self.frame_controles,
+            values = empresas if self.base_datos else [],
+            width= 220,
+            border_color="#1f77b4",
+            button_color= "#1f77b4",
+            button_hover_color= "#115584"
+        )
+        #Agregamos sticky="ew" para alinearlos perfectamente
+        self.combo_empresa.grid(row=0, column=1, padx=15, pady=10, sticky="w")
         
         # Selector 2: Ratio / Métrica
         
@@ -90,8 +100,15 @@ class AppFinanzas(ctk.CTk):
         self.lbl_ratio = ctk.CTkLabel(self.frame_controles, text="Seleccionar Ratio:", font=ctk.CTkFont(size=13))
         self.lbl_ratio.grid(row=1, column=0, padx=15, pady=10, sticky="w")
         
-        self.combo_ratio = ctk.CTkComboBox(self.frame_controles, values=self.ratios_disponibles)
-        self.combo_ratio.grid(row=1, column=1, padx=15, pady=10)
+        self.combo_ratio = ctk.CTkComboBox(
+            self.frame_controles, 
+            values=self.ratios_disponibles,
+            width= 220,
+            border_color="#1f77b4",
+            button_color="#1f77b4",
+            button_hover_color="#115584"
+        )
+        self.combo_ratio.grid(row=1, column=1, padx=15, pady=10, sticky="w")
 
         #Self ruta excel
         
