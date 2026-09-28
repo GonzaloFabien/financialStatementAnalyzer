@@ -17,7 +17,7 @@ class AppFinanzas(ctk.CTk):
 
         #Títulos y otros:
         self.title("SMV Equity Analytics - Desktop Edition")
-        self.geometry("600x400")
+        self.geometry("720x520")
 
 
         #Conexión segura a la BD NoSQL Json:
@@ -73,14 +73,14 @@ class AppFinanzas(ctk.CTk):
         # --- CONTENEDOR DE CONTROLES (FRAME INTERACTIVO) ---
         # Creamos una "caja" interna para agrupar los desplegables
         self.frame_controles = ctk.CTkFrame(self)
-        self.frame_controles.pack(padx=20, pady=20, fill="x")
+        self.frame_controles.pack(padx=20, pady=15, fill="x")
 
         #Configuramos la figura 1, para que absorba el espacio disponible:
         self.frame_controles.grid_columnconfigure(1, weight=1)
-        
-        # Selector 1: Empresa
-        self.lbl_empresa = ctk.CTkLabel(self.frame_controles, text="Seleccionar Empresa:", font=ctk.CTkFont(size=13, weight='bold'))
-        self.lbl_empresa.grid(row=0, column=0, padx=15, pady=10, sticky="w")
+
+        #------ Row 0: Empresa 1 ------
+        self.lbl_empresa = ctk.CTkLabel(self.frame_controles, text="Empresa 1 (azul):", font=ctk.CTkFont(size=13, weight='bold'))
+        self.lbl_empresa.grid(row=0, column=0, padx=15, pady=8, sticky="w")
         
         # CORRECCIÓN: Se cambió self.empresas por empresas (o una lista vacía si falla la carga)
         self.combo_empresa = ctk.CTkComboBox(
@@ -92,21 +92,22 @@ class AppFinanzas(ctk.CTk):
             button_hover_color= "#115584"
         )
         #Agregamos sticky="ew" para alinearlos perfectamente
-        self.combo_empresa.grid(row=0, column=1, padx=15, pady=10, sticky="w")
-        
+        self.combo_empresa.grid(row=0, column=1, padx=15, pady=8, sticky="w")
+
+        #------ ROW 1: Emprea 2 ------
         #Combobox de la segunda empresa a anlizar:
-        self.lbl_empresa2 = ctk.CTkLabel(self.frame_controles, text="Empresa 2 (Naranja):", font=ctk.CTkFont(size=13, weight="bold"))
-        self.lbl_empresa2.grid(row=1, column=0, padx=15, pady=10, sticky="w") # <-- Corregido pady a 10
+        self.lbl_empresa2 = ctk.CTkLabel(self.frame_controles, text="Empresa 2 ", font=ctk.CTkFont(size=13, weight="bold"))
+        self.lbl_empresa2.grid(row=1, column=0, padx=15, pady=8, sticky="w") # <-- Corregido pady a 10
         
         self.combo_empresa2 = ctk.CTkComboBox(
             self.frame_controles, 
             values=empresas if self.base_datos else [],
             width=220,
-            border_color="#1f77b4",          
-            button_color="#1f77b4",          
-            button_hover_color="#115584"     
+            border_color="#b41f1f",          
+            button_color="#b41f1f",          
+            button_hover_color="#FB1515"     
         )
-        self.combo_empresa2.grid(row=1, column=1, padx=15, pady=10, sticky="w")
+        self.combo_empresa2.grid(row=1, column=1, padx=15, pady=8, sticky="w")
         if self.base_datos and len(empresas) > 1: 
             self.combo_empresa2.set(empresas[1]) # Protegido si falla la BD
 
@@ -124,7 +125,7 @@ class AppFinanzas(ctk.CTk):
             button_color="#1f77b4",
             button_hover_color="#115584"
         )
-        self.combo_ratio.grid(row=1, column=1, padx=15, pady=10, sticky="w")
+        self.combo_ratio.grid(row=2, column=1, padx=15, pady=10, sticky="w")
 
         #Self ruta excel
         
@@ -150,11 +151,16 @@ class AppFinanzas(ctk.CTk):
         try:
             self.lbl_estado.configure(text="⏳ Procesando datos y dibujando gráfico...", text_color="#ffb703")
             self.update() # Fuerza a la ventana a actualizar el texto de inmediato
-            
+
+            #Segmentamos en dos empresas: 
+            empresa_1 = self.combo_empresa.get()
+            empresa_2 = self.combo_empresa2.get()
+            ratio_a_analizar = self.combo_ratio.get()
+
             # Ejecutamos el comando 'python reporte.py'en la raiz inicial
             carpeta_actual = os.path.dirname(os.path.abspath(__file__))
             ruta_reporte_py = os.path.abspath(os.path.join(carpeta_actual,"..","reporte.py"))
-            subprocess.run(["python", ruta_reporte_py], check=True)
+            subprocess.run(["python", ruta_reporte_py, empresa_1, empresa_2, ratio_a_analizar], check=True)
             
             self.lbl_estado.configure(text="✅ ¡Gráfico de Competidores Abierto!", text_color="#2ca02c")
         except Exception as e:
