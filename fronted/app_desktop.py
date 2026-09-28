@@ -94,6 +94,22 @@ class AppFinanzas(ctk.CTk):
         #Agregamos sticky="ew" para alinearlos perfectamente
         self.combo_empresa.grid(row=0, column=1, padx=15, pady=10, sticky="w")
         
+        #Combobox de la segunda empresa a anlizar:
+        self.lbl_empresa2 = ctk.CTkLabel(self.frame_controles, text="Empresa 2 (Naranja):", font=ctk.CTkFont(size=13, weight="bold"))
+        self.lbl_empresa2.grid(row=1, column=0, padx=15, pady=10, sticky="w") # <-- Corregido pady a 10
+        
+        self.combo_empresa2 = ctk.CTkComboBox(
+            self.frame_controles, 
+            values=empresas if self.base_datos else [],
+            width=220,
+            border_color="#1f77b4",          
+            button_color="#1f77b4",          
+            button_hover_color="#115584"     
+        )
+        self.combo_empresa2.grid(row=1, column=1, padx=15, pady=10, sticky="w")
+        if self.base_datos and len(empresas) > 1: 
+            self.combo_empresa2.set(empresas[1]) # Protegido si falla la BD
+
         # Selector 2: Ratio / Métrica
         
         
