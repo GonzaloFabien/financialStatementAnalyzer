@@ -3,6 +3,17 @@ import os
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker 
 
+
+# Sistema dinámico para atrapar los argumentos enviados desde la app de escritorio
+if len(sys.argv) > 3:
+    nombre_empresa_1 = sys.argv[1]
+    nombre_empresa_2 = sys.argv[2]
+    ratio_a_graficar = sys.argv[3]
+else:
+    nombre_empresa_1 = "Casa Grande"
+    nombre_empresa_2 = "Cartavio"
+    ratio_a_graficar = 'Net Margin'
+
 nombre_empresa_1 = "Casa Grande"
 nombre_empresa_2 = "Cartavio"
 
