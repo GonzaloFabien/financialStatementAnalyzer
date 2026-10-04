@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker 
 
@@ -10,12 +11,11 @@ if len(sys.argv) > 3:
     nombre_empresa_2 = sys.argv[2]
     ratio_a_graficar = sys.argv[3]
 else:
+    #Respaldo adicional 
     nombre_empresa_1 = "Casa Grande"
     nombre_empresa_2 = "Cartavio"
     ratio_a_graficar = 'Net Margin'
 
-nombre_empresa_1 = "Casa Grande"
-nombre_empresa_2 = "Cartavio"
 
 #1- Conectamos a la BD Json:
 carpeta_sctipt_actual = os.path.dirname(os.path.abspath(__file__))
@@ -26,8 +26,8 @@ with open(ruta_json, "r", encoding="utf-8") as archivo:
     datos_personalizdos  = json.load(archivo)
 
 #2- Extraemos los diccionarios de ambas emrpesas:
-diccionario_casa_grande = datos_personalizdos.get('Casa Grande', {})
-diccionario_cartavio =  datos_personalizdos.get('Cartavio', {})
+diccionario_casa_grande = datos_personalizdos.get(nombre_empresa_1, {})
+diccionario_cartavio =  datos_personalizdos.get(nombre_empresa_2, {})
 
 #3- Detectamos los años que comparten ambas empresas:
 años_casa_grande = set(diccionario_casa_grande.keys())
@@ -37,8 +37,6 @@ años_comunes = sorted(list(años_casa_grande.intersection(años_cartavio)))
 """
 #-----IMPORTANTE, aquí el ratio que queremos comparar/MOSTRAR:
 """
-
-ratio_a_graficar = 'Net Margin'
 
 #4- Aquí de desgloza los valores del ratio a graficar 'Net Income' para cada año disponible
 valores_casa_grande = [diccionario_casa_grande[año].get(ratio_a_graficar, 0) for año in años_comunes]
