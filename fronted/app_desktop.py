@@ -127,6 +127,17 @@ class AppFinanzas(ctk.CTk):
         )
         self.combo_ratio.grid(row=2, column=1, padx=15, pady=10, sticky="w")
 
+        # Botón secundario para activar la Tabla Numérica Histórica (Empresa 1)
+        self.btn_tabla = ctk.CTkButton(
+            self, 
+            text="📊 Mostrar Tabla Histórica (Empresa 1)", 
+            command=self.mostrar_tabla_numerica,
+            fg_color="#2ca02c", # Color verde para diferenciarlo del gráfico azul
+            hover_color="#1e7e1e",
+            font=ctk.CTkFont(weight="bold", size=14),
+            height=40
+        )
+        self.btn_tabla.pack(padx=20, pady=10)
         #Self ruta excel
         
         #Elemento para exportar a Excel (nuevo)
@@ -167,6 +178,9 @@ class AppFinanzas(ctk.CTk):
             self.lbl_estado.configure(text=f"❌ Error al lanzar report_engine.py: {str(e)}", text_color="#d32f2f")
 
     
+    def mostrar_tabla_numerica(self):
+        mostrar = "se mostrara"
+
     def ejecutar_exportacion(self):
         # Aquí reutilizamos la lógica exacta de tu archivo exporter.py
         try:
