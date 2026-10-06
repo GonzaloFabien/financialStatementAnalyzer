@@ -179,7 +179,16 @@ class AppFinanzas(ctk.CTk):
 
     
     def mostrar_tabla_numerica(self):
-        mostrar = "se mostrara"
+        #Encerramos en un try-catch:
+        try:
+            for widget in self.frame_tabla.winfo_children():
+                widget.destroy()
+            
+            empresa_activa = self.combo_empresa.get()
+            datos_empresa = self.base_datos.get(empresa_activa, {})
+
+            if not datos_empresa:
+                self.lbl_estado.condigure(text=f"no se encuentran datos para {empresa_activa}")
 
     def ejecutar_exportacion(self):
         # Aquí reutilizamos la lógica exacta de tu archivo exporter.py
