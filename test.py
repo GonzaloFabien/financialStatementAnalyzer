@@ -19,47 +19,51 @@ else:
     #Si por alguna razón no existe tabla_historial la creamos desde cero:
     tabla_guardada = {}
 
-#Si no existe nuestra actual empresa a importar, entonces la creamos:
-if "Casa Grande" not in tabla_guardada:
-    tabla_guardada['Casa Grande'] = {}
+"""
+    Se crea la función para poder agregar empresas más rápidamente, solo coloca el nombre:
+"""
+def agregar_empresa_a_bd(nombre_base, nombre_file):
+    #Si no existe nuestra actual empresa a importar, entonces la creamos:
+    if nombre_base not in tabla_guardada:
+        tabla_guardada[nombre_base] = {}
 
 
-#Se inicia el bucle:-----------------------------------------------------
-for año in casa_grande:
-    nombre_importacion = f"data_xml/casa_grande{año}.xml" 
+    #Se inicia el bucle:-----------------------------------------------------
+    for año in casa_grande:
+        nombre_importacion = f"data_xml/{nombre_file}{año}.xml" 
 
-    #Test para verificar si el archivo existe:
-    if not os.path.exists(nombre_importacion):
-        print(f"El archivo {nombre_importacion} para el año {año} no existe")
-        continue    
+        #Test para verificar si el archivo existe:
+        if not os.path.exists(nombre_importacion):
+            print(f"El archivo {nombre_importacion} para el año {año} no existe")
+            continue    
 
-    #1- conexión al XML
-    try:
-        root_anual = ET.parse(nombre_importacion).getroot()
-    except ET.ParseError as ex:
-        print(f"\tAlereta, no se pudo leer el archivo del año {año}")
-        continue
-    
-    #2- Buscamos y encontramos el ID de cada elemento por su año:
-    ids_anual = encontrar_id_año(año, root_anual)
+        #1- conexión al XML
+        try:
+            root_anual = ET.parse(nombre_importacion).getroot()
+        except ET.ParseError as ex:
+            print(f"\tAlereta, no se pudo leer el archivo del año {año}")
+            continue
+        
+        #2- Buscamos y encontramos el ID de cada elemento por su año:
+        ids_anual = encontrar_id_año(año, root_anual)
 
-    #3- Datos encontrados en el diccionario:
-    data_empresa_anual = extraer_source_data_f1(root_anual, ids_anual)
+        #3- Datos encontrados en el diccionario:
+        data_empresa_anual = extraer_source_data_f1(root_anual, ids_anual)
 
-    #4- Se calcula los datos de cada año:
-    ratios_calculados_anual = calcular_ratios_de_extraer_source_data_f2(data_empresa_anual)
+        #4- Se calcula los datos de cada año:
+        ratios_calculados_anual = calcular_ratios_de_extraer_source_data_f2(data_empresa_anual)
 
-    #5- Añadimos la data y ratios analizados al nuevo diccionario:
-    tabla_guardada["Casa Grande"][año] = ratios_calculados_anual
+        #5- Añadimos la data y ratios analizados al nuevo diccionario:
+        tabla_guardada[nombre_base][año] = ratios_calculados_anual
 
-    #Comentario opcional de funcionalidad del código:
-    print(f"\tFuncionó con Éxito la lectura del archivo xml, para el año: |{año}")
+        #Comentario opcional de funcionalidad del código:
+        print(f"\tFuncionó con Éxito la lectura del {nombre_file} xml, para el año: |{año}")
 
-#6- acabado el proceso de iteración guardamos en el Json:
-with open("data_xml/reporte_analizado.json", "w", encoding="utf-8") as archivo_json: 
-    json.dump(tabla_guardada, archivo_json, indent=4, ensure_ascii=False)
+    #6- acabado el proceso de iteración guardamos en el Json:
+    with open("data_xml/reporte_analizado.json", "w", encoding="utf-8") as archivo_json: 
+        json.dump(tabla_guardada, archivo_json, indent=4, ensure_ascii=False)
 
-#Fin del bucle----
+    #Fin del bucle----
 
 
 
@@ -103,3 +107,10 @@ for ratio in ratios_a_mostrar:
     valor_Cartavio = tabla_horizontal['Cartavio'][ratio]
     print(f"{ratio:<25} | {valor_casaGrande:<13.2f} | {valor_Cartavio:<13.2f}")
 print("-"*40)
+
+
+
+#Proceso para ejecutar correctamente todo el código:
+
+if __name__ == "__main__":
+    agregar_empresa_a_bd("Pluz Energia","pluz_energia")
