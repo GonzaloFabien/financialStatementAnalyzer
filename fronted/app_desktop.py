@@ -127,6 +127,44 @@ class AppFinanzas(ctk.CTk):
         )
         self.combo_ratio.grid(row=2, column=1, padx=15, pady=10, sticky="w")
 
+        #aa
+
+        self.entry_buscar_ratio = ctk.CTkEntry(
+            self, 
+            placeholder_text="🔍 Escribe para filtrar ratios (ej: Margin, Net)...",
+            width=400
+        )
+        self.entry_buscar_ratio.pack(padx=20, pady=5)
+        
+        # Vinculamos el evento de soltar una tecla para que ejecute la lógica de filtrado al instante
+        self.entry_buscar_ratio.bind("<KeyRelease>", lambda event: self.mostrar_tabla_numerica())
+
+        # Botón secundario para activar la Tabla Numérica Histórica (Empresa 1)
+        self.btn_tabla = ctk.CTkButton(
+            self, 
+            text="📊 Mostrar Tabla Histórica (Empresa 1)", 
+            command=self.mostrar_tabla_numerica,
+            fg_color="#2ca02c", 
+            hover_color="#1e7e1e",
+            font=ctk.CTkFont(weight="bold", size=14),
+            height=40
+        )
+        self.btn_tabla.pack(padx=20, pady=10)
+
+        # Contenedor con scroll para la Rejilla de Datos
+        self.frame_tabla = ctk.CTkScrollableFrame(self, height=180)
+
+        #Self ruta excel
+        
+        #Elemento para exportar a Excel (nuevo)
+        self.btn_excel = ctk.CTkButton(
+            self, 
+            text="📥 Exportar Base de Datos a Excel", 
+            command=self.ejecutar_exportacion,
+            font=ctk.CTkFont(weight="bold")
+        )
+        self.btn_excel.pack(padx=20, pady=15)
+        
         # Botón secundario para activar la Tabla Numérica Histórica (Empresa 1)
         self.btn_tabla = ctk.CTkButton(
             self, 
