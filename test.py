@@ -113,4 +113,4 @@ print("-"*40)
 #Proceso para ejecutar correctamente todo el código:
 
 if __name__ == "__main__":
-    agregar_empresa_a_bd("Pluz Energia","pluz_energia")
+    agregar_empresa_a_bd("Clorox","clorox")

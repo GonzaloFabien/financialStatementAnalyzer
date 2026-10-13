@@ -23,16 +23,16 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
 #FUNCION 2: Esta función solo hará matemática y generará los ratios:
 def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     #Se generan varias variables para poder trabajarlas
-    revenue = diccionario_fuente_generado['Revenue']
+    revenue = diccionario_fuente_generado['Revenue'] or 0
     cost_of_sales = diccionario_fuente_generado['CostOfSales']
     net_income = diccionario_fuente_generado['ProfitLoss']
-    equity = diccionario_fuente_generado['Equity']
-    assets = diccionario_fuente_generado['Assets']
+    equity = diccionario_fuente_generado['Equity'] or 0
+    assets = diccionario_fuente_generado['Assets'] or 0
     liabilities = diccionario_fuente_generado['Liabilities']
-    current_assets = diccionario_fuente_generado['CurrentAssets']
-    inventories = diccionario_fuente_generado['Inventories']
-    current_liabilities = diccionario_fuente_generado['CurrentLiabilities']
-    cashAndCashEquivalents = diccionario_fuente_generado['CashAndCashEquivalents']
+    current_assets = diccionario_fuente_generado['CurrentAssets'] or 0
+    inventories = diccionario_fuente_generado['Inventories'] or 0 
+    current_liabilities = diccionario_fuente_generado['CurrentLiabilities'] or 0
+    cashAndCashEquivalents = diccionario_fuente_generado['CashAndCashEquivalents']or 0 
     
     #Estos son los tag del diccionario a buscar:
     ratios_calculados = {
