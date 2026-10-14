@@ -566,5 +566,35 @@
             "Debt Asset Ratio": 50.38846095912823,
             "Quick Ratio": 0.32344157831145326
         }
+    },
+    "Clorox": {
+        "2022": {
+            "Revenue": 0,
+            "CostOfSales": null,
+            "Equity": 0,
+            "CashAndCashEquivalents": 0,
+            "Net Income": 471000000,
+            "Net Margin": 0,
+            "ROE": 0,
+            "ROA": 0,
+            "Cash Ratio": 0,
+            "Current Ratio": 0,
+            "Debt Asset Ratio": 0,
+            "Quick Ratio": 0
+        },
+        "2025": {
+            "Revenue": 0,
+            "CostOfSales": null,
+            "Equity": 0,
+            "CashAndCashEquivalents": 0,
+            "Net Income": 601000000,
+            "Net Margin": 0,
+            "ROE": 0,
+            "ROA": 0,
+            "Cash Ratio": 0,
+            "Current Ratio": 0,
+            "Debt Asset Ratio": 0,
+            "Quick Ratio": 0
+        }
     }
 }
