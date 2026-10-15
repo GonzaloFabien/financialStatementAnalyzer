@@ -595,6 +595,34 @@
             "Current Ratio": 0,
             "Debt Asset Ratio": 0,
             "Quick Ratio": 0
+        },
+        "2023": {
+            "Revenue": 0,
+            "CostOfSales": null,
+            "Equity": 0,
+            "CashAndCashEquivalents": 0,
+            "Net Income": 161000000,
+            "Net Margin": 0,
+            "ROE": 0,
+            "ROA": 0,
+            "Cash Ratio": 0,
+            "Current Ratio": 0,
+            "Debt Asset Ratio": 0,
+            "Quick Ratio": 0
+        },
+        "2024": {
+            "Revenue": 0,
+            "CostOfSales": null,
+            "Equity": 0,
+            "CashAndCashEquivalents": 0,
+            "Net Income": 292000000,
+            "Net Margin": 0,
+            "ROE": 0,
+            "ROA": 0,
+            "Cash Ratio": 0,
+            "Current Ratio": 0,
+            "Debt Asset Ratio": 0,
+            "Quick Ratio": 0
         }
     }
 }
