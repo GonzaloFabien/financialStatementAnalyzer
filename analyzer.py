@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 #FUNCION 1: Esta función solo extrae datos a un diccionario anidado:
 def extraer_source_data_f1(root_empresa, año_a_analizar):
     datos = {
-        'Revenue' : buscar_elemento('Revenue',año_a_analizar, root_empresa),
+        'Revenue' : buscar_elemento('RevenueFromContractWithCustomerExcludingAssessedTax',año_a_analizar, root_empresa),
         'CostOfSales' : buscar_elemento('CostOfSales', año_a_analizar, root_empresa),
         'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', año_a_analizar, root_empresa),
         'ProfitLoss': buscar_elemento('ProfitLoss', año_a_analizar, root_empresa),
@@ -25,7 +25,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     #Se generan varias variables para poder trabajarlas
     revenue = diccionario_fuente_generado['Revenue'] or 0
     cost_of_sales = diccionario_fuente_generado['CostOfSales']
-    net_income = diccionario_fuente_generado['ProfitLoss']
+    net_income = diccionario_fuente_generado['ProfitLoss'] or 0
     equity = diccionario_fuente_generado['Equity'] or 0
     assets = diccionario_fuente_generado['Assets'] or 0
     liabilities = diccionario_fuente_generado['Liabilities']
