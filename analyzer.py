@@ -5,6 +5,7 @@ from funcion_buscar import buscar_elemento
 import xml.etree.ElementTree as ET
 
 #FUNCION 1: Esta función solo extrae datos a un diccionario anidado:
+#MANTENIMIENTO:
 def extraer_source_data_f1(root_empresa, año_a_analizar):
     datos = {
         'Revenue' : buscar_elemento('RevenueFromContractWithCustomerExcludingAssessedTax',año_a_analizar, root_empresa),
