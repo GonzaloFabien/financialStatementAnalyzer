@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 #MANTENIMIENTO:
 def extraer_source_data_f1(root_empresa, año_a_analizar):
     datos = {
-        'Revenue' : buscar_elemento('RevenueFromContractWithCustomerExcludingAssessedTax',año_a_analizar, root_empresa),
+        'Revenue' : buscar_elemento('Revenue',año_a_analizar, root_empresa) or  buscar_elemento('RevenueFromContractWithCustomerExcludingAssessedTax',año_a_analizar, root_empresa),
         'CostOfSales' : buscar_elemento('CostOfSales', año_a_analizar, root_empresa),
         'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', año_a_analizar, root_empresa),
         'ProfitLoss': buscar_elemento('ProfitLoss', año_a_analizar, root_empresa),
