@@ -9,14 +9,14 @@ import xml.etree.ElementTree as ET
 def extraer_source_data_f1(root_empresa, año_a_analizar):
     datos = {
         'Revenue' : buscar_elemento('Revenue',año_a_analizar, root_empresa) or  buscar_elemento('RevenueFromContractWithCustomerExcludingAssessedTax',año_a_analizar, root_empresa),
-        'CostOfSales' : buscar_elemento('CostOfSales', año_a_analizar, root_empresa),
-        'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', año_a_analizar, root_empresa),
-        'ProfitLoss': buscar_elemento('ProfitLoss', año_a_analizar, root_empresa),
-        'Equity': buscar_elemento('Equity', año_a_analizar, root_empresa),
-        'Assets': buscar_elemento('Assets', año_a_analizar, root_empresa),
-        'Liabilities': buscar_elemento('Liabilities', año_a_analizar, root_empresa),
-        'CurrentAssets': buscar_elemento('CurrentAssets', año_a_analizar, root_empresa),
-        'Inventories': buscar_elemento('Inventories', año_a_analizar, root_empresa),
+        'CostOfSales' : buscar_elemento('CostOfSales', año_a_analizar, root_empresa) or buscar_elemento('CostOfGoodsAndServicesSold',año_a_analizar, root_empresa) or buscar_elemento('CostOfGoodsSold',año_a_analizar, root_empresa) ,
+        'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', año_a_analizar, root_empresa) or buscar_elemento('CashAndCashEquivalentsAtCarryingValue',año_a_analizar, root_empresa),
+        'ProfitLoss': buscar_elemento('ProfitLoss', año_a_analizar, root_empresa) or buscar_elemento('NetIncomeLoss',año_a_analizar, root_empresa),
+        'Equity': buscar_elemento('Equity', año_a_analizar, root_empresa) or buscar_elemento('StockholdersEquity',año_a_analizar, root_empresa) or buscar_elemento('StockholdersEquity',año_a_analizar, root_empresa) or buscar_elemento('PartnersCapital', año_a_analizar, root_empresa) or buscar_elemento('LimitedLiabilityCompanyLlcMembersEquityIncludingPortionAttributableToNoncontrollingInterest', año_a_analizar, root_empresa),
+        'Assets': buscar_elemento('Assets', año_a_analizar, root_empresa) or buscar_elemento('Assets', año_a_analizar, root_empresa),
+        'Liabilities': buscar_elemento('LiabilitiesAndStockholdersEquity', año_a_analizar, root_empresa) or buscar_elemento('LiabilitiesAndStockholdersEquity', año_a_analizar, root_empresa),
+        'CurrentAssets': buscar_elemento('CurrentAssets', año_a_analizar, root_empresa) or buscar_elemento('AssetsCurrent', año_a_analizar, root_empresa),
+        'Inventories': buscar_elemento('Inventories', año_a_analizar, root_empresa) or buscar_elemento('InventoryNet', año_a_analizar, root_empresa),
         'CurrentLiabilities': buscar_elemento('CurrentLiabilities', año_a_analizar, root_empresa)
     }
     return datos
@@ -29,7 +29,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     net_income = diccionario_fuente_generado['ProfitLoss'] or 0
     equity = diccionario_fuente_generado['Equity'] or 0
     assets = diccionario_fuente_generado['Assets'] or 0
-    liabilities = diccionario_fuente_generado['Liabilities']
+    liabilities = diccionario_fuente_generado['Liabilities'] or 0
     current_assets = diccionario_fuente_generado['CurrentAssets'] or 0
     inventories = diccionario_fuente_generado['Inventories'] or 0 
     current_liabilities = diccionario_fuente_generado['CurrentLiabilities'] or 0

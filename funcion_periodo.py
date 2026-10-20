@@ -6,6 +6,8 @@ import xml.etree.ElementTree as ET
 def cortar_llaves(tag):
     return tag.split('}')[-1] if '}' in tag else tag
 
+#empresa_a_buscar es el documento xml, cartavio2024.xml por ejemplo
+
 def encontrar_id_año(año_buscado, empresa_a_buscar):
     # En caso de que el archivo XML no se haya cargado correctamente
     if empresa_a_buscar is None:

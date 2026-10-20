@@ -33,6 +33,11 @@ def buscar_elemento(nombre_tag, id_buscado, root):
                     elemento_encontrado = elementos.text
                     return int(elemento_encontrado)
                     print(f"nombre del tag : {nombre_tag} = || {elementos.text} || con id:{elementos.get('contextRef')}")
+        #3-Condicional para US-GAAP:
+        if len(id_buscado) > 2:
+             if elemento_recortado == nombre_tag and id_buscado[2] == elementos.get('contextRef'):
+                elemento_encontrado = elementos.text
+                return int(elemento_encontrado)
 
     
 

@@ -7,7 +7,7 @@ import json
 import os
 
 #Aquí vamos a colocar los años de los documentos que vamos a descargar:
-casa_grande = ["2016", "2017","2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]
+años_a_buscar = ["2016", "2017","2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]
 
 ruta_json_existente = "data_xml/reporte_analizado.json"
 
@@ -29,7 +29,7 @@ def agregar_empresa_a_bd(nombre_base, nombre_file):
 
 
     #Se inicia el bucle:-----------------------------------------------------
-    for año in casa_grande:
+    for año in años_a_buscar:
         nombre_importacion = f"data_xml/{nombre_file}{año}.xml" 
 
         #Test para verificar si el archivo existe:

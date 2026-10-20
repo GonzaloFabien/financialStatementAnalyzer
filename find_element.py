@@ -2,9 +2,9 @@
 
 import xml.etree.ElementTree as ET
 
-tree = ET.parse("casaGrande2024.xml")
+tree = ET.parse("data_xml/clorox2020.xml")
 root = tree.getroot()
-find_element = "revenue" #<-- The parentheses goes with lowerCase
+find_element = "equity" #<-- The parentheses goes with lowerCase
 
 
 print("--- Rastreando cuentas con nombres similares de efectivo:")
