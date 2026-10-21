@@ -38,6 +38,7 @@ def buscar_elemento(nombre_tag, id_buscado, root):
              if elemento_recortado == nombre_tag and id_buscado[2] == elementos.get('contextRef'):
                 elemento_encontrado = elementos.text
                 return int(elemento_encontrado)
+    return None #Esto al final si es que buscó y buscó  y no encontró nada
 
     
 
