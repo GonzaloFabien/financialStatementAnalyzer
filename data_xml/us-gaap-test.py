@@ -1,18 +1,12 @@
 import xml.etree.ElementTree as ET
 
-# Definición de los Namespaces según el encabezado del archivo
-namespaces = {
-    'xbrli': 'http://xbrl.org',
-    'us-gaap': 'http://fasb.org',  # Taxonomía identificada
-    'clx': 'http://clorox.com'
-}
-
-def leer_xbrl_liabilities_equity(xml_content):
-    # Cargar el contenido XML
-    root = ET.fromstring(xml_content)
+def leer_xbrl_ajustado(xml_file_path):
+    # Cargar el archivo directamente desde tu ruta local
+    tree = ET.parse(xml_file_path)
+    root = tree.getroot()
     
-    # Lista de etiquetas us-gaap objetivo para liabilities y equity
-    target_tags = [
+    # Lista de conceptos clave que queremos encontrar (Pasivo y Patrimonio)
+    conceptos_objetivo = [
         'Liabilities', 
         'LiabilitiesCurrent', 
         'StockholdersEquity', 
@@ -20,27 +14,32 @@ def leer_xbrl_liabilities_equity(xml_content):
         'TreasuryStockValue'
     ]
     
-    print(f"{'Concepto US-GAAP':<40} | {'Contexto':<12} | {'Valor':<15}")
-    print("-" * 75)
+    # Filtro de contextos anuales principales del documento
+    contextos_validos = ['FI2017Q4', 'FI2016Q4']
     
-    # Buscar cada elemento dentro del archivo usando el espacio de nombres de us-gaap
-    for tag in target_tags:
-        # Formato de búsqueda: {namespace}tag
-        search_path = f".//us-gaap:{tag}"
-        elements = root.findall(search_path, namespaces)
+    print(f"{'Concepto Encontrado':<40} | {'Contexto':<12} | {'Valor original':<15} | {'Formateado':<15}")
+    print("-" * 90)
+    
+    # Iteramos sobre absolutamente todos los elementos del XML para no perder ninguno por culpa del Namespace
+    for elem in root.iter():
+        # Extraemos solo el nombre de la etiqueta (eliminando lo que esté entre {})
+        tag_name = elem.tag.split('}')[-1]
         
-        for elem in elements:
-            context = elem.get('contextRef')
-            value = elem.text
-            # Filtrar por los contextos principales de balance anual (2017 y 2016)
-            if context in ['FI2017Q4', 'FI2016Q4']:
+        if tag_name in conceptos_objetivo:
+            contexto = elem.get('contextRef')
+            
+            # Si pertenece a los periodos clave de cierre de año, lo imprimimos
+            if contexto in contextos_validos:
+                val_text = elem.text if elem.text else "0"
                 try:
-                    # Dar formato numérico legible
-                    formatted_val = f"${int(value):,}"
+                    formatted_val = f"${int(val_text):,}"
                 except ValueError:
-                    formatted_val = value
-                    
-                print(f"us-gaap:{tag:<32} | {context:<12} | {formatted_val:>15}")
+                    formatted_val = val_text
+                
+                print(f"{tag_name:<40} | {contexto:<12} | {val_text:<15} | {formatted_val:>15}")
 
-# Para ejecutarlo con tu archivo, puedes pasar el texto del documento como argumento:
-# leer_xbrl_liabilities_equity(tu_texto_xml)
+# === CÓMO USARLO ===
+# Guarda tu XML con el nombre 'reporte.xml' en la misma carpeta que este script y ejecuta:
+# leer_xbrl_ajustado('reporte.xml')
+
+leer_xbrl_ajustado("clorox2017.xml")
