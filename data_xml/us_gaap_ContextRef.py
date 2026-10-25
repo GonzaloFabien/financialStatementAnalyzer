@@ -1,0 +1,1 @@
+#Creacion de contextos para US-GAAP
