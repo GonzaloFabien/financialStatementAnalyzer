@@ -7,21 +7,26 @@ import xml.etree.ElementTree as ET
 #FUNCION 1: Esta función solo extrae datos a un diccionario anidado:
 #MANTENIMIENTO:
 def extraer_source_data_f1(root_empresa, año_a_analizar):
-    #------Mantenimiento----]
+    #------Mantenimiento---- manejo de DUPLAS---DURATION---INSTANT---]
+    ids_duration, ids_instant = año_a_analizar
+    duration_id = ids_duration[0] if ids_duration else ""
+    instant_id = ids_instant[0] if ids_instant else ""
+
+
     
     datos = {
         # --- Cuentas del Estado de Resultados (Usan año_a_analizar) ---
-        'Revenue' : buscar_elemento('Revenue', año_a_analizar, root_empresa) or buscar_elemento('RevenueFromContractWithCustomerExcludingAssessedTax', año_a_analizar, root_empresa),        
-        'CostOfSales' : buscar_elemento('CostOfSales', año_a_analizar, root_empresa) or buscar_elemento('CostOfGoodsAndServicesSold', año_a_analizar, root_empresa) or buscar_elemento('CostOfGoodsSold', año_a_analizar, root_empresa),        
-        'ProfitLoss': buscar_elemento('ProfitLoss', año_a_analizar, root_empresa) or buscar_elemento('NetIncomeLoss', año_a_analizar, root_empresa),
+        'Revenue' : buscar_elemento('Revenue', duration_id, root_empresa) or buscar_elemento('RevenueFromContractWithCustomerExcludingAssessedTax', duration_id, root_empresa),        
+        'CostOfSales' : buscar_elemento('CostOfSales', duration_id, root_empresa) or buscar_elemento('CostOfGoodsAndServicesSold', duration_id, root_empresa) or buscar_elemento('CostOfGoodsSold', duration_id, root_empresa),        
+        'ProfitLoss': buscar_elemento('ProfitLoss', duration_id, root_empresa) or buscar_elemento('NetIncomeLoss', duration_id, root_empresa),
         # --- Cuentas del Balance General (Usan año_a_analizar) ---
-        'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', año_a_analizar, root_empresa) or buscar_elemento('CashAndCashEquivalentsAtCarryingValue', año_a_analizar, root_empresa),        
-        'Equity': buscar_elemento('Equity', año_a_analizar, root_empresa) or buscar_elemento('StockholdersEquity', año_a_analizar, root_empresa) or buscar_elemento('StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest', año_a_analizar, root_empresa) or buscar_elemento('LimitedLiabilityCompanyLlcMembersEquityIncludingPortionAttributableToNoncontrollingInterest', año_a_analizar, root_empresa),
-        'Assets': buscar_elemento('Assets', año_a_analizar, root_empresa),
-        'Liabilities': buscar_elemento('LiabilitiesAndStockholdersEquity', año_a_analizar, root_empresa),        
-        'CurrentAssets': buscar_elemento('CurrentAssets', año_a_analizar, root_empresa) or buscar_elemento('AssetsCurrent', año_a_analizar, root_empresa),        
-        'Inventories': buscar_elemento('Inventories', año_a_analizar, root_empresa) or buscar_elemento('InventoryNet', año_a_analizar, root_empresa),        
-        'CurrentLiabilities': buscar_elemento('CurrentLiabilities', año_a_analizar, root_empresa)
+        'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', instant_id, root_empresa) or buscar_elemento('CashAndCashEquivalentsAtCarryingValue', instant_id, root_empresa),        
+        'Equity': buscar_elemento('Equity', instant_id, root_empresa) or buscar_elemento('StockholdersEquity', instant_id, root_empresa) or buscar_elemento('StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest', instant_id, root_empresa) or buscar_elemento('LimitedLiabilityCompanyLlcMembersEquityIncludingPortionAttributableToNoncontrollingInterest', instant_id, root_empresa),
+        'Assets': buscar_elemento('Assets', instant_id, root_empresa),
+        'Liabilities': buscar_elemento('LiabilitiesAndStockholdersEquity', instant_id, root_empresa),        
+        'CurrentAssets': buscar_elemento('CurrentAssets', instant_id, root_empresa) or buscar_elemento('AssetsCurrent', instant_id, root_empresa),        
+        'Inventories': buscar_elemento('Inventories', instant_id, root_empresa) or buscar_elemento('InventoryNet', instant_id, root_empresa),        
+        'CurrentLiabilities': buscar_elemento('CurrentLiabilities', instant_id, root_empresa)
             }
     return datos
 

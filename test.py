@@ -4,7 +4,7 @@ from funcion_periodo import encontrar_id_año
 from analyzer import extraer_source_data_f1
 from analyzer import calcular_ratios_de_extraer_source_data_f2
 from data_xml.mantenimiento import  encontrar_id_balance_general
-from data_xml.instant import resolver_contextos_por_año
+from data_xml.instant import encontrar_contextos_xbrl
 import json
 import os
 
@@ -49,7 +49,8 @@ def agregar_empresa_a_bd(nombre_base, nombre_file):
         #-----EN MANTENIMIENTO, siga adelante por favor-------
         #2- Buscamos y encontramos el ID de cada elemento por su año ------- EN MANTENIMIENTO-------:
 
-        ids_del_año = encontrar_id_año(root_anual, año)
+        ids_del_año = encontrar_contextos_xbrl(root=root_anual, año_buscado=año)
+
 
         #----- FIN DEL MANTENIMIENTO
 
