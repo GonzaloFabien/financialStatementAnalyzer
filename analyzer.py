@@ -7,33 +7,22 @@ import xml.etree.ElementTree as ET
 #FUNCION 1: Esta función solo extrae datos a un diccionario anidado:
 #MANTENIMIENTO:
 def extraer_source_data_f1(root_empresa, año_a_analizar):
-    #------Mantenimiento----
-    id_resultados = año_a_analizar["ER"]
-    id_balance = año_a_analizar["BG"]
+    #------Mantenimiento----]
     
     datos = {
-        # --- Cuentas del Estado de Resultados (Usan id_resultados) ---
-        'Revenue' : buscar_elemento('Revenue', id_resultados, root_empresa) or buscar_elemento('RevenueFromContractWithCustomerExcludingAssessedTax', id_resultados, root_empresa),
-        
-        'CostOfSales' : buscar_elemento('CostOfSales', id_resultados, root_empresa) or buscar_elemento('CostOfGoodsAndServicesSold', id_resultados, root_empresa) or buscar_elemento('CostOfGoodsSold', id_resultados, root_empresa),
-        
-        'ProfitLoss': buscar_elemento('ProfitLoss', id_resultados, root_empresa) or buscar_elemento('NetIncomeLoss', id_resultados, root_empresa),
-
-        # --- Cuentas del Balance General (Usan id_balance) ---
-        'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', id_balance, root_empresa) or buscar_elemento('CashAndCashEquivalentsAtCarryingValue', id_balance, root_empresa),
-        
-        'Equity': buscar_elemento('Equity', id_balance, root_empresa) or buscar_elemento('StockholdersEquity', id_balance, root_empresa) or buscar_elemento('PartnersCapital', id_balance, root_empresa) or buscar_elemento('LimitedLiabilityCompanyLlcMembersEquityIncludingPortionAttributableToNoncontrollingInterest', id_balance, root_empresa),
-        
-        'Assets': buscar_elemento('Assets', id_balance, root_empresa),
-        
-        'Liabilities': buscar_elemento('LiabilitiesAndStockholdersEquity', id_balance, root_empresa),
-        
-        'CurrentAssets': buscar_elemento('CurrentAssets', id_balance, root_empresa) or buscar_elemento('AssetsCurrent', id_balance, root_empresa),
-        
-        'Inventories': buscar_elemento('Inventories', id_balance, root_empresa) or buscar_elemento('InventoryNet', id_balance, root_empresa),
-        
-        'CurrentLiabilities': buscar_elemento('CurrentLiabilities', id_balance, root_empresa)
-    }
+        # --- Cuentas del Estado de Resultados (Usan año_a_analizar) ---
+        'Revenue' : buscar_elemento('Revenue', año_a_analizar, root_empresa) or buscar_elemento('RevenueFromContractWithCustomerExcludingAssessedTax', año_a_analizar, root_empresa),        
+        'CostOfSales' : buscar_elemento('CostOfSales', año_a_analizar, root_empresa) or buscar_elemento('CostOfGoodsAndServicesSold', año_a_analizar, root_empresa) or buscar_elemento('CostOfGoodsSold', año_a_analizar, root_empresa),        
+        'ProfitLoss': buscar_elemento('ProfitLoss', año_a_analizar, root_empresa) or buscar_elemento('NetIncomeLoss', año_a_analizar, root_empresa),
+        # --- Cuentas del Balance General (Usan año_a_analizar) ---
+        'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', año_a_analizar, root_empresa) or buscar_elemento('CashAndCashEquivalentsAtCarryingValue', año_a_analizar, root_empresa),        
+        'Equity': buscar_elemento('Equity', año_a_analizar, root_empresa) or buscar_elemento('StockholdersEquity', año_a_analizar, root_empresa) or buscar_elemento('StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest', año_a_analizar, root_empresa) or buscar_elemento('LimitedLiabilityCompanyLlcMembersEquityIncludingPortionAttributableToNoncontrollingInterest', año_a_analizar, root_empresa),
+        'Assets': buscar_elemento('Assets', año_a_analizar, root_empresa),
+        'Liabilities': buscar_elemento('LiabilitiesAndStockholdersEquity', año_a_analizar, root_empresa),        
+        'CurrentAssets': buscar_elemento('CurrentAssets', año_a_analizar, root_empresa) or buscar_elemento('AssetsCurrent', año_a_analizar, root_empresa),        
+        'Inventories': buscar_elemento('Inventories', año_a_analizar, root_empresa) or buscar_elemento('InventoryNet', año_a_analizar, root_empresa),        
+        'CurrentLiabilities': buscar_elemento('CurrentLiabilities', año_a_analizar, root_empresa)
+            }
     return datos
 
 #FUNCION 2: Esta función solo hará matemática y generará los ratios:
