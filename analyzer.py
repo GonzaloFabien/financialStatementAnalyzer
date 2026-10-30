@@ -4,13 +4,26 @@
 from funcion_buscar import buscar_elemento
 import xml.etree.ElementTree as ET
 
+#FUNCION 0: Auxiliar para limpiar valor de los números:
+def limpiar_valor(valor):
+    if valor is None:
+        return 0
+    if isinstance(valor, (int, float)):
+        return valor
+    try:
+        #Elimina impuresas:
+        return int(float(str(valor).strip()))
+    except ValueError:
+        return 0
+
+
 #FUNCION 1: Esta función solo extrae datos a un diccionario anidado:
 #MANTENIMIENTO:
 def extraer_source_data_f1(root_empresa, año_a_analizar):
     #------Mantenimiento---- manejo de DUPLAS---DURATION---INSTANT---]
     ids_duration, ids_instant = año_a_analizar
     duration_id = ids_duration[0] if ids_duration else ""
-    instant_id = ids_instant[0] if ids_instant else ""
+    instant_id = ids_instant[1] if ids_instant else ""
 
 
     
@@ -33,16 +46,16 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
 #FUNCION 2: Esta función solo hará matemática y generará los ratios:
 def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     #Se generan varias variables para poder trabajarlas
-    revenue = diccionario_fuente_generado['Revenue'] or 0
-    cost_of_sales = diccionario_fuente_generado['CostOfSales']
-    net_income = diccionario_fuente_generado['ProfitLoss'] or 0
-    equity = diccionario_fuente_generado['Equity'] or 0
-    assets = diccionario_fuente_generado['Assets'] or 0
-    liabilities = diccionario_fuente_generado['Liabilities'] or 0
-    current_assets = diccionario_fuente_generado['CurrentAssets'] or 0
-    inventories = diccionario_fuente_generado['Inventories'] or 0 
-    current_liabilities = diccionario_fuente_generado['CurrentLiabilities'] or 0
-    cashAndCashEquivalents = diccionario_fuente_generado['CashAndCashEquivalents']or 0 
+    revenue = limpiar_valor(diccionario_fuente_generado['Revenue'])
+    cost_of_sales = limpiar_valor(diccionario_fuente_generado['CostOfSales'])
+    net_income = limpiar_valor(diccionario_fuente_generado['ProfitLoss'])
+    equity = limpiar_valor(diccionario_fuente_generado['Equity'])
+    assets = limpiar_valor(diccionario_fuente_generado['Assets'])
+    liabilities = limpiar_valor(diccionario_fuente_generado['Liabilities'])
+    current_assets = limpiar_valor(diccionario_fuente_generado['CurrentAssets'])
+    inventories = limpiar_valor(diccionario_fuente_generado['Inventories']) 
+    current_liabilities = limpiar_valor(diccionario_fuente_generado['CurrentLiabilities'])
+    cashAndCashEquivalents = limpiar_valor(diccionario_fuente_generado['CashAndCashEquivalents']) 
     
     #Estos son los tag del diccionario a buscar:
     ratios_calculados = {
@@ -52,7 +65,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
         'CashAndCashEquivalents': cashAndCashEquivalents,
         'Net Income': net_income,
         'Net Margin': (net_income / revenue * 100) if revenue > 0 else 0,
-        'ROE': (net_income / equity * 100) if equity > 0 else 0,
+        'ROE': (net_income / equity * 100),
         'ROA': (net_income / assets * 100) if assets > 0 else 0,
         'Cash Ratio': (cashAndCashEquivalents/current_assets) if current_assets > 0 else 0,
         'Current Ratio': (liabilities / equity * 100) if equity > 0 else 0,
