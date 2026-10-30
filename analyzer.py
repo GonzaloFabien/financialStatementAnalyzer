@@ -39,7 +39,7 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
         'Liabilities': buscar_elemento('Liabilities', instant_id, root_empresa) or buscar_elemento('LiabilitiesAndStockholdersEquity', instant_id, root_empresa),        
         'CurrentAssets': buscar_elemento('CurrentAssets', instant_id, root_empresa) or buscar_elemento('AssetsCurrent', instant_id, root_empresa),        
         'Inventories': buscar_elemento('Inventories', instant_id, root_empresa) or buscar_elemento('InventoryNet', instant_id, root_empresa),        
-        'CurrentLiabilities': buscar_elemento('CurrentLiabilities', instant_id, root_empresa)
+        'CurrentLiabilities': buscar_elemento('CurrentLiabilities', instant_id, root_empresa) or buscar_elemento('LiabilitiesCurrent', instant_id, root_empresa)
             }
     return datos
 
@@ -57,11 +57,11 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     current_liabilities = limpiar_valor(diccionario_fuente_generado['CurrentLiabilities'])
     cashAndCashEquivalents = limpiar_valor(diccionario_fuente_generado['CashAndCashEquivalents']) 
     
-    #Test: para ver las variables año a año:
-    print(f"efectivo y equivalente: {cashAndCashEquivalents}")
-    print(f"pasivos: {liabilities}")
-    #cash_ratio = cashAndCashEquivalents/liabilities
-    #print(f"Current ratio: type|{type(cash_ratio)} | {cash_ratio}")
+    #-----------------Test: para ver las variables año a año:--------------
+    #print(f"Pasivos corrientes es : {current_liabilities}")
+    #print(f"Equity: {equity}")
+    #roee = net_income/equity
+    #print(f"Roe: type|{type(roee)} | {roee}")
 
     #Estos son los tag del diccionario a buscar:
     ratios_calculados = {
@@ -72,14 +72,14 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
         'CashAndCashEquivalents': cashAndCashEquivalents,
         'Net Income': net_income,
         'Net Margin': (net_income / revenue * 100) if revenue > 0 else 0,
-        'ROE': (net_income / equity * 100),
-        'ROA': (net_income / assets * 100) if assets > 0 else 0,
+        'ROE': (net_income / equity) if equity > 0 else 0,
+        'ROA': (net_income / assets) if assets > 0 else 0,
         'Cash Ratio': (cashAndCashEquivalents/current_assets) if current_assets > 0 else 0,
-        'Current Ratio': (liabilities / equity * 100) if equity > 0 else 0,
-        'Debt Asset Ratio': (liabilities / assets * 100) if assets > 0 else 0,
+        'Current Ratio': (liabilities / equity) if equity > 0 else 0,
+        'Debt Asset Ratio': (liabilities / assets   ) if assets > 0 else 0,
         'Quick Ratio': (current_assets - inventories) / current_liabilities if current_liabilities > 0 else 0
     }
-
+    #print(f"valor Quick ratio: {ratios_calculados['Quick Ratio']}")
     return ratios_calculados
 
 
@@ -87,3 +87,5 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
 #Demostramos que es un package:
 if __name__ == "__main__":
     print("hola")
+
+

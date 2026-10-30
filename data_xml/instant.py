@@ -63,7 +63,7 @@ def encontrar_contextos_xbrl(root, año_buscado):
     #print(f"{año_buscado} | duration = {duration_ids} | instante = {instant_ids}")
     return duration_ids, instant_ids
 
-
+"""
 def extraer_datos_financieros(ruta_archivo, año_buscado):
     if not os.path.exists(ruta_archivo):
         return "El archivo especificado no existe."
@@ -110,5 +110,4 @@ def extraer_datos_financieros(ruta_archivo, año_buscado):
                         continue
 
     return resultados
-
-
+"""

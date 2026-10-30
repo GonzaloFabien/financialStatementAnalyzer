@@ -3,7 +3,6 @@ from funcion_buscar import buscar_elemento
 from funcion_periodo import encontrar_id_año
 from analyzer import extraer_source_data_f1
 from analyzer import calcular_ratios_de_extraer_source_data_f2
-from data_xml.mantenimiento import  encontrar_id_balance_general
 from data_xml.instant import encontrar_contextos_xbrl
 import json
 import os
