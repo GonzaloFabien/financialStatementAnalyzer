@@ -206,6 +206,7 @@ class AppFinanzas(ctk.CTk):
             lbl_head_ratio_date = ctk.CTkLabel(self.frame_tabla, text= "Métrica/Ratio", font= ctk.CTkFont(weight="bold"), anchor="w")
             lbl_head_ratio_date.grid(row=0, column=0, padx=0, pady=5, sticky="w")
 
+            #Aquí se muestran los datos de cada empresa, de forma ordenada
             for col_idx, año in enumerate(años_ordenados, start=1):
                 lbl_hdr_año = ctk.CTkLabel(self.frame_tabla, text=str(año), font=ctk.CTkFont(weight="bold"))
                 lbl_hdr_año.grid(row=0, column=col_idx, padx=15, pady=5)
@@ -219,10 +220,12 @@ class AppFinanzas(ctk.CTk):
 
                 #Lista de valores para cada año siguiente:
                 for col_idx, año in enumerate(años_ordenados, start=1):
-                    valor = datos_empresa[año].get(ratio, 0)
+                    valor = datos_empresa[año].get(ratio, 0) #Este es el valor a mostrar:
 
                     #que sea % si son ratios y 000 en miles si son montos:
-                    if abs(valor) <100:
+                    if abs(valor) <=2:
+                        valor_texto = f"{valor:.1%}"
+                    elif abs(valor) <100:
                         valor_texto = f"{valor:.1f}%" if valor !=0 else"0.0%"
                     else:
                         valor_texto = f"{valor/1_000_000:.1f}M" if valor !=0 else "0.0M"

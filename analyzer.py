@@ -57,11 +57,18 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     current_liabilities = limpiar_valor(diccionario_fuente_generado['CurrentLiabilities'])
     cashAndCashEquivalents = limpiar_valor(diccionario_fuente_generado['CashAndCashEquivalents']) 
     
+    #Test: para ver las variables año a año:
+    print(f"efectivo y equivalente: {cashAndCashEquivalents}")
+    print(f"pasivos: {liabilities}")
+    #cash_ratio = cashAndCashEquivalents/liabilities
+    #print(f"Current ratio: type|{type(cash_ratio)} | {cash_ratio}")
+
     #Estos son los tag del diccionario a buscar:
     ratios_calculados = {
         'Revenue' : revenue,
         'CostOfSales' : cost_of_sales,
         'Equity': equity,
+        'Liabilities' : liabilities,
         'CashAndCashEquivalents': cashAndCashEquivalents,
         'Net Income': net_income,
         'Net Margin': (net_income / revenue * 100) if revenue > 0 else 0,

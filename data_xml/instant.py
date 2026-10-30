@@ -59,7 +59,8 @@ def encontrar_contextos_xbrl(root, año_buscado):
                 if context_id not in instant_ids:
                     instant_ids.append(context_id)
     #Ok esto desmuestra que sí es una dupla y está retornando dos variables:
-    print(f"{año_buscado} | duration = {duration_ids} | instante = {instant_ids}")
+    #Esto es para testear nuestro código y VER LOS IDS de cada año:--------
+    #print(f"{año_buscado} | duration = {duration_ids} | instante = {instant_ids}")
     return duration_ids, instant_ids
 
 

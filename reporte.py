@@ -31,7 +31,7 @@ diccionario_cartavio =  datos_personalizdos.get(nombre_empresa_2, {})
 
 #3- Detectamos los años que comparten ambas empresas:
 años_casa_grande = set(diccionario_casa_grande.keys())
-años_cartavio = set(diccionario_casa_grande.keys())
+años_cartavio = set(diccionario_cartavio.keys())
 años_comunes = sorted(list(años_casa_grande.intersection(años_cartavio)))
 
 """
@@ -70,7 +70,10 @@ plt.tight_layout()
 #correción del gráfico en el eje Y, porcentual y en millones (000,000)
 def formatear_eje_y(valor, pos): 
     #Si el valor del tag es menor a |10| o sea su valor absoluto, entonces es un valor_porcentual:
-    if abs(valor) < 100:
+    if abs(valor<= 2.0 ):
+        valor_decimal = valor *100
+        return f"{valor_decimal:.1f}%"
+    elif abs(valor) < 100:
         return f"{valor:.1f}%"
     else:
         #al ser un número grande, no es posible que sea porcentual y se mantiene:
