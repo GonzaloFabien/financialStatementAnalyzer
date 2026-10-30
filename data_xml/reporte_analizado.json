@@ -578,8 +578,8 @@
             "ROE": 84.71223021582733,
             "ROA": 7.648587203637544,
             "Cash Ratio": 0.10608695652173913,
-            "Current Ratio": 1107.5539568345323,
-            "Debt Asset Ratio": 100.0,
+            "Current Ratio": 976.4388489208633,
+            "Debt Asset Ratio": 88.16174082494317,
             "Quick Ratio": 0
         },
         "2025": {
@@ -592,8 +592,8 @@
             "ROE": 256.6978193146417,
             "ROA": 14.817478870706708,
             "Cash Ratio": 0.10385572139303482,
-            "Current Ratio": 1732.398753894081,
-            "Debt Asset Ratio": 100.0,
+            "Current Ratio": 1582.2429906542056,
+            "Debt Asset Ratio": 91.33249415572739,
             "Quick Ratio": 0
         },
         "2023": {
@@ -606,8 +606,8 @@
             "ROE": 73.18181818181819,
             "ROA": 2.7081581160639194,
             "Cash Ratio": 0.20076586433260393,
-            "Current Ratio": 2702.2727272727275,
-            "Debt Asset Ratio": 100.0,
+            "Current Ratio": 2525.909090909091,
+            "Debt Asset Ratio": 93.47350714886458,
             "Quick Ratio": 0
         },
         "2024": {
@@ -620,36 +620,36 @@
             "ROE": 89.02439024390245,
             "ROA": 5.077377847330899,
             "Cash Ratio": 0.12453760789149199,
-            "Current Ratio": 1753.3536585365855,
-            "Debt Asset Ratio": 100.0,
+            "Current Ratio": 1603.3536585365855,
+            "Debt Asset Ratio": 91.44496609285342,
             "Quick Ratio": 0
         },
         "2017": {
-            "Revenue": 0,
+            "Revenue": 5973000000,
             "CostOfSales": 3302000000,
             "Equity": 542000000,
             "CashAndCashEquivalents": 418000000,
             "Net Income": 701000000,
-            "Net Margin": 0,
+            "Net Margin": 11.736145990289637,
             "ROE": 129.33579335793357,
             "ROA": 15.329105619943146,
             "Cash Ratio": 0.2760898282694848,
-            "Current Ratio": 843.7269372693727,
-            "Debt Asset Ratio": 100.0,
+            "Current Ratio": 743.7269372693727,
+            "Debt Asset Ratio": 88.14782418543625,
             "Quick Ratio": 0
         },
         "2018": {
-            "Revenue": 0,
+            "Revenue": 6124000000,
             "CostOfSales": 3449000000,
             "Equity": 726000000,
             "CashAndCashEquivalents": 131000000,
             "Net Income": 823000000,
-            "Net Margin": 0,
+            "Net Margin": 13.43892880470281,
             "ROE": 113.36088154269972,
             "ROA": 16.26482213438735,
             "Cash Ratio": 0.09992372234935164,
-            "Current Ratio": 696.969696969697,
-            "Debt Asset Ratio": 100.0,
+            "Current Ratio": 596.969696969697,
+            "Debt Asset Ratio": 85.65217391304348,
             "Quick Ratio": 0
         },
         "2019": {
@@ -662,8 +662,8 @@
             "ROE": 146.69051878354205,
             "ROA": 16.028146989835808,
             "Cash Ratio": 0.08505747126436781,
-            "Current Ratio": 915.2057245080501,
-            "Debt Asset Ratio": 100.0,
+            "Current Ratio": 815.2057245080501,
+            "Debt Asset Ratio": 89.07349491790461,
             "Quick Ratio": 0
         },
         "2020": {
@@ -676,8 +676,8 @@
             "ROE": 103.41409691629957,
             "ROA": 15.113471752776436,
             "Cash Ratio": 0.4311881188118812,
-            "Current Ratio": 684.2511013215859,
-            "Debt Asset Ratio": 100.0,
+            "Current Ratio": 584.2511013215859,
+            "Debt Asset Ratio": 85.38548205375824,
             "Quick Ratio": 0
         },
         "2021": {
@@ -690,8 +690,8 @@
             "ROE": 174.93917274939173,
             "ROA": 11.351436690874644,
             "Cash Ratio": 0.174412247129579,
-            "Current Ratio": 1541.1192214111923,
-            "Debt Asset Ratio": 100.0,
+            "Current Ratio": 1397.080291970803,
+            "Debt Asset Ratio": 90.65361540890433,
             "Quick Ratio": 0
         }
     }

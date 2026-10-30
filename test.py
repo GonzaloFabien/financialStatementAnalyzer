@@ -79,4 +79,4 @@ def agregar_empresa_a_bd(nombre_base, nombre_file):
 #Proceso para ejecutar correctamente todo el código:
 
 if __name__ == "__main__":
-    agregar_empresa_a_bd("Cartavio","cartavio")
+    agregar_empresa_a_bd("Clorox","clorox")

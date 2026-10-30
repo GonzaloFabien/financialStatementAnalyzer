@@ -29,14 +29,14 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
     
     datos = {
         # --- Cuentas del Estado de Resultados (Usan año_a_analizar) ---
-        'Revenue' : buscar_elemento('Revenue', duration_id, root_empresa) or buscar_elemento('RevenueFromContractWithCustomerExcludingAssessedTax', duration_id, root_empresa),        
+        'Revenue' : buscar_elemento('Revenue', duration_id, root_empresa) or buscar_elemento('RevenueFromContractWithCustomerExcludingAssessedTax', duration_id, root_empresa) or buscar_elemento('Revenues', duration_id, root_empresa) or buscar_elemento('SalesRevenueNet', duration_id, root_empresa),        
         'CostOfSales' : buscar_elemento('CostOfSales', duration_id, root_empresa) or buscar_elemento('CostOfGoodsAndServicesSold', duration_id, root_empresa) or buscar_elemento('CostOfGoodsSold', duration_id, root_empresa),        
         'ProfitLoss': buscar_elemento('ProfitLoss', duration_id, root_empresa) or buscar_elemento('NetIncomeLoss', duration_id, root_empresa),
         # --- Cuentas del Balance General (Usan año_a_analizar) ---
         'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', instant_id, root_empresa) or buscar_elemento('CashAndCashEquivalentsAtCarryingValue', instant_id, root_empresa),        
         'Equity': buscar_elemento('Equity', instant_id, root_empresa) or buscar_elemento('StockholdersEquity', instant_id, root_empresa) or buscar_elemento('StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest', instant_id, root_empresa) or buscar_elemento('LimitedLiabilityCompanyLlcMembersEquityIncludingPortionAttributableToNoncontrollingInterest', instant_id, root_empresa),
         'Assets': buscar_elemento('Assets', instant_id, root_empresa),
-        'Liabilities': buscar_elemento('LiabilitiesAndStockholdersEquity', instant_id, root_empresa),        
+        'Liabilities': buscar_elemento('Liabilities', instant_id, root_empresa) or buscar_elemento('LiabilitiesAndStockholdersEquity', instant_id, root_empresa),        
         'CurrentAssets': buscar_elemento('CurrentAssets', instant_id, root_empresa) or buscar_elemento('AssetsCurrent', instant_id, root_empresa),        
         'Inventories': buscar_elemento('Inventories', instant_id, root_empresa) or buscar_elemento('InventoryNet', instant_id, root_empresa),        
         'CurrentLiabilities': buscar_elemento('CurrentLiabilities', instant_id, root_empresa)
