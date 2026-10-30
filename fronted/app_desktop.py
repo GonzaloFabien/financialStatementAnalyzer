@@ -184,56 +184,57 @@ class AppFinanzas(ctk.CTk):
 
     
     def mostrar_tabla_numerica(self):
-        #Encerramos en un try-catch:
         try:
-            #0-Se limpia cualquier consulta previa
+            # 0- Se limpia cualquier consulta previa
             for widget in self.frame_tabla.winfo_children():
                 widget.destroy()
-            #1-Seleccionamos la empresa usando el Combobox de empresa 1: 
+                
+            # 1- Seleccionamos la empresa usando el Combobox de empresa 1: 
             empresa_activa = self.combo_empresa.get()
             datos_empresa = self.base_datos.get(empresa_activa, {})
 
             if not datos_empresa:
-                self.lbl_estado.condigure(text=f"no se encuentran datos para {empresa_activa}", text_color="#d32f2f")
+                self.lbl_estado.configure(text=f"No se encuentran datos para {empresa_activa}", text_color="#d32f2f")
                 return
             
-            #2-Ordenamos cronologicamente los datos: 
+            # 2- Ordenamos cronológicamente los años de la empresa actual
             años_ordenados = sorted(list(datos_empresa.keys()))
-                #Desplegamos
             self.frame_tabla.pack(padx=20, pady=10, fill="both", expand=True)
 
-            #3- Imporatante mostramos el encabezado de la tabla:titulo/ratio/años
-            lbl_head_ratio_date = ctk.CTkLabel(self.frame_tabla, text= "Métrica/Ratio", font= ctk.CTkFont(weight="bold"), anchor="w")
+            # 🚀 CORRECCIÓN CLAVE: Extraer los ratios dinámicamente usando el primer año YA ORDENADO de esta empresa
+            año_referencia = años_ordenados[0]
+            ratios_actuales = list(datos_empresa[año_referencia].keys())
+
+            # 3- Mostramos el encabezado de la tabla: título/ratio/años
+            lbl_head_ratio_date = ctk.CTkLabel(self.frame_tabla, text="Métrica/Ratio", font=ctk.CTkFont(weight="bold"), anchor="w")
             lbl_head_ratio_date.grid(row=0, column=0, padx=0, pady=5, sticky="w")
 
-            #Aquí se muestran los datos de cada empresa, de forma ordenada
             for col_idx, año in enumerate(años_ordenados, start=1):
                 lbl_hdr_año = ctk.CTkLabel(self.frame_tabla, text=str(año), font=ctk.CTkFont(weight="bold"))
                 lbl_hdr_año.grid(row=0, column=col_idx, padx=15, pady=5)
             
-            #4-CUERPO DE LA TABLA A MANEJAR:
-            #EL proceso consiste en renderizar cada ratio fila por fila:
-            for row_idx, ratio in enumerate(self.ratios_disponibles, start=1):
-                #Nombre del ratio en la columna 0:
+            # 4- CUERPO DE LA TABLA:
+            # Renderizamos usando 'ratios_actuales' en lugar de la variable global desfasada
+            for row_idx, ratio in enumerate(ratios_actuales, start=1):
                 lbl_nombre_ratio = ctk.CTkLabel(self.frame_tabla, text=ratio, anchor="w")
                 lbl_nombre_ratio.grid(row=row_idx, column=0, padx=10, pady=2, sticky="w")
 
-                #Lista de valores para cada año siguiente:
                 for col_idx, año in enumerate(años_ordenados, start=1):
-                    valor = datos_empresa[año].get(ratio, 0) #Este es el valor a mostrar:
+                    # Buscamos de forma segura en el año correspondiente
+                    valor = datos_empresa[año].get(ratio, 0)
 
-                    #que sea % si son ratios y 000 en miles si son montos:
-                    if abs(valor) <=2:
+                    # Formateo de datos corregido para decimales y millones
+                    if abs(valor) <= 2.0 and valor != 0:
                         valor_texto = f"{valor:.1%}"
-                    elif abs(valor) <100:
-                        valor_texto = f"{valor:.1f}%" if valor !=0 else"0.0%"
+                    elif abs(valor) < 100:
+                        valor_texto = f"{valor:.1f}%" if valor != 0 else "0.0%"
                     else:
-                        valor_texto = f"{valor/1_000_000:.1f}M" if valor !=0 else "0.0M"
+                        valor_texto = f"{valor/1_000_000:.1f}M" if valor != 0 else "0.0M"
                     
                     lbl_valor = ctk.CTkLabel(self.frame_tabla, text=valor_texto)
                     lbl_valor.grid(row=row_idx, column=col_idx, padx=15, pady=2)
 
-            self.lbl_estado.configure(text=f"🟡 tabla_historica de {empresa_activa} cargada con éxito:", text_color="#2ca02c")
+            self.lbl_estado.configure(text=f"✅ Tabla histórica de {empresa_activa} cargada con éxito", text_color="#2ca02c")
 
         except Exception as e:
             self.lbl_estado.configure(text=f"Error al cargar la tabla: {str(e)}", text_color="#d32f2f")

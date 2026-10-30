@@ -58,7 +58,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     cashAndCashEquivalents = limpiar_valor(diccionario_fuente_generado['CashAndCashEquivalents']) 
     
     #-----------------Test: para ver las variables año a año:--------------
-    #print(f"Pasivos corrientes es : {current_liabilities}")
+    print(f"Ventas : {revenue}")
     #print(f"Equity: {equity}")
     #roee = net_income/equity
     #print(f"Roe: type|{type(roee)} | {roee}")
@@ -79,7 +79,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
         'Debt Asset Ratio': (liabilities / assets   ) if assets > 0 else 0,
         'Quick Ratio': (current_assets - inventories) / current_liabilities if current_liabilities > 0 else 0
     }
-    #print(f"valor Quick ratio: {ratios_calculados['Quick Ratio']}")
+    print(f"valor para Ventas es: {ratios_calculados['Revenue']}")
     return ratios_calculados
 
 
