@@ -80,7 +80,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
         'Debt Asset Ratio': (liabilities / assets   ) if assets > 0 else 0,
         'Quick Ratio': (current_assets - inventories) / current_liabilities if current_liabilities > 0 else 0
     }
-    print(f"valor para Liabilities es: {ratios_calculados['Liabilities']}")
+    #print(f"valor para Liabilities es: {ratios_calculados['Liabilities']}")
     return ratios_calculados
 
 
