@@ -22,9 +22,10 @@ def limpiar_valor(valor):
 def extraer_source_data_f1(root_empresa, año_a_analizar):
     #------Mantenimiento---- manejo de DUPLAS---DURATION---INSTANT---]
     ids_duration, ids_instant = año_a_analizar
-    duration_id = ids_duration[0] if ids_duration else ""
-    instant_id = ids_instant[1] if ids_instant else ""
+    duration_id = ids_duration[0] if ids_duration else "id1"
+    instant_id = ids_instant[1] if ids_instant else "id2"
 
+    print(f"duracińo |{ids_duration}| instant| {instant_id}")
 
     
     datos = {
@@ -58,7 +59,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     cashAndCashEquivalents = limpiar_valor(diccionario_fuente_generado['CashAndCashEquivalents']) 
     
     #-----------------Test: para ver las variables año a año:--------------
-    print(f"Ventas : {revenue}")
+    print(f"Liabilities : {liabilities}")
     #print(f"Equity: {equity}")
     #roee = net_income/equity
     #print(f"Roe: type|{type(roee)} | {roee}")
@@ -79,7 +80,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
         'Debt Asset Ratio': (liabilities / assets   ) if assets > 0 else 0,
         'Quick Ratio': (current_assets - inventories) / current_liabilities if current_liabilities > 0 else 0
     }
-    print(f"valor para Ventas es: {ratios_calculados['Revenue']}")
+    print(f"valor para Liabilities es: {ratios_calculados['Liabilities']}")
     return ratios_calculados
 
 
