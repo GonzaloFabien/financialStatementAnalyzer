@@ -23,9 +23,9 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
     #------Mantenimiento---- manejo de DUPLAS---DURATION---INSTANT---]
     ids_duration, ids_instant = año_a_analizar
     duration_id = ids_duration[0] if ids_duration else "id1"
-    instant_id = ids_instant[1] if ids_instant else "id2"
+    instant_id = ids_instant[0] if ids_instant else "id2"
 
-    print(f"duracińo |{ids_duration}| instant| {instant_id}")
+    #print(f"duracińo |{ids_duration}| instant| {instant_id}")
 
     
     datos = {
@@ -76,7 +76,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
         'ROE': (net_income / equity) if equity > 0 else 0,
         'ROA': (net_income / assets) if assets > 0 else 0,
         'Cash Ratio': (cashAndCashEquivalents/current_assets) if current_assets > 0 else 0,
-        'Current Ratio': (liabilities / equity) if equity > 0 else 0,
+        'Current Ratio': (assets/ liabilities) if liabilities > 0 else 0,
         'Debt Asset Ratio': (liabilities / assets   ) if assets > 0 else 0,
         'Quick Ratio': (current_assets - inventories) / current_liabilities if current_liabilities > 0 else 0
     }
