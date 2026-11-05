@@ -224,9 +224,9 @@ class AppFinanzas(ctk.CTk):
                     valor = datos_empresa[año].get(ratio, 0)
 
                     # Formateo de datos corregido para decimales y millones
-                    if abs(valor) <= 2.0 and valor != 0:
+                    if abs(valor) <= 4.0 and valor != 0:
                         valor_texto = f"{valor:.1%}"
-                    elif abs(valor) < 200:
+                    elif abs(valor) < 300:
                         valor_texto = f"{valor:.1f}%" if valor != 0 else "0.0%"
                     else:
                         valor_texto = f"{valor/1_000_000:.1f}M" if valor != 0 else "0.0M"

@@ -72,7 +72,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
         'Liabilities' : liabilities,
         'CashAndCashEquivalents': cashAndCashEquivalents,
         'Net Income': net_income,
-        'Net Margin': (net_income / revenue * 100) if revenue > 0 else 0,
+        'Net Margin': (net_income / revenue) if revenue > 0 else 0,
         'ROE': (net_income / equity) if equity > 0 else 0,
         'ROA': (net_income / assets) if assets > 0 else 0,
         'Cash Ratio': (cashAndCashEquivalents/current_assets) if current_assets > 0 else 0,
