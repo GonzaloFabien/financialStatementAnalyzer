@@ -9,6 +9,22 @@ import pandas as pd
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 
+#Configuración Frontend:
+COLORES = {
+    "color_fondo_app" : "#0B0E14",
+    "color_fondo_panel" : "#131722",
+    "color_borde" : "#2A2E39",
+    "empresa_1" : "#2A2E39",
+    "empresa_1_hover": "#1E4BD8",
+    "empresa_2": "#FF9800",       
+    "empresa_2_hover": "#E68900",
+    "exito": "#00C805",           
+    "exito_hover": "#009E04",
+    "texto_principal": "#E0E3EB",
+    "texto_secundario": "#787B86"
+
+}
+
 
 #Iniciación de la aplicación de escritorio:
 class AppFinanzas(ctk.CTk):
@@ -17,7 +33,8 @@ class AppFinanzas(ctk.CTk):
 
         #Títulos y otros:
         self.title("SMV Equity Analytics - Desktop Edition")
-        self.geometry("720x520")
+        self.geometry("1200x720")
+        self.configure(fb_color=COLORES["color_fondo_app"])
 
 
         #Conexión segura a la BD NoSQL Json:
@@ -39,8 +56,8 @@ class AppFinanzas(ctk.CTk):
             self, 
             text="📈 Generar Gráfico Comparativo Histórico", 
             command=self.lanzar_motor_grafico,
-            fg_color="#1f77b4", 
-            hover_color="#115584",
+            fg_color= COLORES["empresa_1"], 
+            hover_color= COLORES["empresa_1_hover"],
             font=ctk.CTkFont(weight="bold", size=14),
             height=40
         )
@@ -67,7 +84,7 @@ class AppFinanzas(ctk.CTk):
             mensaje = "Error en cargar el reporte_analizado.json "
 
 
-        self.lbl_estado = ctk.CTkLabel(self, text=mensaje, text_color="#2ca02c")
+        self.lbl_estado = ctk.CTkLabel(self, text=mensaje, text_color= COLORES["texto_principal"])
         self.lbl_estado.pack(padx=20, pady=10)
 
         # --- CONTENEDOR DE CONTROLES (FRAME INTERACTIVO) ---
@@ -87,9 +104,9 @@ class AppFinanzas(ctk.CTk):
             self.frame_controles,
             values = empresas if self.base_datos else [],
             width= 220,
-            border_color="#1f77b4",
-            button_color= "#1f77b4",
-            button_hover_color= "#115584"
+            border_color= COLORES["empresa_1"],
+            button_color= COLORES["empresa_1"],
+            button_hover_color= COLORES["empresa_1_hover"]
         )
         #Agregamos sticky="ew" para alinearlos perfectamente
         self.combo_empresa.grid(row=0, column=1, padx=15, pady=8, sticky="w")
@@ -103,9 +120,9 @@ class AppFinanzas(ctk.CTk):
             self.frame_controles, 
             values=empresas if self.base_datos else [],
             width=220,
-            border_color="#b41f1f",          
-            button_color="#b41f1f",          
-            button_hover_color="#FB1515"     
+            border_color= COLORES["empresa_2"],
+            button_color= COLORES["empresa_2"],
+            button_hover_color= COLORES["empresa_2_hover"]
         )
         self.combo_empresa2.grid(row=1, column=1, padx=15, pady=8, sticky="w")
         if self.base_datos and len(empresas) > 1: 
@@ -115,15 +132,15 @@ class AppFinanzas(ctk.CTk):
         
         
         self.lbl_ratio = ctk.CTkLabel(self.frame_controles, text="Seleccionar Ratio:", font=ctk.CTkFont(size=13))
-        self.lbl_ratio.grid(row=1, column=0, padx=15, pady=10, sticky="w")
+        self.lbl_ratio.grid(row=2, column=0, padx=15, pady=10, sticky="w")
         
         self.combo_ratio = ctk.CTkComboBox(
             self.frame_controles, 
             values=self.ratios_disponibles,
             width= 220,
-            border_color="#1f77b4",
-            button_color="#1f77b4",
-            button_hover_color="#115584"
+            border_color= COLORES["color_borde"],
+            button_color=COLORES["color_borde"],
+            button_hover_color= COLORES["empresa_1"]
         )
         self.combo_ratio.grid(row=2, column=1, padx=15, pady=10, sticky="w")
 
@@ -135,8 +152,9 @@ class AppFinanzas(ctk.CTk):
             self, 
             text="📊 Mostrar Tabla Histórica (Empresa 1)", 
             command=self.mostrar_tabla_numerica,
-            fg_color="#2ca02c", # Color verde para diferenciarlo del gráfico azul
-            hover_color="#1e7e1e",
+            fg_color= COLORES["color_fondo_panel"], # Color verde para diferenciarlo del gráfico azul
+            hover_color= COLORES["color_borde"],
+            border_color= COLORES["empresa_1"],
             font=ctk.CTkFont(weight="bold", size=14),
             height=40
         )
@@ -150,6 +168,8 @@ class AppFinanzas(ctk.CTk):
             self, 
             text="📥 Exportar Base de Datos a Excel", 
             command=self.ejecutar_exportacion,
+            fg_color = COLORES["exito_hover"],
+            text_color = "#000000",
             font=ctk.CTkFont(weight="bold")
         )
         self.btn_excel.pack(padx=20, pady=15)
@@ -178,7 +198,7 @@ class AppFinanzas(ctk.CTk):
             ruta_reporte_py = os.path.abspath(os.path.join(carpeta_actual,"..","reporte.py"))
             subprocess.run(["python", ruta_reporte_py, empresa_1, empresa_2, ratio_a_analizar], check=True)
             
-            self.lbl_estado.configure(text="✅ ¡Gráfico de Competidores Abierto!", text_color="#2ca02c")
+            self.lbl_estado.configure(text="🗸 ¡Gráfico de Competidores Abierto!", text_color="#2ca02c")
         except Exception as e:
             self.lbl_estado.configure(text=f"❌ Error al lanzar report_engine.py: {str(e)}", text_color="#d32f2f")
 
@@ -234,7 +254,7 @@ class AppFinanzas(ctk.CTk):
                     lbl_valor = ctk.CTkLabel(self.frame_tabla, text=valor_texto)
                     lbl_valor.grid(row=row_idx, column=col_idx, padx=15, pady=2)
 
-            self.lbl_estado.configure(text=f"✅ Tabla histórica de {empresa_activa} cargada con éxito", text_color="#2ca02c")
+            self.lbl_estado.configure(text=f"🗸, Tabla histórica de {empresa_activa} cargada con éxito", text_color="#2ca02c")
 
         except Exception as e:
             self.lbl_estado.configure(text=f"Error al cargar la tabla: {str(e)}", text_color="#d32f2f")
@@ -243,8 +263,10 @@ class AppFinanzas(ctk.CTk):
     def ejecutar_exportacion(self):
         # Aquí reutilizamos la lógica exacta de tu archivo exporter.py
         try:
+            #--- Área en mantenimiento: 
             primer_año = list(self.base_datos['Casa Grande'].keys())[0]
             ratios_a_exportar =  list(self.base_datos['Casa Grande'][primer_año].keys())
+            #--- Fin del área en mantenimiento:
             ruta_excel = "excelDinamico.xlsx"
             with pd.ExcelWriter(ruta_excel, engine='openpyxl') as writer:
                 for empresa, datos_historicos in self.base_datos.items():

@@ -45,7 +45,7 @@ valores_cartavio = [diccionario_cartavio[año].get(ratio_a_graficar, 0) for año
 """
     DISEÑO DEL GRÁFICO:
 """
-plt.plot(años_comunes, valores_casa_grande, marker="o", linewidth=1.5, color="#21B2DB", label=nombre_empresa_1)
+plt.plot(años_comunes, valores_casa_grande, marker="o", linewidth=1.5, color="#465154", label=nombre_empresa_1)
 plt.plot(años_comunes, valores_cartavio, marker="s", linewidth=1.5,color="#ED9B24", label=nombre_empresa_2)
 
 plt.title(f"Comparativa : {ratio_a_graficar} anual", fontsize=14, fontweight="bold")
@@ -73,7 +73,7 @@ def formatear_eje_y(valor, pos):
     if abs(valor<= 2.0 ):
         valor_decimal = valor *100
         return f"{valor_decimal:.1f}%"
-    elif abs(valor) < 100:
+    elif abs(valor) <400:
         return f"{valor:.1f}%"
     else:
         #al ser un número grande, no es posible que sea porcentual y se mantiene:
