@@ -25,7 +25,7 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
     duration_id = ids_duration[0] if ids_duration else "id1"
     instant_id = ids_instant[0] if ids_instant else "id2"
 
-    #print(f"duracińo |{ids_duration}| instant| {instant_id}")
+    #print(f"Duración |{ids_duration}| instant| {instant_id}")
 
     
     datos = {
@@ -61,8 +61,8 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     #-----------------Test: para ver las variables año a año:--------------
     print(f"Liabilities : {liabilities}")
     #print(f"Equity: {equity}")
-    #roee = net_income/equity
-    #print(f"Roe: type|{type(roee)} | {roee}")
+    #roe = net_income/equity
+    #print(f"Roe: type|{type(roe)} | {roe}")
 
     #Estos son los tag del diccionario a buscar:
     ratios_calculados = {

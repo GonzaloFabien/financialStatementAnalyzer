@@ -9,15 +9,15 @@ import pandas as pd
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 
-#Configuración Frontend:
+#Configuración Frontend para los colores:
 COLORES = {
     "color_fondo_app" : "#0B0E14",
     "color_fondo_panel" : "#131722",
-    "color_borde" : "#2A2E39",
-    "empresa_1" : "#2A2E39",
-    "empresa_1_hover": "#1E4BD8",
-    "empresa_2": "#FF9800",       
-    "empresa_2_hover": "#E68900",
+    "color_borde" : "#FF9800",
+    "empresa_1" :  "#FF9800",
+    "empresa_1_hover": "#7A4F0E",
+    "empresa_2": "#2A2E39",       
+    "empresa_2_hover": "#292727",
     "exito": "#00C805",           
     "exito_hover": "#009E04",
     "texto_principal": "#E0E3EB",
@@ -56,8 +56,8 @@ class AppFinanzas(ctk.CTk):
             self, 
             text="📈 Generar Gráfico Comparativo Histórico", 
             command=self.lanzar_motor_grafico,
-            fg_color= COLORES["empresa_1"], 
-            hover_color= COLORES["empresa_1_hover"],
+            fg_color= COLORES["empresa_2"], 
+            hover_color= COLORES["empresa_2_hover"],
             font=ctk.CTkFont(weight="bold", size=14),
             height=40
         )
@@ -96,7 +96,7 @@ class AppFinanzas(ctk.CTk):
         self.frame_controles.grid_columnconfigure(1, weight=1)
 
         #------ Row 0: Empresa 1 ------
-        self.lbl_empresa = ctk.CTkLabel(self.frame_controles, text="Empresa 1 (azul):", font=ctk.CTkFont(size=13, weight='bold'))
+        self.lbl_empresa = ctk.CTkLabel(self.frame_controles, text="Empresa 1 :", font=ctk.CTkFont(size=13, weight='bold'))
         self.lbl_empresa.grid(row=0, column=0, padx=15, pady=8, sticky="w")
         
         # CORRECCIÓN: Se cambió self.empresas por empresas (o una lista vacía si falla la carga)
@@ -113,7 +113,7 @@ class AppFinanzas(ctk.CTk):
 
         #------ ROW 1: Emprea 2 ------
         #Combobox de la segunda empresa a anlizar:
-        self.lbl_empresa2 = ctk.CTkLabel(self.frame_controles, text="Empresa 2 ", font=ctk.CTkFont(size=13, weight="bold"))
+        self.lbl_empresa2 = ctk.CTkLabel(self.frame_controles, text="Empresa 2", font=ctk.CTkFont(size=13, weight="bold"))
         self.lbl_empresa2.grid(row=1, column=0, padx=15, pady=8, sticky="w") # <-- Corregido pady a 10
         
         self.combo_empresa2 = ctk.CTkComboBox(
@@ -139,8 +139,8 @@ class AppFinanzas(ctk.CTk):
             values=self.ratios_disponibles,
             width= 220,
             border_color= COLORES["color_borde"],
-            button_color=COLORES["color_borde"],
-            button_hover_color= COLORES["empresa_1"]
+            button_color=COLORES["empresa_1"],
+            button_hover_color= COLORES["empresa_1_hover"]
         )
         self.combo_ratio.grid(row=2, column=1, padx=15, pady=10, sticky="w")
 
@@ -185,7 +185,7 @@ class AppFinanzas(ctk.CTk):
     #Lanza o ejecuta al reporte.py:
     def lanzar_motor_grafico(self):
         try:
-            self.lbl_estado.configure(text="⏳ Procesando datos y dibujando gráfico...", text_color="#ffb703")
+            self.lbl_estado.configure(text="⏳ Procesando datos y dibujando gráfico...", text_color= COLORES["empresa_1"])
             self.update() # Fuerza a la ventana a actualizar el texto de inmediato
 
             #Segmentamos en dos empresas: 
