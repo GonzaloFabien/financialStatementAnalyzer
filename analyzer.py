@@ -79,7 +79,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
 
     
     #-----------------Test: para ver las variables año a año:--------------
-    print(f"Costos financieros : {liabilities}")
+    #print(f"Costos financieros : {liabilities}")
     #print(f"Equity: {equity}")
     #roe = net_income/equity
     #print(f"Roe: type|{type(roe)} | {roe}")
