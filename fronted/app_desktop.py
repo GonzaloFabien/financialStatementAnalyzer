@@ -284,14 +284,17 @@ class AppFinanzas(ctk.CTk):
         try:
             #--- Área en mantenimiento: 
             primer_año = list(self.base_datos['Casa Grande'].keys())[0]
-            ratios_a_exportar =  list(self.base_datos['Casa Grande'][primer_año].keys())
+            """ratios_a_exportar =  list(self.base_datos['Casa Grande'][primer_año].keys())"""
+
             #--- Fin del área en mantenimiento:
-            ruta_excel = "excelDinamico.xlsx"
+            ruta_excel = "excel_Empresas_BD.xlsx"
             with pd.ExcelWriter(ruta_excel, engine='openpyxl') as writer:
                 for empresa, datos_historicos in self.base_datos.items():
+                    #print(f"empresa |{empresa}| dato historico|{datos_historicos}|")
                     años_ordenados = sorted(list(datos_historicos.keys()))
                     matriz_excel = {}
-                    for ratio in ratios_a_exportar:
+                    print(matriz_excel)
+                    for ratio in valores_a_mostrar: #Cambiar aquí la varaible
                         matriz_excel[ratio] = [datos_historicos[año].get(ratio, 0) for año in años_ordenados]
                     df = pd.DataFrame(matriz_excel, index=años_ordenados).T
                     df.to_excel(writer, sheet_name=empresa, index_label="Ratio / Métrica")
