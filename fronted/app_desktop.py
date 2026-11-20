@@ -26,6 +26,15 @@ COLORES = {
 }
 
 
+#--------------------------------Valores a mostrar--------------------------------
+valores_a_mostrar = [
+    "Revenue",
+    "CostOfSales",
+    "Net Income"
+]
+
+#---------------------------------------------------------------------------------
+
 #Iniciación de la aplicación de escritorio:
 class AppFinanzas(ctk.CTk):
     def __init__(self):
@@ -218,6 +227,7 @@ class AppFinanzas(ctk.CTk):
                 return
             
             # 2- Ordenamos cronológicamente los años de la empresa actual
+            #print(datos_empresa.values()) #Datos empresa es donde están todos los datos absolutos de la empresa:------------
             años_ordenados = sorted(list(datos_empresa.keys()))
             self.frame_tabla.pack(padx=20, pady=10, fill="both", expand=True)
 
@@ -234,8 +244,13 @@ class AppFinanzas(ctk.CTk):
                 lbl_hdr_año.grid(row=0, column=col_idx, padx=15, pady=5)
             
             # 4- CUERPO DE LA TABLA:
-            # Renderizamos usando 'ratios_actuales' en lugar de la variable global desfasada
-            for row_idx, ratio in enumerate(ratios_actuales, start=1):
+            """ 
+                Renderizamos usando 'valores_a_mostrar' en vez de 'ratios_actuales',
+                si quieres mostrar TODOS los tags disponibles puedes utilizar 'valores_a_mostrar'
+                el cual es una lista de diccionario con todo los datos del JSON para el primera año
+                de la empresa.
+            """
+            for row_idx, ratio in enumerate(valores_a_mostrar, start=1):
                 lbl_nombre_ratio = ctk.CTkLabel(self.frame_tabla, text=ratio, anchor="w")
                 lbl_nombre_ratio.grid(row=row_idx, column=0, padx=10, pady=2, sticky="w")
 
