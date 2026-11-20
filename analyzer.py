@@ -23,7 +23,8 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
     #------Mantenimiento---- manejo de DUPLAS---DURATION---INSTANT---]
     ids_duration, ids_instant = año_a_analizar
     duration_id = ids_duration[0] if ids_duration else "id1"
-    instant_id = ids_instant[0] if ids_instant else "id2"
+    instant_id = ids_instant[1] if ids_instant else "id2"      #Cambiar a ids_instant[0] para emprsas nacionales de la SMV y a [1] para US-gaap
+    
 
     #print(f"Duración |{ids_duration}| instant| {instant_id}")
 
@@ -34,14 +35,14 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
         'CostOfSales' : buscar_elemento('CostOfSales', duration_id, root_empresa) or buscar_elemento('CostOfGoodsAndServicesSold', duration_id, root_empresa) or buscar_elemento('CostOfGoodsSold', duration_id, root_empresa),        
         'ProfitLoss': buscar_elemento('ProfitLoss', duration_id, root_empresa) or buscar_elemento('NetIncomeLoss', duration_id, root_empresa),
         'GrossProfit' : buscar_elemento('GrossProfit', duration_id, root_empresa),
-        'AdministrativeExpenses' : buscar_elemento('AdministrativeExpense', duration_id, root_empresa),
-        'SallingExpenses' : buscar_elemento('DistributionCosts', duration_id, root_empresa),
-        'OperatingIncome' : buscar_elemento('ProfitLossFromOperatingActivities', duration_id, root_empresa),
-        'FinanceCosts' : buscar_elemento('FinanceCosts', duration_id, root_empresa),
-        'FinanceIncome' : buscar_elemento('FinanceIncome', duration_id, root_empresa),
+        'AdministrativeExpenses' : buscar_elemento('AdministrativeExpense', duration_id, root_empresa) or buscar_elemento('SellingGeneralAndAdministrativeExpense', duration_id, root_empresa),
+        'SallingExpenses' : buscar_elemento('DistributionCosts', duration_id, root_empresa) or buscar_elemento('AdvertisingExpense', duration_id, root_empresa),
+        'OperatingIncome' : buscar_elemento('ProfitLossFromOperatingActivities', duration_id, root_empresa) or 0,
+        'FinanceCosts' : buscar_elemento('FinanceCosts', duration_id, root_empresa) or buscar_elemento('InterestExpense', duration_id, root_empresa),
+        'FinanceIncome' : buscar_elemento('FinanceIncome', duration_id, root_empresa) or buscar_elemento('OtherExpenseIncomeNet', duration_id, root_empresa),
         'ForeingExchangeGainLoss': buscar_elemento('GainsLossesOnNetMonetaryPosition', duration_id, root_empresa),
-        'ProfitLossBeforeTax' : buscar_elemento('ProfitLossBeforeTax', duration_id, root_empresa),
-        'TotalTaxExpense' : buscar_elemento('IncomeTaxExpenseContinuingOperations', duration_id, root_empresa),
+        'ProfitLossBeforeTax' : buscar_elemento('ProfitLossBeforeTax', duration_id, root_empresa) or buscar_elemento('IncomeTaxExpenseBenefit', duration_id, root_empresa) or buscar_elemento('IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest', duration_id, root_empresa),
+        'TotalTaxExpense' : buscar_elemento('IncomeTaxExpenseContinuingOperations', duration_id, root_empresa) or buscar_elemento('IncomeTaxExpenseBenefit', duration_id, root_empresa),
         # --- Cuentas del Balance General (Usan año_a_analizar) ---
         'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', instant_id, root_empresa) or buscar_elemento('CashAndCashEquivalentsAtCarryingValue', instant_id, root_empresa),        
         'Equity': buscar_elemento('Equity', instant_id, root_empresa) or buscar_elemento('StockholdersEquity', instant_id, root_empresa) or buscar_elemento('StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest', instant_id, root_empresa) or buscar_elemento('LimitedLiabilityCompanyLlcMembersEquityIncludingPortionAttributableToNoncontrollingInterest', instant_id, root_empresa),
@@ -79,7 +80,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
 
     
     #-----------------Test: para ver las variables año a año:--------------
-    #print(f"Costos financieros : {liabilities}")
+    print(f"Costos financieros : {liabilities}")
     #print(f"Equity: {equity}")
     #roe = net_income/equity
     #print(f"Roe: type|{type(roe)} | {roe}")
