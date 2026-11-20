@@ -27,10 +27,14 @@ COLORES = {
 
 
 #--------------------------------Valores a mostrar--------------------------------
+#Para ver los tag disponibles, ver lo último de analyzer.py 
+
 valores_a_mostrar = [
     "Revenue",
     "CostOfSales",
-    "Net Income"
+    "Net Income",
+    "ROA",
+    "ROE"
 ]
 
 #---------------------------------------------------------------------------------

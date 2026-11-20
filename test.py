@@ -8,7 +8,7 @@ import json
 import os
 
 #Aquí vamos a colocar los años de los documentos que vamos a descargar:
-años_a_buscar = [ "2016", "2017","2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]
+años_a_buscar = [ "2012","2013","2014","2015","2016", "2017","2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]
 
 ruta_json_existente = "data_xml/reporte_analizado.json"
 
@@ -78,5 +78,5 @@ def agregar_empresa_a_bd(nombre_base, nombre_file):
 #Proceso para ejecutar correctamente todo el código:
 
 if __name__ == "__main__":
-    agregar_empresa_a_bd("Pluz Energia","pluz_energia")
+    agregar_empresa_a_bd("Buenaventura","buenaventura")
 

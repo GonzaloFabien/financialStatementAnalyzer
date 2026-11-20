@@ -33,6 +33,15 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
         'Revenue' : buscar_elemento('Revenue', duration_id, root_empresa) or buscar_elemento('RevenueFromContractWithCustomerExcludingAssessedTax', duration_id, root_empresa) or buscar_elemento('Revenues', duration_id, root_empresa) or buscar_elemento('SalesRevenueNet', duration_id, root_empresa),        
         'CostOfSales' : buscar_elemento('CostOfSales', duration_id, root_empresa) or buscar_elemento('CostOfGoodsAndServicesSold', duration_id, root_empresa) or buscar_elemento('CostOfGoodsSold', duration_id, root_empresa),        
         'ProfitLoss': buscar_elemento('ProfitLoss', duration_id, root_empresa) or buscar_elemento('NetIncomeLoss', duration_id, root_empresa),
+        'GrossProfit' : buscar_elemento('GrossProfit', duration_id, root_empresa),
+        'AdministrativeExpenses' : buscar_elemento('AdministrativeExpense', duration_id, root_empresa),
+        'SallingExpenses' : buscar_elemento('DistributionCosts', duration_id, root_empresa),
+        'OperatingIncome' : buscar_elemento('ProfitLossFromOperatingActivities', duration_id, root_empresa),
+        'FinanceCosts' : buscar_elemento('FinanceCosts', duration_id, root_empresa),
+        'FinanceIncome' : buscar_elemento('FinanceIncome', duration_id, root_empresa),
+        'ForeingExchangeGainLoss': buscar_elemento('GainsLossesOnNetMonetaryPosition', duration_id, root_empresa),
+        'ProfitLossBeforeTax' : buscar_elemento('ProfitLossBeforeTax', duration_id, root_empresa),
+        'TotalTaxExpense' : buscar_elemento('IncomeTaxExpenseContinuingOperations', duration_id, root_empresa),
         # --- Cuentas del Balance General (Usan año_a_analizar) ---
         'CashAndCashEquivalents' : buscar_elemento('CashAndCashEquivalents', instant_id, root_empresa) or buscar_elemento('CashAndCashEquivalentsAtCarryingValue', instant_id, root_empresa),        
         'Equity': buscar_elemento('Equity', instant_id, root_empresa) or buscar_elemento('StockholdersEquity', instant_id, root_empresa) or buscar_elemento('StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest', instant_id, root_empresa) or buscar_elemento('LimitedLiabilityCompanyLlcMembersEquityIncludingPortionAttributableToNoncontrollingInterest', instant_id, root_empresa),
@@ -41,6 +50,7 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
         'CurrentAssets': buscar_elemento('CurrentAssets', instant_id, root_empresa) or buscar_elemento('AssetsCurrent', instant_id, root_empresa),        
         'Inventories': buscar_elemento('Inventories', instant_id, root_empresa) or buscar_elemento('InventoryNet', instant_id, root_empresa),        
         'CurrentLiabilities': buscar_elemento('CurrentLiabilities', instant_id, root_empresa) or buscar_elemento('LiabilitiesCurrent', instant_id, root_empresa)
+        
             }
     return datos
 
@@ -57,17 +67,40 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     inventories = limpiar_valor(diccionario_fuente_generado['Inventories']) 
     current_liabilities = limpiar_valor(diccionario_fuente_generado['CurrentLiabilities'])
     cashAndCashEquivalents = limpiar_valor(diccionario_fuente_generado['CashAndCashEquivalents']) 
+    gross_profit = limpiar_valor(diccionario_fuente_generado['GrossProfit'])
+    administrative_expenses = limpiar_valor(diccionario_fuente_generado['AdministrativeExpenses'])
+    selling_expenses = limpiar_valor(diccionario_fuente_generado['SallingExpenses'])
+    operaing_income = limpiar_valor(diccionario_fuente_generado['OperatingIncome'])
+    finance_cost = limpiar_valor(diccionario_fuente_generado['FinanceCosts'])
+    finance_income = limpiar_valor(diccionario_fuente_generado['FinanceIncome'])
+    forering_exchange = limpiar_valor(diccionario_fuente_generado['ForeingExchangeGainLoss'])
+    incomes_before_tax = limpiar_valor(diccionario_fuente_generado['ProfitLossBeforeTax'])
+    total_tax_expenses = limpiar_valor(diccionario_fuente_generado['TotalTaxExpense'])
+
     
     #-----------------Test: para ver las variables año a año:--------------
-    print(f"Liabilities : {liabilities}")
+    print(f"Costos financieros : {liabilities}")
     #print(f"Equity: {equity}")
     #roe = net_income/equity
     #print(f"Roe: type|{type(roe)} | {roe}")
+    #----------------------------------------------------------------------
 
     #Estos son los tag del diccionario a buscar:
     ratios_calculados = {
         'Revenue' : revenue,
         'CostOfSales' : cost_of_sales,
+        'Gross Income' : gross_profit,
+        'Gross Margin' : (gross_profit/revenue) if revenue > 0 else 0,
+        'Administrative Expenses' : administrative_expenses,
+        'Selling Expenses' : selling_expenses,
+        'Selling and Administrative Expenses' : (administrative_expenses+selling_expenses),
+        'Operating Margin' : operaing_income/revenue if revenue > 0 else 0,  
+        'Finance Income' : (finance_income) if finance_income > 0 else 0,
+        'Finance Expense' : (finance_cost) if finance_cost > 0 else 0,
+        'Interest Expense' : (finance_income-finance_cost),
+        'Taxes' : total_tax_expenses,
+
+
         'Equity': equity,
         'Liabilities' : liabilities,
         'CashAndCashEquivalents': cashAndCashEquivalents,
