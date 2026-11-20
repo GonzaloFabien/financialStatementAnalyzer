@@ -1462,7 +1462,7 @@
   </xbrli:context>
 <xbrli:unit id="id0"> <xbrli:measure>iso4217:USD</xbrli:measure> </xbrli:unit>
 <xbrli:unit id="SHA">  <xbrli:divide>       <xbrli:unitNumerator>         <xbrli:measure xmlns:m="http://www.xbrl.org/2003/iso4217">m:USD</xbrli:measure>       </xbrli:unitNumerator>       <xbrli:unitDenominator>         <xbrli:measure xmlns:m="http://www.xbrl.org/2003/instance">m:shares</xbrli:measure>       </xbrli:unitDenominator>     </xbrli:divide> </xbrli:unit>
-  <ifrs-full:NameOfReportingEntityOrOtherMeansOfIdentification contextRef="id1">COMPA��A DE MINAS BUENAVENTURA S.A.A.</ifrs-full:NameOfReportingEntityOrOtherMeansOfIdentification>
+  <ifrs-full:NameOfReportingEntityOrOtherMeansOfIdentification contextRef="id1">COMPAï¿½ï¿½A DE MINAS BUENAVENTURA S.A.A.</ifrs-full:NameOfReportingEntityOrOtherMeansOfIdentification>
   <smv:RegistroUnicoDeContribuyente contextRef="id1">20100079501</smv:RegistroUnicoDeContribuyente>
   <smv:ClasificacionIndustrialInternacionalUniforme contextRef="id1">1320</smv:ClasificacionIndustrialInternacionalUniforme>
   <smv:InformacionSobreElInforme contextRef="id1">2020ACMD</smv:InformacionSobreElInforme>

@@ -98,7 +98,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
         'Finance Income' : (finance_income) if finance_income > 0 else 0,
         'Finance Expense' : (finance_cost) if finance_cost > 0 else 0,
         'Interest Expense' : (finance_income-finance_cost),
-        'Taxes' : total_tax_expenses,
+        'Taxes' : total_tax_expenses,   
 
 
         'Equity': equity,

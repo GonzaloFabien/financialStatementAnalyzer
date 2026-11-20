@@ -254,7 +254,7 @@ class AppFinanzas(ctk.CTk):
                 el cual es una lista de diccionario con todo los datos del JSON para el primera año
                 de la empresa.
             """
-            for row_idx, ratio in enumerate(valores_a_mostrar, start=1):
+            for row_idx, ratio in enumerate(ratios_actuales, start=1):
                 lbl_nombre_ratio = ctk.CTkLabel(self.frame_tabla, text=ratio, anchor="w")
                 lbl_nombre_ratio.grid(row=row_idx, column=0, padx=10, pady=2, sticky="w")
 

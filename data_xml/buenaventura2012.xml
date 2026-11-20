@@ -1356,7 +1356,7 @@ xmlns:iso4217="http://www.xbrl.org/2003/iso4217"><link:schemaRef xlink:href="htt
   <smv:InformacionSobreElInforme contextRef="id1">2012ACMD</smv:InformacionSobreElInforme>
   <smv:MatriculaDeLaSociedadDeAuditoriaDelCCP contextRef="id1">SO761</smv:MatriculaDeLaSociedadDeAuditoriaDelCCP>
   <smv:NombreDeLaSociedadDeAuditoria contextRef="id1">Medina, Zaldivar, Paredes y Asociados Soc. Civ.</smv:NombreDeLaSociedadDeAuditoria>
-  <smv:NombreDelQueFirmaElDictamenApellidosYNombres contextRef="id1">Zaldívar Garcia, Marco</smv:NombreDelQueFirmaElDictamenApellidosYNombres>
+  <smv:NombreDelQueFirmaElDictamenApellidosYNombres contextRef="id1">ZaldÃ­var Garcia, Marco</smv:NombreDelQueFirmaElDictamenApellidosYNombres>
   <smv:CalificacionDelDictamen contextRef="id1">L</smv:CalificacionDelDictamen>
   <ifrs:Assets decimals="-3" unitRef="id0" contextRef="id2">3953549000</ifrs:Assets>
   <ifrs:Assets decimals="-3" unitRef="id0" contextRef="id3">4588653000</ifrs:Assets>
