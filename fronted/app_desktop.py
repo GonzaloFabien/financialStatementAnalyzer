@@ -221,7 +221,7 @@ class AppFinanzas(ctk.CTk):
             años_ordenados = sorted(list(datos_empresa.keys()))
             self.frame_tabla.pack(padx=20, pady=10, fill="both", expand=True)
 
-            # 🚀 CORRECCIÓN CLAVE: Extraer los ratios dinámicamente usando el primer año YA ORDENADO de esta empresa
+            # CORRECCIÓN CLAVE: Extraer los ratios dinámicamente usando el primer año YA ORDENADO de esta empresa
             año_referencia = años_ordenados[0]
             ratios_actuales = list(datos_empresa[año_referencia].keys())
 
