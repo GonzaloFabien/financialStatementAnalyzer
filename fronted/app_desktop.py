@@ -180,7 +180,7 @@ class AppFinanzas(ctk.CTk):
         self.btn_excel = ctk.CTkButton(
             self, 
             text="📥 Exportar Base de Datos a Excel", 
-            command=self.ejecutar_exportacion,
+            command=self.abrir_pestaña_modal,
             fg_color = COLORES["exito_hover"],
             text_color = "#000000",
             font=ctk.CTkFont(weight="bold")
@@ -278,8 +278,40 @@ class AppFinanzas(ctk.CTk):
         except Exception as e:
             self.lbl_estado.configure(text=f"Error al cargar la tabla: {str(e)}", text_color="#d32f2f")
 
+    def abrir_pestaña_modal(self):
 
-    def ejecutar_exportacion(self):
+        #1-Configuración basica de la pestaña modal:
+        pestaña_modal = ctk.CTkToplevel(self)
+        pestaña_modal.title("Configuraciones:")
+        pestaña_modal.geometry("400x200")
+        pestaña_modal.configure(fb_color=COLORES["color_fondo_app"])
+
+        #2-La volvemos Modal
+        pestaña_modal.transient(self)
+        pestaña_modal.grab_set()
+
+        #3-Contenido de la pestaña modal:
+        titulo_modal = ctk.CTkLabel(pestaña_modal, text="Exportar excel:", font=ctk.CTkFont(size=18), text_color=COLORES["texto_principal"])
+        titulo_modal.pack(pady=(15,5))
+
+        entrada_nombre = ctk.CTkEntry(pestaña_modal, placeholder_text="nombre de archivo")
+        entrada_nombre.insert(0, "excel_BD")
+        entrada_nombre.pack(pady=5)
+
+        #4- Guardar y salir boton:
+        boton_modal = ctk.CTkButton(
+            pestaña_modal, text="Guardar excel", width=120,
+            command=lambda: self.ejecutar_exportacion(entrada_nombre.get(), pestaña_modal),
+            text_color=COLORES["texto_principal"],
+            font=ctk.CTkFont(size=16),
+            fg_color = COLORES["empresa_1"],
+            hover_color= COLORES["empresa_1_hover"]
+            )
+        boton_modal.pack(pady=10)
+
+        return None
+
+    def ejecutar_exportacion(self, nombre, pestaña_m):
         # Aquí reutilizamos la lógica exacta de tu archivo exporter.py
         try:
             #--- Área en mantenimiento: 
@@ -287,7 +319,7 @@ class AppFinanzas(ctk.CTk):
             """ratios_a_exportar =  list(self.base_datos['Casa Grande'][primer_año].keys())"""
 
             #--- Fin del área en mantenimiento:
-            ruta_excel = "excel_Empresas_BD.xlsx"
+            ruta_excel = f"{nombre}.xlsx"
             with pd.ExcelWriter(ruta_excel, engine='openpyxl') as writer:
                 for empresa, datos_historicos in self.base_datos.items():
                     #print(f"empresa |{empresa}| dato historico|{datos_historicos}|")
@@ -300,7 +332,8 @@ class AppFinanzas(ctk.CTk):
                     df.to_excel(writer, sheet_name=empresa, index_label="Ratio / Métrica")
             
             # Cambiamos el texto del estado para avisarle al usuario en tiempo real
-            self.lbl_estado.configure(text=f"📊 ¡Excel generado con éxito en data_xml!", text_color="#2ca02c")
+            self.lbl_estado.configure(text=f"📊 ¡Excel {ruta_excel} geneardo correctamente!", text_color=COLORES["exito"])
+            pestaña_m.destroy()
         except Exception as e:
             self.lbl_estado.configure(text=f"❌ Error al exportar: {str(e)}", text_color="#d32f2f")
 
@@ -309,5 +342,3 @@ class AppFinanzas(ctk.CTk):
 if __name__ == "__main__":
     app = AppFinanzas()
     app.mainloop()
-
-
