@@ -99,11 +99,14 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
         'Finance Income' : (finance_income) if finance_income > 0 else 0,
         'Finance Expense' : (finance_cost) if finance_cost > 0 else 0,
         'Interest Expense' : (finance_income-finance_cost),
-        'Taxes' : total_tax_expenses,   
+        'Foreign Currency Gain Loss' : forering_exchange,
+        'Taxes' : total_tax_expenses, 
+        'Earnings Before Taxes': incomes_before_tax,
 
 
         'Equity': equity,
         'Liabilities' : liabilities,
+        'Assets' : assets,
         'CashAndCashEquivalents': cashAndCashEquivalents,
         'Net Income': net_income,
         'Net Margin': (net_income / revenue) if revenue > 0 else 0,

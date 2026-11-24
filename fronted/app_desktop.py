@@ -34,11 +34,14 @@ valores_a_mostrar = [
     "CostOfSales",
     "Gross Margin",
     "Administrative Expenses",
-    "Selling Expenss",
+    "Selling Expenses",
     "Operating Margin",
     "Finance Income",
-    "FInance Expense",
+    "Finance Expense",
     "Net Income",
+
+    "Equity",
+    "Assets",
     "ROA",
     "ROE"
 ]
