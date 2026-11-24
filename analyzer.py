@@ -23,7 +23,7 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
     #------Mantenimiento---- manejo de DUPLAS---DURATION---INSTANT---]
     ids_duration, ids_instant = año_a_analizar
     duration_id = ids_duration[0] if ids_duration else "id1"
-    instant_id = ids_instant[1] if ids_instant else "id2"      #Cambiar a ids_instant[0] para emprsas nacionales de la SMV y a [1] para US-gaap
+    instant_id = ids_instant[0] if ids_instant else "id2"      #Cambiar a ids_instant[0] para emprsas nacionales de la SMV y a [1] para US-gaap
     
 
     #print(f"Duración |{ids_duration}| instant| {instant_id}")
