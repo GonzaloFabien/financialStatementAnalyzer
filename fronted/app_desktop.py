@@ -335,7 +335,7 @@ class AppFinanzas(ctk.CTk):
                     años_ordenados = sorted(list(datos_historicos.keys()))
                     matriz_excel = {}
                     print(matriz_excel)
-                    for ratio in valores_a_mostrar: #Cambiar aquí la varaible
+                    for ratio in ratios_actuales: #Cambiar aquí la varaible
                         matriz_excel[ratio] = [datos_historicos[año].get(ratio, 0) for año in años_ordenados]
                     df = pd.DataFrame(matriz_excel, index=años_ordenados).T
                     df.to_excel(writer, sheet_name=empresa, index_label="Ratio / Métrica")
