@@ -325,7 +325,7 @@ class AppFinanzas(ctk.CTk):
         try:
             #--- Área en mantenimiento: 
             primer_año = list(self.base_datos['Casa Grande'].keys())[0]
-            """ratios_a_exportar =  list(self.base_datos['Casa Grande'][primer_año].keys())"""
+            ratios_a_exportar =  list(self.base_datos['Casa Grande'][primer_año].keys()) #OJO 1 este es el que tiene 3 comillas, se debe ocultar si se desea cambiar por la lista de arriba 'valores_a_mostrar'
 
             #--- Fin del área en mantenimiento:
             ruta_excel = f"{nombre}.xlsx"
@@ -335,7 +335,7 @@ class AppFinanzas(ctk.CTk):
                     años_ordenados = sorted(list(datos_historicos.keys()))
                     matriz_excel = {}
                     print(matriz_excel)
-                    for ratio in ratios_actuales: #Cambiar aquí la varaible
+                    for ratio in ratios_a_exportar: # OJO 1Cambiar aquí la varaible por la que está en 3 comillas 'ratios_a_exportar'
                         matriz_excel[ratio] = [datos_historicos[año].get(ratio, 0) for año in años_ordenados]
                     df = pd.DataFrame(matriz_excel, index=años_ordenados).T
                     df.to_excel(writer, sheet_name=empresa, index_label="Ratio / Métrica")
