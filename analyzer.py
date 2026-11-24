@@ -37,7 +37,7 @@ def extraer_source_data_f1(root_empresa, año_a_analizar):
         'GrossProfit' : buscar_elemento('GrossProfit', duration_id, root_empresa),
         'AdministrativeExpenses' : buscar_elemento('AdministrativeExpense', duration_id, root_empresa) or buscar_elemento('SellingGeneralAndAdministrativeExpense', duration_id, root_empresa),
         'SallingExpenses' : buscar_elemento('DistributionCosts', duration_id, root_empresa) or buscar_elemento('AdvertisingExpense', duration_id, root_empresa),
-        'OtherOperatingExpenses' : buscar_elemento('OtherExpenseByFunction', duration_id, root_empresa) or 0,
+        'OtherOperatingExpenses' : buscar_elemento('OtherIncome', duration_id, root_empresa) or 0, 
         'OperatingIncome' : buscar_elemento('ProfitLossFromOperatingActivities', duration_id, root_empresa) or 0,
         'FinanceCosts' : buscar_elemento('FinanceCosts', duration_id, root_empresa) or buscar_elemento('InterestExpense', duration_id, root_empresa),
         'FinanceIncome' : buscar_elemento('FinanceIncome', duration_id, root_empresa) or buscar_elemento('OtherExpenseIncomeNet', duration_id, root_empresa),
@@ -79,7 +79,7 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
     administrative_expenses = limpiar_valor(diccionario_fuente_generado['AdministrativeExpenses'])
     selling_expenses = limpiar_valor(diccionario_fuente_generado['SallingExpenses'])
     other_operating_expenses = limpiar_valor(diccionario_fuente_generado['OtherOperatingExpenses'])
-    operaing_income = limpiar_valor(diccionario_fuente_generado['OperatingIncome'])
+    operating_income = limpiar_valor(diccionario_fuente_generado['OperatingIncome'])
     finance_cost = limpiar_valor(diccionario_fuente_generado['FinanceCosts'])
     finance_income = limpiar_valor(diccionario_fuente_generado['FinanceIncome'])
     forering_exchange = limpiar_valor(diccionario_fuente_generado['ForeingExchangeGainLoss'])
@@ -107,9 +107,9 @@ def calcular_ratios_de_extraer_source_data_f2(diccionario_fuente_generado):
         'Administrative Expenses' : administrative_expenses,
         'Selling Expenses' : selling_expenses,
         'Selling and Administrative Expenses' : (administrative_expenses+selling_expenses),
-        'Operating Margin' : operaing_income/revenue if revenue > 0 else 0,
+        'Operating Margin' : operating_income/revenue if revenue > 0 else 0,
         'Ohter Operating Expenses' : other_operating_expenses if other_operating_expenses>0 else 0,
-        'Operating Income' :   operaing_income  if operaing_income>0 else 0,
+        'Operating Income' :   operating_income,
         'Finance Income' : (finance_income) if finance_income > 0 else 0,
         'Finance Expense' : (finance_cost) if finance_cost > 0 else 0,
         'Interest Expense' : (finance_income-finance_cost),
